@@ -57,6 +57,7 @@ class StatsCog(commands.Cog):
         return
 
     @slash_command(name='resultado', description='Registra el resultado de una partida.')
+    @commands.is_owner()
     async def resultado(self, ctx, 
                         players: Option(str, "Lista de jugadores con sus personajes al acabar la partida."), 
                         winner: Option(str, "Resultado del juego. Valores admitidos: good, evil")):
@@ -92,6 +93,13 @@ class StatsCog(commands.Cog):
 
         return
     
+    @resultado.error
+    async def on_application_command_error(self, ctx: discord.ApplicationContext, error: discord.DiscordException):
+        if isinstance(error, commands.NotOwner):
+            await ctx.respond("No tienes permiso para guardar una partida.")
+        else:
+            raise error
+
     class ConfirmationButtons(discord.ui.View):
         def __init__(self, ctx, bot, processed_players, winner):
             super().__init__()
