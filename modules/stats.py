@@ -35,7 +35,7 @@ class StatsCog(commands.Cog):
             await ctx.respond(f"No tengo partidas registradas con el {character}.")
             return
         
-        await ctx.respond(character_stats)
+        await ctx.respond(embed=character_stats)
         return
 
     @slash_command(name='jugador', description='Da estadísticas sobre el jugador')

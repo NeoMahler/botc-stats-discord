@@ -1,5 +1,6 @@
 import os, json, shutil
 from discord.ext import commands
+import discord
 import time
 
 class UtilitiesCog(commands.Cog):
@@ -47,7 +48,7 @@ class UtilitiesCog(commands.Cog):
         else:
             return False
     
-    def get_character_name(self, character):
+    def get_character_name(self, character, lang="es"):
         modifier = ""
         if "(" in character:
             modifier = " bueno" if character[-2] == "g" else " malvado"
@@ -56,7 +57,7 @@ class UtilitiesCog(commands.Cog):
         with open(character_data, 'r') as f:
             character_data = json.load(f)
 
-        name = character_data[character]["name"]["es"]
+        name = character_data[character]["name"][lang]
             
         return f"{name}{modifier}"
 
@@ -66,6 +67,13 @@ class UtilitiesCog(commands.Cog):
             character_data = json.load(f)
 
         return character_data[character]["article"]["es"]
+    
+    def get_character_details(self, character):
+        character_data = os.path.join("data", "character_data.json")
+        with open(character_data, 'r') as f:
+            character_data = json.load(f)
+
+        return character_data[character]
 
     def generate_game_id(self):
         games_file = os.path.join("data", "games.json")
@@ -223,13 +231,33 @@ class UtilitiesCog(commands.Cog):
             return False
         
         character_stats = character_stats[character]
-        article = self.get_character_article(character)
-        character = self.get_character_name(character)
+        winrate = round(character_stats['winrate'] / character_stats['games'] * 100)
 
-        msg = f"{article.capitalize()}{character} ha aparecido en **{character_stats['games']} partidas**, de las que ha ganado {character_stats['winrate']}.\n"
-        msg += f"_(no incluye partidas con el alineamiento alterado)_"
+        char_details = self.get_character_details(character)
+        character = char_details["name"]["es"]
+        character_en = char_details["name"]["en"]
+        type = char_details["type"]
+        if type == "demon":
+            type = "Demonio"
+            color = discord.Color.red()
+        elif type == "minion":
+            type = "Secuaz"
+            color = discord.Color.red()
+        elif type == "outsider":
+            type = "Forastero"
+            color = discord.Color.blue()
+        elif type == "townsfolk":
+            type = "Aldeano"
+            color = discord.Color.blue()
+        wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
 
-        return msg
+        embed = discord.Embed(title=f"{character}", description=char_details["description"]["es"], url=wiki, color=color)
+        embed.add_field(name="Tipo", value=type)
+        embed.add_field(name="Partidas", value=f"{character_stats['games']} (:trophy: {winrate}%)")
+        embed.add_field(name="En inglés", value=character_en)
+        embed.set_footer(text="Nota: no incluye partidas con el alineamiento alterado.")
+
+        return embed
     
     def generate_game_stats(self):
         game_stats_f = os.path.join("data", "games.json")
