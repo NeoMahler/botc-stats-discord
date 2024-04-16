@@ -1,4 +1,4 @@
-import os, json
+import os, json, shutil
 from discord.ext import commands
 import time
 
@@ -272,6 +272,16 @@ class UtilitiesCog(commands.Cog):
             msg += f"1. {char_name} (:trophy: {winrate}%)\n"
 
         return msg
+    
+    def backup_data(self):
+        if not os.path.exists("backups"):
+            os.makedirs("backups")
+        
+        shutil.copy(os.path.join("data", "players.json"), os.path.join("backups", "players.json"))
+        shutil.copy(os.path.join("data", "characters.json"), os.path.join("backups", "characters.json"))
+        shutil.copy(os.path.join("data", "games.json"), os.path.join("backups", "games.json"))
+        return
+
 
 def setup(bot):
     bot.add_cog(UtilitiesCog(bot))

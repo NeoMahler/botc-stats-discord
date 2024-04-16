@@ -163,3 +163,4 @@ token.cfg
 data/games.json
 data/players.json
 data/characters.json
+backups/*

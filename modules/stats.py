@@ -85,6 +85,8 @@ class StatsCog(commands.Cog):
             processed_players[player] = character
         print(processed_players)
 
+        utilities.backup_data()
+
         confirmation = utilities.generate_confirmation_msg(processed_players, winner)
         if confirmation == None:
             await ctx.respond("Error al procesar la validez de los parámetros. Revisa que los jugadores, personajes, alineamiento y resultado sean correctos.")
