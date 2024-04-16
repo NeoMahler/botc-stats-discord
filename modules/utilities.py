@@ -60,6 +60,13 @@ class UtilitiesCog(commands.Cog):
             
         return f"{name}{modifier}"
 
+    def get_character_article(self, character):
+        character_data = os.path.join("data", "character_data.json")
+        with open(character_data, 'r') as f:
+            character_data = json.load(f)
+
+        return character_data[character]["article"]["es"]
+
     def generate_game_id(self):
         games_file = os.path.join("data", "games.json")
         with open(games_file, 'r') as f:
@@ -168,7 +175,8 @@ class UtilitiesCog(commands.Cog):
                     alignment = "bueno"
                 else:
                     alignment = "malvado"
-                msg += f"**<@{player}>** era el **{character}** ({alignment})\n"
+                article = self.get_character_article(char_id)
+                msg += f"**<@{player}>** era {article}**{character}** ({alignment})\n"
 
         if result == "good":
             result = "Bueno"
@@ -215,9 +223,10 @@ class UtilitiesCog(commands.Cog):
             return False
         
         character_stats = character_stats[character]
+        article = self.get_character_article(character)
         character = self.get_character_name(character)
 
-        msg = f"El {character} ha aparecido en **{character_stats['games']} partidas**, de las que ha ganado {character_stats['winrate']}.\n"
+        msg = f"{article.capitalize()}{character} ha aparecido en **{character_stats['games']} partidas**, de las que ha ganado {character_stats['winrate']}.\n"
         msg += f"_(no incluye partidas con el alineamiento alterado)_"
 
         return msg
