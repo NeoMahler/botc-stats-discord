@@ -10,6 +10,11 @@
             "es": "Cada noche*, si alguno de tus vecinos vivos buenos está borracho o envenenado, mueres.",
             "ca": "Cada nit*, si algun dels teus veïns vius estan borratxos o enverinats, mors."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": []
@@ -25,6 +30,11 @@
             "es": "Tienes la habilitat de un Secuaz fuera de juego.",
             "ca": "Tens l'habilitat d'un sequaç fora de joc."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -33,16 +43,21 @@
             "ca": "és l'alquimista"
         }]
     },
-    "alhadikia": {
+    "alhadikhia": {
         "name": {
-            "en": "Al-Hadikia",
-            "es": "Al-Hadikia",
-            "ca": "Al-Hadikia"
+            "en": "Al-Hadikhia",
+            "es": "Al-Hadikhia",
+            "ca": "Al-Hadikhia"
         },
         "description": {
             "en": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
             "es": "Cada noche*, escoge a 3 jugadors (todos los jugadores saben a quien): cada uno escoge en silencio si vive o muere, pero si todos viven, todos mueren.",
             "ca": "Cada nit*, tria 3 jugadors (tots els jugadors saben qui): cadascun tria en silenci si viu o mor, però si tots viuen, tots moren."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "demon",
         "setupWarning": false,
@@ -72,6 +87,11 @@
             "es": "No sabes qué habilidad tienes. Cada día, intenta adivinarla en privado: sabes si te has acercado.",
             "ca": "No saps quina habilitat tens. Cada dia, intenta endevinar-la en privat: saps si t'hi has acostat."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders":[{
@@ -91,6 +111,11 @@
             "es": "Una vez por partida, durante el día, haz una pregunta privada al Narrador que pueda responder con sí o no.",
             "ca": "Un cop per partida, durant el dia, fes una pregunta privada al Narrador que pugui respondre amb sí o no."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"  
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -109,6 +134,11 @@
             "en": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
             "es": "Una vez por partida, de noche*, escoge a un jugador: muere, incluso si por alguna razón no pudiera.",
             "ca": "Un cop per partida, de nit*, tria un jugador: mor, fins i tot si per alguna raó no podria."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "minion",
         "setupWarning": false,
@@ -134,6 +164,11 @@
             "es": "El Narrador puede saltarse las reglas del juego. Si es ejecutado, el equipo bueno gana, incluso si estás muertos. [No hay personajes malvados]",
             "ca": "El Narrador pot saltar-se les normes del joc. Si és executat, l'equipo bo guanya, fins i tot si ets mort. [No hi ha personatges malvats]"
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": true,
         "reminders": []
@@ -148,6 +183,11 @@
             "en": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
             "es": "Cada noche, descubres 1 jugador de cada tipo de personaje, hasta que no haya más tipos para descubrir. [+1 Forastero]",
             "ca": "Cada nit, descobreixes 1 jugador de cada tipus de personatge, fins que no hi hagi més tipus per descobrir. [+1 Foraster]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": true,
@@ -180,6 +220,11 @@
             "es": "Si has muerto hoy o esta noche, el Demonio puede escoger a 2 jugadores (no a otro Demonio) para que se intercambien los personajes.",
             "ca": "Si has mort avui o aquesta nit, el Dimoni pot triar 2 jugadors (no un altre Dimoni) perquè s'intercanviïn els personatges."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": [{
@@ -199,6 +244,11 @@
             "es": "Hay Forasteros adicionales en juego. [+2 Forasteros]",
             "ca": "Hi ha Forasters addicionals en joc. [+2 Forasters]"
         },
+        "article": {
+            "en": "the ", 
+            "es": "el ", 
+            "ca": "el "
+        },
         "type": "minion",
         "setupWarning": true,
         "reminders": []
@@ -214,6 +264,11 @@
             "es": "Si eres ejecutado, todos los jugadores menos 3 mueren. 1 minuto después, el jugador con más jugadores apuntándolo muere.",
             "ca": "Si ets executat, tots els jugadors fora de 3 moren. 1 minut després, el jugador amb més jugadors apuntant-lo mor."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": []
@@ -222,12 +277,17 @@
         "name": {
             "en": "Bounty Hunter",
             "es": "Cazarrecompensas",
-            "ca": "Caçarecompenses"
+            "ca": "Caça-recompenses"
         },
         "description": {
             "en": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
             "es": "Empiezas conociendo un jugador malvado. Si ese jugador muere, descubres otro jugador malvado durante la noche. [1 Aldeano es malvado]",
             "ca": "Comences coneixent un jugador malvat. Si aquest jugador mor, descobreixes un altre jugador malvat durant la nit. [1 Vil·latà és malvat]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": true,
@@ -243,6 +303,11 @@
             "en": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
             "es": "Cada noche, elige a un jugador (excepto a ti mismo): mañana puedes votar solo si él también vota.",
             "ca": "Cada nit, tria un jugador (excepte a tu mateix): demà pots votar només si ell també vota."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "outsider",
         "setupWarning": false,
@@ -262,6 +327,11 @@
             "en": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
             "es": "Tienes l'habilitat del ejecutado más reciente. Si es malvado, estás envenenado hasta que un jugador bueno muera ejecutado.",
             "ca": "Tens l'habilitat de l'executat més recent. Si és malvat, estàs enverinat fins que un jugador bo mori executat."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -287,6 +357,11 @@
             "es": "Cada noche, escoge a un jugador y un personaje bueno: está \"loco\" sobre ser este personaje mañana o puede ser ejecutado.",
             "ca": "Cada nit, tria un jugador i un personatge bo: està \"boig\" sobre ser aquest personatge demà o pot ser executat."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": [{
@@ -306,6 +381,11 @@
             "es": "Cada noche, escoge a 2 jugador vivos (excepto a ti mismo): descubres cuantos han despertado esta noche por su habilidad",
             "ca": "Cada nit, tria 2 jugadors vius (excepte tu mateix): descobreixes quants s'han despertat aquesta nit per la seva habilitat."
         },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -320,6 +400,11 @@
             "en": "You start knowing how many pairs of evil players there are.",
             "es": "Empiezas sabiendo cuandos pares de jugadores malvados hay.",
             "ca": "Comences sabent quantes parelles de jugadors malvats hi ha."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -336,6 +421,11 @@
             "es": "Si el Demonio mata el Rey, descubres quién es el Demonio. [+el Rey]",
             "ca": "Si el Dimoni mata el Rei, descobreixes qui és el Dimoni. [+el Rei]"
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": true,
         "reminders": []
@@ -351,6 +441,11 @@
             "es": "Empiezas sabiendo a cuántos jugadores de distancia está el Demonio de su Secuaz más próximo.",
             "ca": "Comences sabent a quants jugadors de distància és el Dimoni del seu Sequaç més proper."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -365,6 +460,11 @@
             "en": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.",
             "es": "Una vez por partida, de noche, escoge un personaje: queda borracho durante 3 noches y 3 días.",
             "ca": "Un cop per partida, de nit, tria un personatge: queda borratxo durant 3 nits i 3 dies."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -397,6 +497,11 @@
             "es": "Cada noche, te conviertes en el alineamiento de un vecino vivo. Si todos los jugadores buenos se unen a tu secta, tu equipo gana.",
             "ca": "Cada nit, et converteixes en l'alineament d'un veí viu. Si tots els jugadors bons s'apunten a la teva secta, el teu equipo guanya."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -411,6 +516,11 @@
             "en": "All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.",
             "es": "Todos los Secuaces saben que estás en juego. Si un Secuaz adivina tu identidad en público (una vez), tu equipo pierde.",
             "ca": "Tots els Sequaços saben que estàs en joc. Si un Sequaç endevina la teva identitat en públic (una vegada), el teu equipo perd."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
         },
         "type": "outsider",
         "setupWarning": false,
@@ -431,6 +541,11 @@
             "es": "Cada noche, escoge a un jugador vivo (diferente a la noche anterior): si es ejecutado mañana, no muere.",
             "ca": "Cada nit, tria un jugador viu (diferent de la nit passada): si és executat demà, no mor."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": [{
@@ -450,6 +565,11 @@
             "es": "Cada noche, escoge a un jugador (excepto a ti mismo o a Viajeros): descubres 1 personaje bueno y 1 de malvado, uno de los cuales es correcto.",
             "ca": "Cada nit, tria un jugador (excepte a tu mateix o a Viatgers): descobreixes 1 personatge bo i 1 de malvat, dels quals un és correcte."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -465,6 +585,11 @@
             "es": "No sabes que eres el Borracho. Crees que eres un personaje Aldeano, pero no lo eres.",
             "ca": "No saps que ets el Borratxo. Et penses que ets un personatge Vil·latà, però no l'ets."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": true,
         "reminders": [{
@@ -476,13 +601,18 @@
     "empath": {
         "name": {
             "en": "Empath",
-            "es": "Empática",
-            "ca": "Empàtica"
+            "es": "Empático",
+            "ca": "Empàtic"
         },
         "description": {
             "en": "Each night, you learn how many of your 2 alive neighbors are evil.",
             "es": "Cada noche, descubres cuántos de tus 2 vecinos vivos son malvados.",
             "ca": "Cada nit, descobreixes quants dels teus 2 veïns vius són malvats."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -498,6 +628,11 @@
             "en": "Once per game, at night, choose which Minions or which Demon is in play.",
             "es": "Una vez por partida, de noche, elige qué Sequaces o qué Demonio está en juego.",
             "ca": "Un cop per partida, de nit, tria quins Sequaços o quin Dimoni està en joc."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -518,6 +653,11 @@
             "es": "Tú y un oponente os conocéis. Si el jugador bueno es ejecutado, el equipo malvado gana. El equipo bueno no puede ganar si ambos vivís.",
             "ca": "Tu i un oponent us coneixeu. Si el jugador bo és executat, l'equip malvat guanya. L'equip bo no pot guanyar si els dos viviu."
         },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": [{
@@ -537,6 +677,11 @@
             "es": "Cada noche*, escoge a un jugador (distinto de la noche anterior): el Dimonio, si lo escoges, lo descubre y no se despierta de noche.",
             "ca": "Cada nit*, tria un jugador (diferent de la nit anterior): el Dimoni, si el tries, ho descobreix i no es desperta de nit."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -555,6 +700,11 @@
             "en": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
             "es": "Cada noche*, escoge a un jugador: muere. El primer Forastero que muera así se convierte en un Fang Gu malvado y mueres en su lugar. [+1 Forastero]",
             "ca": "Cada nit*, tria un jugador: mor. El primer Foraster que mori així es converten en un Fang Gu malvat i mors en el seu lloc. [+1 Foraster]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": true,
@@ -579,6 +729,11 @@
             "es": "Si mueres de noche, un jugador bueno vivo se convierte en Campesino.",
             "ca": "Si mors de nit, un jugador bo viu es converteix en Pagès"
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -593,6 +748,11 @@
             "en": "Each night, choose a player: if you nominate & execute them, their team loses. All players know if you choose a new player.",
             "es": "Cada noche, escoge a un jugador: si lo nominas y ejecutas, su equipo pierde. Todos los jugadores saben si escoges a un nuevo jugador.",
             "ca": "Cada nit, tria un jugador: si el nomines i l'executes, el seu equip perd. Tots els jugadors saben si tries un nou jugador."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "minion",
         "setupWarning": false,
@@ -613,6 +773,11 @@
             "es": "Una vez por partida, de día, visita al Narrador para obtener un consejo para que tu equipo gane.",
             "ca": "Un cop per partida, de dia, visita el Narrador per obtenir un consell perquè el teu equip guanyi."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -631,6 +796,11 @@
             "en": "Each night*, you learn if a Demon voted today.",
             "es": "Cada noche*, descubres si un Demonio ha votado hoy.",
             "ca": "Cada nit*, descobreixes si un Dimoni ha votat avui."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -655,6 +825,11 @@
             "es": "La primera vez que mueres, no mueres.",
             "ca": "El primer cop que mors, no mors."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -666,13 +841,18 @@
     "fortuneteller": {
         "name": {
             "en": "Fortune Teller",
-            "es": "Adivina",
-            "ca": "Endevina"
+            "es": "Vidente",
+            "ca": "Vidente"
         },
         "description": {
             "en": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
             "es": "Cada noche, elige a 2 jugadores: descubres si uno de ellos es un Demonio. Un jugador bueno figura como Demonio para ti.",
             "ca": "Cada nit, tria 2 jugadors: descobreixes si un d'ells és un Dimoni. Un jugador bo figura com a Dimoni per a tu."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -685,13 +865,18 @@
     "gambler": {
         "name": {
             "en": "Gambler",
-            "es": "Tahúr",
-            "ca": "Tafurer"
+            "es": "Apostador",
+            "ca": "Apostador"
         },
         "description": {
             "en": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
             "es": "Cada noche*, escoge a un jugador e intenta adivinar su personaje: si no lo aciertas, mueres.",
             "ca": "Cada nit*, tria un jugador i intenta endevinar el seu personatge: si no l'encertes, mors."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -712,6 +897,11 @@
             "es": "Cada noche, descubres qué alineamento cree el Narrador que está ganando: bueno, malvado o ninguno.",
             "ca": "Cada nit, descobreixes quin alineament creu el Narrador que està guanyant: bo, malvat o cap dels dos."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -726,6 +916,11 @@
             "en": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.",
             "es": "Si afirmas ser el Goblin públicamente cuando eres nominado y eres ejecutado ese día, tu equipo gana.",
             "ca": "Si afirmes ser el Goblin públicament quan ets nominat i ets executat aquell dia, el teu equip guanya."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "minion",
         "setupWarning": false,
@@ -765,6 +960,11 @@
             "es": "Puedes nominar una sola vez por partida. Al hacerlo, si el nominado no es el Demonio, muere.",
             "ca": "Pots nominar un sol cop per partida. En fer-ho, si el nominat no és el Dimoni, mor."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": [{
@@ -803,6 +1003,11 @@
             "es": "Cada día, puedes hacer una declaración pública. Esta noche, si era verdad, un jugador muere.",
             "ca": "Cada dia, pots fer una declaració pública. Aquesta nit, si era veritat, un jugador mor."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -821,6 +1026,11 @@
             "en": "You start knowing a good player & their character. If the Demon kills them, you die too.",
             "es": "Empiezas conociendo a un jugador bueno y su personaje. Si el Demonio lo mata, tú también mueres.",
             "ca": "Comences coneixent un jugador bo i el seu personatge. Si el Dimoni el mata, tu també mors."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -844,6 +1054,11 @@
             "en": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
             "es": "Cada noche, escoge a 2 jugadorer: mañana, el 1ᵒ está loco sobre que el 2ᵒ es malvado, o ambos pueden morir.",
             "ca": "Cada nit, tria dos jugadors: demà, el 1r està boig que el 2n és malvat, o els dos podem morir."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "l'"
         },
         "type": "minion",
         "setupWarning": false,
@@ -869,6 +1084,11 @@
             "es": "Si has muerto hoy o esta noche, los Secuaces y Demonios pueden decidir ser nuevos personajes de su tipo.",
             "ca": "Si has mort avui o aquesta nit, els Sequaços i Dimonis poden decidir ser nous personatges del seu tipus."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": [{
@@ -888,6 +1108,11 @@
             "es": "Quien gana, pierde y quien pierde, gana, incluso si estás muerto.",
             "ca": "Qui guanya, perd i qui perd, guanya, fins i tot si estàs mort."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": []
@@ -903,6 +1128,11 @@
             "es": "Cada noche, descubres con qué jugador cree el Narrador que tendrías que hablar más.",
             "ca": "Cada nit, descobreixes amb quin jugador creu el Narrador que hauries de parlar més."
         },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -917,6 +1147,11 @@
             "en": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",
             "es": "Una vez por partida, de noche, escoge a un jugador vivo: la Damisela, si la escoges, se convierte en Aldeano fuera de juego. [+la Damisela]",
             "ca": "Un cop per partida, de nit, tria un jugador viu: la Damisel·la, si la tries, es converteix en un Vil·latà for ade joc. [+la Damisel·la]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": true,
@@ -936,6 +1171,11 @@
             "en": "Each night*, choose 2 players: they can't die tonight, but 1 is drunk until dusk.",
             "es": "Cada noche*, escoge a 2 jugadores: no pueden morir esta noche, pero 1 está borracho hasta el anochecer.",
             "ca": "Cada nit*, tria 2 jugadors: no poden morir aquesta nit, però 1 està borratxo fins el vespre."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -960,6 +1200,11 @@
             "es": "Cada noche*, escoge a un jugador: muere. Si te matas de esta forma, un Secuaz de convierte en el Diablillo.",
             "ca": "Cada nit*, tria un jugador: mor. Si mors d'aquesta manera, un Sequaç es converteix en Diabló."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "demon",
         "setupWarning": false,
         "reminders": [{
@@ -978,6 +1223,11 @@
             "en": "You start knowing that 1 of 2 players is a particular Minion.",
             "es": "Empiezas sabiendo que 1 de 2 jugadores es un Secuaz concreto.",
             "ca": "Comences sabent que 1 de 2 jugadors és un Sequaç concret."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1003,6 +1253,11 @@
             "es": "En tu primer día, intenta adivinar públicamente los personajes de hasta 5 jugadores. Esa noche, descubres cuántos acertaste.",
             "ca": "El teu primer dia, intenta endevinar públicament els personatges de fins a 5 jugadors. Aquesta nit, descobreixes quants n'has encertat."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -1022,6 +1277,11 @@
             "es": "Cada noche, si hay más muertos que vivos, descubres 1 personaje vivo. El Demonio sabe quién eres.",
             "ca": "Cada nit, si hi ha més morts que vius, descobreixes 1 personatge viu. El Dimoni sap qui ets."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -1036,6 +1296,11 @@
             "en": "Each night*, choose a player: they die. [You choose which players are which Minions. -? to +? Outsiders]",
             "es": "Cada noche*, escoge a un jugador: muere. [Escoges qué jugadores son qué Secuaces. -? a +? Forasteros]",
             "ca": "Cada nit*, tria un jugador: mor. [Tries quins jugadors són quins Sequaços. -? a +? Forasters]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": true,
@@ -1055,6 +1320,11 @@
             "en": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
             "es": "Al descubrir que has muert, elige a 1 jugador vivo públicamente: si es malvado, tu equipo pierde.",
             "ca": "En descobrir que has mort, tria 1 jugador viu públicament: si és malvat, el teu equip perd."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "outsider",
         "setupWarning": false,
@@ -1090,6 +1360,11 @@
             "es": "Cada noche*, un jugador puede morir. Las ejecuciones fallan si solo votan malvados. También figuras como Secuaz. [La mayoría es Legión]",
             "ca": "Cada nit*, un jugador pot morir. Les execucions fallen si només voten malvats. També figures com a Sequaç. [La majoria és Legió]"
         },
+        "article": {
+            "en": "",
+            "es": "",
+            "ca": ""
+        },
         "type": "demon",
         "setupWarning": true,
         "reminders": [{
@@ -1112,6 +1387,11 @@
             "en": "If more than 1 good player is executed, evil wins. All players know you are in play. After day 5, evil wins.",
             "es": "Si más de 1 jugador bueno es ejecutado, el mal gana. Todos los jugadores saben que estás en juego. Después del día 5, el mal gana.",
             "ca": "Si més d'1 jugador bo és executat, el mal guanya. Tots els jugadors saben que estàs en joc. Després del dia 5, el mal guanya."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -1144,13 +1424,18 @@
     "librarian": {
         "name": {
             "en": "Librarian",
-            "es": "Bibliotecaria",
-            "ca": "Bibliotecària"
+            "es": "Bibliotecario",
+            "ca": "Bibliotecari"
         },
         "description": {
             "en": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
             "es": "Empiezas sabiendo que 1 de 2 jugadores es un Forastero concreto. (O que no hay ninguno en juego.)",
             "ca": "Comences sabent que 1 de 2 jugadors és un Foraster concret. (O que no n'hi ha cap en joc.)"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1175,6 +1460,11 @@
             "es": "Cada noche, los Secuaces deciden quién cuida la ficha del Monstruito y \"es el Demonio\". Un jugador muere cada noche*. [+1 Secuaz]",
             "ca": "Cada nit, els Sequaços decideixen qui cuida la fitxa del Petit Monstre i \"és el Dimoni\". Un jugador mor cada nit*. [+1 Sequaç]"
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "demon",
         "setupWarning": true,
         "reminders": [{
@@ -1197,6 +1487,11 @@
             "en": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if (& only if) they die.",
             "es": "Cada noche*, escoge a un jugador: muere. Empiezas escogiendo a un jugador vivo: está envenenado; mueres si (y solo si) él muere.",
             "ca": "Cada nit*, tria un jugador: mor. Comences triant un jugador viu: està enverinat; mors si (i només si) ell mor."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -1221,6 +1516,11 @@
             "es": "Te crees Demonio, pero no lo eres. El Demonio sabe quién eres y a quién eliges durante la noche.",
             "ca": "Et creus Dimoni, però no ho ets. El DImoni sap qui ets i qui tries durant la nit."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": [{
@@ -1239,6 +1539,11 @@
             "en": "Each night*, choose an alive player: if good, they die, but they are the only player that can die tonight.",
             "es": "Cada noche*, escoge a un jugador vivo: si es bueno, muere, pero es el único jugador que puede morir esta noche.",
             "ca": "Cada nit*, tria un jugador viu: si és bo, mor, però és l'únic jugador que pot morir aquesta nit."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1259,6 +1564,11 @@
             "es": "El Demonio cree que eres un Secuaz. Los Secuaces creen que eres un Demonio.",
             "ca": "El Dimoni creu que ets un Sequaç. Els Sequaços creuen que ets un Dimoni."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -1274,6 +1584,11 @@
             "es": "Crees que eres un personaje bueno, pero no lo eres. El Demonio sabe quién eres. [Estás al lado del Demonio]",
             "ca": "Creus que ets un personatge bo, però no ho ets. El Dimoni sap qui ets. [Ets al costat del Dimoni]"
         },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
         "type": "minion",
         "setupWarning": true,
         "reminders": [{
@@ -1287,6 +1602,11 @@
             "en": "Mastermind",
             "es": "Genio",
             "ca": "Geni"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "description": {
             "en": "If the Demon dies by execution (ending the game), play for 1 more day. If a player is then executed, their team loses.",
@@ -1308,6 +1628,11 @@
             "es": "Cada noche, descubres cuantas habilidades de jugadores han funcionado anormalmente (desde el amanecer) a causa de la habilidad de otro personaje.",
             "ca": "Cada nit, descobreixes quantes habilitats de jugadors han funcionat anormalment (des de l'alba) a causa de l'habilitat d'un altre personatge."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -1327,6 +1652,11 @@
             "es": "Si solo quedan 3 jugadores vivos y no hay ejecución, tu equipo gana. Si mueres de noche, puede que otro jugador muera en tu lugar.",
             "ca": "Si només queden 3 jugadors vius i no hi ha execució, el teu equip guanya. Si mors de nit, pot ser que un altre jugador mori en lloc teu."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -1341,6 +1671,11 @@
             "en": "You start knowing a secret word. The 1st good player to say this word becomes evil that night.",
             "es": "Empiezas con una palabra secreta. El primer jugador bueno que la diga se convierte en malvado durante la noche.",
             "ca": "Comences amb una paraula secreta. El priemr jugador bo que la digui es converteix en malvat durant la nit."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "minion",
         "setupWarning": false,
@@ -1365,6 +1700,11 @@
             "es": "Cuando un Secuaz muere ejecutado, el resto de jugadores (excepto Viajeros) están borrachos hasta mañana al anochecer.",
             "ca": "Quan un Sequaç mor executat, la resta de jugadors (excepte els Viatgers) estan borratxos fins demà al vespre."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -1383,6 +1723,11 @@
             "en": "Each night*, choose a player (not yourself): they are safe from the Demon tonight.",
             "es": "Cada noche*, escoge a un jugador (excepto a ti mismo): está protegido del Demonio durante la noche.",
             "ca": "Cada nit*, tria un jugador (excepte a tu mateix): està protegit del Dimoni durant la nit."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1403,6 +1748,11 @@
             "es": "Al descubrir que has muerto, elige a 1 jugador vivo públicamente. Esta noche, si era bueno, muere.",
             "ca": "En descobrir que has mort, tria 1 jugador viu públicament. Aquesta nit, si era bo, mors."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": [{
@@ -1422,6 +1772,11 @@
             "es": "Si estás \"loco\" sobre ser Forastero, podrías ser ejecutado.",
             "ca": "Si estàs \"boig\" sobre ser Foraster, podries ser executat."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": []
@@ -1436,6 +1791,11 @@
             "en": "Once per game, at night, choose a player: they learn who you are.",
             "es": "Una vez por partida, de noche, escoge a un jugador: descubre quién eres.",
             "ca": "Un cop per partida, de nit, tria un jugador: descobreix qui ets."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1456,6 +1816,11 @@
             "es": "Empiezas conociendo a 3 jugadores, de los que 1 (y solo 1) es malvado.",
             "ca": "Comences coneixent 3 jugadors, dels quals 1 (i només 1) és malvat."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -1474,6 +1839,11 @@
             "en": "Each night*, choose a player: they die. Your 2 Townsfolk neighbors are poisoned.",
             "es": "Cada noche*, escoge a un jugador: muere. Tus 2 vecinos aldeanos están envenenados.",
             "ca": "Cada nit, tria un jugador: mor. Els teus 2 veïns vilatans estan enverinats."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -1498,6 +1868,11 @@
             "es": "Cada noche*, escoge un personaje: muere. Si no está en juego, el Narrador escoge quién muere.",
             "ca": "Cada nit*, tria un personatge: mor. Si no està en joc, el Narrador tria qui mor."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "demon",
         "setupWarning": false,
         "reminders": [{
@@ -1517,6 +1892,11 @@
             "es": "Cada noche*, descubres cuantos jugadores muertos son malvados.",
             "ca": "Cada nit*, descobreixes quants jugadors morts són malvats."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -1531,6 +1911,11 @@
             "en": "All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote.",
             "es": "Todos los jugadores cierran sus ojos al votar y el recuento es secreto. Los votos contra ti solo cuentan si votas.",
             "ca": "Tots els jugadors tanquen els ulls en votar i el recompte és secret. Els vots contra tu només compten si votes."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "minion",
         "setupWarning": false,
@@ -1551,6 +1936,11 @@
             "es": "Los jugadores buenos ejecutados podrían no morir.",
             "ca": "Els jugadors bons executats podrien no morir."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -1565,6 +1955,11 @@
             "en": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
             "es": "Una vez por partida, de noche, escoge un personaje bueno: ganas su habilidad. Si el personaje está en juego, su jugador está borracho.",
             "ca": "Un cop per partida, de nit, tria un jugador bo: obtens la seva habilitat. Si el personatge està en joc, el seu jugador està borratxo."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1589,6 +1984,11 @@
             "es": "Empiezas sabiendo 1 Aldeano en juego. Si estabas loco sobre ser este personaje, obtienes su habilidad cuando muera.",
             "ca": "Comences sabent 1 Vil·latà en joc. Si estaves boig sobre ser aquest personatge, obtens la seva habilitat quan mori."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "la "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -1612,6 +2012,11 @@
             "es": "Cada noche*, escoge a un jugador y un personaje en el que se convierte (si no está en juego). Si crea a un Demonio, las muertas de esta noche son arbitrarias.",
             "ca": "Cada nit*, tria un jugador i un personatge en què es converteix (si no està en joc). Si crea un Dimoni, les morts d'aquesta nit són arbitràries."
         },
+        "article": {
+            "en": "the ", 
+            "es": "la ",
+            "ca": "la "
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": []
@@ -1626,6 +2031,11 @@
             "en": "If you die, the Storyteller gains a not-in-play Minion ability.",
             "es": "Si mueres, el Narrador obtiene la habilidad de un Secuaz fuera de juego.",
             "ca": "Si mors, el Narrador obté l'habilitat d'un Sequaç fora de joc."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "outsider",
         "setupWarning": false,
@@ -1645,6 +2055,11 @@
             "en": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.",
             "es": "Cada noche*, puedes escoger a un jugador: muere. Si tu última elección fue nadie, escoge a 3 jugadores esta noche.",
             "ca": "Cada nit*, pots triar un jugador: mor. Si la teva última tria va ser ningú, tria 3 jugadors aquesta nit."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -1669,6 +2084,11 @@
             "es": "Cada noche, escoge a un jugador: está envenenado esta noche y mañana.",
             "ca": "Cada nit, tria un jugador: està enverinat aquesta nit i demà."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": [{
@@ -1688,6 +2108,11 @@
             "es": "Si has sido el jugador más responsable por la pérdida de tu equipo, cambiar de alineamiento y ganas, incluso si estás muerto.",
             "ca": "Si has estat el jugador més responsable per la pèrdua del teu equip, canvies d'alineament i guanyes, fins i tot si ets mort."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": []
@@ -1702,6 +2127,11 @@
             "en": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
             "es": "Los Secuaces y Demonios no se conocen. Si mueres, descubren quienes son esa noche.",
             "ca": "Els Sequaços i Dimonis no es coneixen. Si mors, descobreixen qui són aquesta nit."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "la "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1721,6 +2151,11 @@
             "en": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.",
             "es": "Cada noche, escoge a un jugador: está envenenado. El jugador previamente envenenado muere, entonces se vuelve sano.",
             "ca": "Cada nit, tria un jugador: està enverinat. El jugador prèviament enverinat mor, i llavors es torna sa."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -1745,6 +2180,11 @@
             "es": "Cada noche, antes de las nominaciones, puedes escoger a un jugador públicament: muere. Al ser ejecutado, solo mueres si pierdes a pidra-papel-tijeras.",
             "ca": "Cada nit, abans de les nominacions, pots triar un jugador públicament: mor. En ser executat, només mors si perds a pedra-paper-tisores."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": []
@@ -1752,13 +2192,18 @@
     "puzzlemaster": {
         "name": {
             "en": "Puzzlemaster",
-            "es": "Experto en Adivinanzas",
-            "ca": "Expert en Endevinalles"
+            "es": "Puzzlemaster",
+            "ca": "Puzzlemaster"
         },
         "description": {
             "en": "1 player is drunk, even if you die. If you guess (once) who it is, learn the Demon player, but guess wrong & get false info.",
             "es": "1 jugador está borracho, incluso si mueres. Si adivinas (una vez) quien es, descubres quién es el Demonio. Si no aciertas, obtienes información falsa.",
             "ca": "1 jugador està borratxo, fins i tot si mors. Si endevines (un cop) qui és, descobreixes qui és el Dimoni. Si no encertes, obtens informació falsa."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "outsider",
         "setupWarning": false,
@@ -1783,6 +2228,11 @@
             "es": "Cada noche, escoge a un jugador: un Secuaz escogido lo sabe. Los Secuaces escogidos no tienen habilidad.",
             "ca": "Cada nit, tria un jugador: un Sequaç triat ho descobreix. Els Sequaços triats no tenen habilitat."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -1802,6 +2252,11 @@
             "es": "Una vez por partida, de noche*, escoge a un jugador vivo: si es un Aldeano, resucitará.",
             "ca": "Un cop per partida, de nit*, tria un jugador viu: si és Vil·latà, ressuscitarà."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -1817,13 +2272,18 @@
     "ravenkeeper": {
         "name": {
             "en": "Ravenkeeper",
-            "es": "Maestro de cuervos",
-            "ca": "Mestre de corbs"
+            "es": "Cuidador de cuervos",
+            "ca": "Cuidador de corbs"
         },
         "description": {
             "en": "If you die at night, you are woken to choose a player: you learn their character.",
             "es": "Si mueres de noche, despertarás para escoger a un jugador: descubres su personaje.",
             "ca": "Si mors de nit, et despertaràs per triar un jugador: descobreixes el seu personatge"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1840,6 +2300,11 @@
             "es": "Puedes figurar como malvado y como un Secuaz o Demonio, incluso muerto.",
             "ca": "Pots figurar com a malvar i com a Sequaç o Dimoni, fins i tot mort."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": []
@@ -1854,6 +2319,11 @@
             "en": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]",
             "es": "Los nominados mueren, pero pueden nominar inmediatamente (en el día 3, tienen que hacerlo). Después del día 3, el mal gana. [Todos los Secuaces són Revuelta]",
             "ca": "Els nominats moren, però poden nominar immediatament (el dia 3, han de fer-ho). Després del dia 3, el mal guanya. [Tots els Secuaços són Revolta]"
+        },
+        "article": {
+            "en": "",
+            "es": "",
+            "ca": ""
         },
         "type": "demon",
         "setupWarning": true,
@@ -1882,6 +2352,11 @@
             "es": "Si el Demonio te mata, descubres que es 1 de 2 jugadores.",
             "ca": "Si el Dimoni et mata, descobreixes que és 1 de 2 jugadors."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -1896,6 +2371,11 @@
             "en": "Each night, choose an alive player: either you or they are drunk until dusk. You can't die.",
             "es": "Cada noche, escoge a un jugador vivo: tú o él está borracho hasta el anochecer. No puedes morir.",
             "ca": "Cada nit, tria un jugador viu: tu o ell està borratxo fins el vespre. No pots morir."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1916,6 +2396,11 @@
             "es": "Si mueres por ejecución, tu equipo pierde.",
             "ca": "Si mors per execució, el teu equip perd."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": []
@@ -1931,6 +2416,11 @@
             "es": "Cada día, visita al Narrador para aprender 2 cosas en privado: 1 es cierta y 1 es falsa.",
             "ca": "Cada dia, visita el Narrador per aprendre 2 coses en privat: 1 és certa i 1 és falsa."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -1945,6 +2435,11 @@
             "en": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
             "es": "Una vez por partida, de noche, escoge a dos jugadores (excepto a ti mismo): descubres si tienen el mismo alineamiento.",
             "ca": "Un cop per partida, de nit, tria dos jugadors (excepte a tu mateix): descobreixes si tenen el mateix alineament."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -1965,6 +2460,11 @@
             "es": "Si hay 5 o más jugadores vivos y el Demonio muere, te conviertes en el Demonio. (Los Viajeros no cuentan)",
             "ca": "Si hi ha 5 o més jugadors vius i el Dimoni mor, et converteixes en el Dimoni. (Els Viatgers no compten)"
         },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": []
@@ -1979,6 +2479,11 @@
             "en": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
             "es": "Cada noche*, escoge a 2 jugadores: mueren. Un jugador muerto escogido la noche anterior puede ser regurgitado.",
             "ca": "Cada nit*, tria 2 jugadors: moren. Un jugador mort triat la nit anterior pot ser regurgitat."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -2003,6 +2508,11 @@
             "es": "Empiezas sabiendo si el jugador malvado más cercano está en sentido horario o anti-horario. Si es equidistante, la información es arbitraria.",
             "ca": "Comences sabent si el jugador malvat més proper és en sentit horari o antihorari. Si és equidistant, la informació és arbitrària."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": []
@@ -2017,6 +2527,11 @@
             "en": "Once per game, during the day, publicly choose a player: if they are the Demon, they die.",
             "es": "Una vez por partida, durante el día, elige a un jugador públicamente: si es el Demonio, muere.",
             "ca": "Un cop per partida, durant el dia, tria un jugador públicament: si és el Dimoni, mor."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -2037,6 +2552,11 @@
             "es": "Cada noche, escoge a un jugador vivo: si escoges un Demonio, os intercambiáis los personajes y alineamientos, y él queda envenenado.",
             "ca": "Cada nit, tria un jugador viu: si tries un Dimoni, us intercanvieu els personatges i alineaments, i ell queda enverinat."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -2056,6 +2576,11 @@
             "es": "Los Secuaces empiezan sabiendo 3 personajes fuera de juego.",
             "ca": "Els Sequaços comencen sabent 3 personatges fora de joc."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": []
@@ -2070,6 +2595,11 @@
             "en": "You are safe from the Demon.",
             "es": "Estás protegido del Demonio.",
             "ca": "Estàs protegit del Dimoni."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -2086,6 +2616,11 @@
             "es": "Cada noche, ves el Grimorio. Puedes figurar como bueno y como Aldeano o Forastero, incluso muerto.",
             "ca": "Cada nit, veus el Grimori. Pots figurar com a bo i com a Vil·latà o Foraster, fins i tot mort."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": []
@@ -2100,6 +2635,11 @@
             "en": "You start knowing 1 good player.",
             "es": "Empiezas conociendo 1 jugador bueno.",
             "ca": "Comences coneixent 1 jugador bo."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -2119,6 +2659,11 @@
             "en": "You get 3 bluffs. On the 3rd night, choose a player: they become an evil Demon of your choice. [No Demon]",
             "es": "Tienes 3 faroles. En la 3ª noche, elige a un jugador: se convierte en un Demonio malvado de tu elección. [No hay Demonio]",
             "ca": "Tens 3 blufs. La 3a nit, tria un jugador: es converteix en un Dimoni malvat de la teva elecció. [No hi ha Dimoni]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -2140,6 +2685,11 @@
             "es": "Al morir, 1 jugador se emborracha.",
             "ca": "En morir, 1 jugador s'emborratxa."
         },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "l'"
+        },
         "type": "outsider",
         "setupWarning": false,
         "reminders": [{
@@ -2159,6 +2709,11 @@
             "es": "Si tus dos vecinos vivos son buenos, no pueden morir.",
             "ca": "Si els teus dos veïns vius són bons, no poden morir."
         },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -2172,7 +2727,24 @@
             "en": "Tinker",
             "es": "Manitas",
             "ca": "Manetes"
-        }
+        },
+        "description": {
+            "en": "You might die at any time.",
+            "es": "Puedes morir en cualquier momento.",
+            "ca": "Pots morir en qualsevol moment."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "outsider",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "dead",
+            "es": "muerto",
+            "ca": "mort"
+        }]
     },
     "towncrier": {
         "name": {
@@ -2184,6 +2756,11 @@
             "en": "Each night*, you learn if a Minion nominated today.",
             "es": "Cada noche*, descubres si algún Sequaz ha nominado hoy.",
             "ca": "Cada nit*, descobreixes si algun Sequaç ha nominat avui."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -2208,6 +2785,11 @@
             "es": "Cada noche*, descubres qué personaje ha muerto por ejecución hoy.",
             "ca": "cada nit*, descobreixes quin personatge ha mort per execució avui."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [{
@@ -2226,6 +2808,11 @@
             "en": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbor. [-1 Outsider]",
             "es": "Cada noche*, escoge a un jugador: muere. Los Secuaces que matas mantienen su habilidad y envenenan a 1 vecino aldeano. [-1 Forastero]",
             "ca": "Cada nit*, tria un jugador: mor. Els Sequaos que mates mantenen la seva habilitat i enverinen 1 veí vil·latà. [-1 Foraster]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": true,
@@ -2254,6 +2841,11 @@
             "es": "Cada noche, escoge a un jugador: descubres su alineamiento. [+0 a +2 Idiotas del Pueblo. 1 de los extras está borracho]",
             "ca": "Cada nit, escull un jugador: en descobreixes l'alineament. [+0 a +2 Idiotes del Poble. 1 dels extres està borratxo]"
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
         "type": "townsfolk",
         "setupWarning": true,
         "reminders": [{
@@ -2272,6 +2864,11 @@
             "en": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
             "es": "La primera vez que eres nominado, si el nominador es un Aldeano, es ejecutado inmediatamente.",
             "ca": "El primer cop que ets nominat, si el nominador és un Vil·latà, és executat immediatament."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -2292,6 +2889,11 @@
             "es": "Todos los jugadores saben quien eres. No puedes morir de día. Si el equipo bueno ha votado, puedes ejecutar de inmediato.",
             "ca": "Tots els jugadors saben qui ets. No pots morir de dia. Si l'equip bo ha votat, pots executar de seguida."
         },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
         "type": "minion",
         "setupWarning": false,
         "reminders": []
@@ -2306,6 +2908,11 @@
             "en": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
             "es": "Cada noche*, escoge a un jugador: muere. Las habilidades de Aldeano dan información falsa. Cada día, si nadie es ejecutado, el mal gana.",
             "ca": "Cada nit*, tria un jugador: mor. Les habilitats de Vil·latà donen informació falsa. Cada dia, si ningú és executat, el mal guanya."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -2325,6 +2932,11 @@
             "en": "You start knowing that 1 of 2 players is a particular Townsfolk.",
             "es": "Empiezas sabiendo que 1 de 2 jugadores es un Aldeano concreto.",
             "ca": "Comences sabent que 1 de 2 jugadors és un Vil·latà concret."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
         },
         "type": "townsfolk",
         "setupWarning": false,
@@ -2349,7 +2961,23 @@
             "en": "On your first night, look at the Grimoire & choose a player: they are poisoned. 1 good player knows a Widow is in play.",
             "es": "En tu primera noche, mira el Grimonio y escoge a un jugador: está envenenado. 1 jugador bueno sabe que hay una Viuda en juego.",
             "ca": "A la teva primera nit, mira el Grimori i tria un jugador: està enverinat. 1 jugador bo sap que hi ha un Vídua en joc."
-        }
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
+        "type": "minion",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "poisoned",
+            "es": "envenenado",
+            "ca": "enverinat"
+        }, {
+            "en": "knows",
+            "es": "lo sabe",
+            "ca": "ho sap"
+        }]
     },
     "witch": {
         "name": {
@@ -2361,7 +2989,19 @@
             "en": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",
             "es": "Cada noche, escoge a un jugador: si mañana nomina, muere. Si solo hay 3 jugadores vivos, pierdes esta habilidad.",
             "ca": "Cada nit, tria un jugador: si demà nomina, mor. Si només hi ha 3 jugadors vius, perds aquesta habilitat."
-        }
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
+        "type": "minion",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "cursed",
+            "es": "maldecido",
+            "ca": "maleït"
+        }]
     },
     "yaggabable": {
         "name": {
@@ -2373,6 +3013,11 @@
             "en": "You start knowing a secret phrase. For each time you said it publicly today, a player might die.",
             "es": "Empiezas con una frase secreta. Por cada vez que la hayas dicho en público hoy, un jugador puede morir.",
             "ca": "Comences amb una paraula secreta. Per cada vegada que la dius en públic, un jugador pot morir."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
@@ -2392,6 +3037,11 @@
             "en": "Each night*, if no-one died today, choose a player: they die. The 1st time you die, you live but register as dead.",
             "es": "Cada noche*, si nadie ha muerto hoy, escoge a un jugador: muere. La primera vez que mueres, vives pero figuras como muerto.",
             "ca": "Cada nit*, si avui no ha mort ningú, tria un jugador: mor. La primera vegada que mors, vius però figures com a mort."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
         },
         "type": "demon",
         "setupWarning": false,
