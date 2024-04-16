@@ -7,7 +7,7 @@ class StatsCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @slash_command(name='stats', description='Da estadísticas generales sobre el juego', guild_ids=[551837071703146506])
+    @slash_command(name='stats', description='Da estadísticas generales sobre el juego')
     async def stats(self, ctx):
         utilities = self.bot.get_cog("UtilitiesCog")
 
@@ -20,7 +20,7 @@ class StatsCog(commands.Cog):
         await ctx.respond(game_stats)
         return
 
-    @slash_command(name='personaje', description='Da estadísticas sobre el personaje', guild_ids=[551837071703146506])
+    @slash_command(name='personaje', description='Da estadísticas sobre el personaje')
     async def personaje(self, ctx, character: Option(str, "Personaje")):
         utilities = self.bot.get_cog("UtilitiesCog")
 
@@ -38,7 +38,7 @@ class StatsCog(commands.Cog):
         await ctx.respond(character_stats)
         return
 
-    @slash_command(name='jugador', description='Da estadísticas sobre el jugador', guild_ids=[551837071703146506])
+    @slash_command(name='jugador', description='Da estadísticas sobre el jugador')
     async def jugador(self, ctx, player: Option(str, "Jugador: mención o ID")):
         utilities = self.bot.get_cog("UtilitiesCog")
 
@@ -56,7 +56,7 @@ class StatsCog(commands.Cog):
         await ctx.respond(player_stats)
         return
 
-    @slash_command(name='resultado', description='Registra el resultado de una partida.', guild_ids=[551837071703146506])
+    @slash_command(name='resultado', description='Registra el resultado de una partida.')
     async def resultado(self, ctx, 
                         players: Option(str, "Lista de jugadores con sus personajes al acabar la partida."), 
                         winner: Option(str, "Resultado del juego. Valores admitidos: good, evil")):
