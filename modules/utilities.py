@@ -73,6 +73,9 @@ class UtilitiesCog(commands.Cog):
         with open(character_data, 'r') as f:
             character_data = json.load(f)
 
+        if "(" in character:
+            character = character.split("(")[0]
+
         return character_data[character]
 
     def generate_game_id(self):
@@ -227,11 +230,13 @@ class UtilitiesCog(commands.Cog):
         with open(character_stats_f, 'r') as f:
             character_stats = json.load(f)
 
-        if character not in character_stats:
-            return False
+        with_stats = False
+        if character in character_stats:
+            with_stats = True
         
-        character_stats = character_stats[character]
-        winrate = round(character_stats['winrate'] / character_stats['games'] * 100)
+        if with_stats:
+            character_stats = character_stats[character]
+            winrate = round(character_stats['winrate'] / character_stats['games'] * 100)
 
         char_details = self.get_character_details(character)
         character = char_details["name"]["es"]
@@ -253,9 +258,13 @@ class UtilitiesCog(commands.Cog):
 
         embed = discord.Embed(title=f"{character}", description=char_details["description"]["es"], url=wiki, color=color)
         embed.add_field(name="Tipo", value=type)
-        embed.add_field(name="Partidas", value=f"{character_stats['games']} (:trophy: {winrate}%)")
+        if with_stats:
+            embed.add_field(name="Partidas", value=f"{character_stats['games']} (:trophy: {winrate}%)")
         embed.add_field(name="En inglés", value=character_en)
-        embed.set_footer(text="Nota: no incluye partidas con el alineamiento alterado.")
+        if with_stats:
+            embed.set_footer(text="Nota: no incluye partidas con el alineamiento alterado.")
+        else:
+            embed.set_footer(text="No tengo partidas guardadas con este personaje.")
 
         return embed
     

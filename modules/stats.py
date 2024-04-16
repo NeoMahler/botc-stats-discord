@@ -31,10 +31,6 @@ class StatsCog(commands.Cog):
         
         character_stats = utilities.generate_character_stats(character)
         
-        if not character_stats:
-            await ctx.respond(f"No tengo partidas registradas con el {character}.")
-            return
-        
         await ctx.respond(embed=character_stats)
         return
 
