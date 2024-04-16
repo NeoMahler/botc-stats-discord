@@ -198,7 +198,7 @@ class UtilitiesCog(commands.Cog):
 
         return msg
     
-    def generate_player_stats(self, player):
+    def generate_player_stats(self, player, user):
         player_stats_f = os.path.join("data", "players.json")
         with open(player_stats_f, 'r') as f:
             player_stats = json.load(f)
@@ -210,20 +210,23 @@ class UtilitiesCog(commands.Cog):
         e_winrate_percentage = round(player_stats['winrate_evil'] / (player_stats['games_evil']) * 100)
         general_winrate_percentage = round((player_stats['winrate_good'] + player_stats['winrate_evil']) / (player_stats['games_good'] + player_stats['games_evil']) * 100)
 
-        msg = f"Estadísticas para <@{player}>:\n\n"
-        msg += f"Ha jugado **{player_stats['games_good'] + player_stats['games_evil']} partidas**, de las que ha ganado un {general_winrate_percentage}%:\n"
-        msg += f":innocent: {player_stats['games_good']} en el equipo bueno ({g_winrate_percentage}% ganadas)\n"
-        msg += f":smiling_imp: {player_stats['games_evil']} en el equipo malvado ({e_winrate_percentage}% ganadas)\n\n"
-
         all_played_chars = player_stats['characters']
         print(all_played_chars)
         top_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)[:5] # Ordenar los personajes según el valor de "games" de cada personaje
-        msg += f"Sus personajes más jugados son:\n"
+
+        top_chars_final = []
         for char in top_chars:
             char_name = self.get_character_name(char[0])
-            msg += f"1. **{char_name}** ({char[1]['games']} partidas)\n"
+            top_chars_final.append(f"{char_name} ({char[1]['games']})")
 
-        return msg
+        embed = discord.Embed(title=f"Estadísticas de {user.display_name}", description=f"Ha participado en {player_stats['games_good'] + player_stats['games_evil']} partidas")
+        embed.set_thumbnail(url=user.display_avatar.url)
+        embed.add_field(name="Victorias", value=f"{general_winrate_percentage}%")
+        embed.add_field(name="Equipo bueno", value=f"{player_stats['games_good']} (:trophy: {g_winrate_percentage}%)")
+        embed.add_field(name="Equipo malvado", value=f"{player_stats['games_evil']} (:trophy: {e_winrate_percentage}%)")
+        embed.add_field(name="Personajes más jugados", value=", ".join(top_chars_final))
+
+        return embed
     
     def generate_character_stats(self, character):
         character_stats_f = os.path.join("data", "characters.json")

@@ -43,13 +43,16 @@ class StatsCog(commands.Cog):
             await ctx.respond("El jugador no es válido. Solo acepto menciones o IDs de usuarios.")
             return
         
-        player_stats = utilities.generate_player_stats(player)
+        print(player)
+        player_member = await self.bot.fetch_user(int(player))
+        
+        player_stats = utilities.generate_player_stats(player, player_member)
         
         if not player_stats:
             await ctx.respond(f"No tengo partidas registradas con <@{player}>.")
             return
         
-        await ctx.respond(player_stats)
+        await ctx.respond(embed=player_stats)
         return
 
     @slash_command(name='resultado', description='Registra el resultado de una partida.')
