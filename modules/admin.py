@@ -11,7 +11,7 @@ class AdminCog(commands.Cog):
         await ctx.respond('Pong!')
         return
 
-    @slash_command(name="update", description="Pulls the latest version from GitHub (owner-only).", guild_ids=[551837071703146506])
+    @slash_command(name="update", description="Pulls the latest version from GitHub (owner-only).")
     @commands.is_owner()
     async def update(self, ctx):
         await ctx.defer()
