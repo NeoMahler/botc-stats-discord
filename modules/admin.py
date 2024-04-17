@@ -50,7 +50,7 @@ class AdminCog(commands.Cog):
         except Exception as e:
             await ctx.respond(f':scream: Error: {type(e).__name__} - {e}')
         else:
-            await ctx.respond('Módulo recargado! :tada:')
+            await ctx.respond('Módulo recargado :tada:')
 
 def setup(bot):
     bot.add_cog(AdminCog(bot))
