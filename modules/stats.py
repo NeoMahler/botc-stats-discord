@@ -35,7 +35,7 @@ class StatsCog(commands.Cog):
         return
 
     @slash_command(name='jugador', description='Da estadísticas sobre el jugador')
-    async def jugador(self, ctx, player: Option(str, "Jugador: mención o ID")):
+    async def jugador(self, ctx, player: Option(str, "Jugador: mención o ID"), character: Option(str, "Personaje", required=False)):
         utilities = self.bot.get_cog("UtilitiesCog")
 
         player = utilities.clean_id(player)
@@ -43,10 +43,14 @@ class StatsCog(commands.Cog):
             await ctx.respond("El jugador no es válido. Solo acepto menciones o IDs de usuarios.")
             return
         
-        print(player)
+        if character:
+            if not utilities.is_character_valid(character):
+                await ctx.respond("El personaje no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
+                return
+        
         player_member = await self.bot.fetch_user(int(player))
         
-        player_stats = utilities.generate_player_stats(player, player_member)
+        player_stats = utilities.generate_player_stats(player, player_member, character=character if character else None)
         
         if not player_stats:
             await ctx.respond(f"No tengo partidas registradas con <@{player}>.")

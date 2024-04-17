@@ -198,7 +198,7 @@ class UtilitiesCog(commands.Cog):
 
         return msg
     
-    def generate_player_stats(self, player, user):
+    def generate_player_stats(self, player, user, character=None):
         player_stats_f = os.path.join("data", "players.json")
         with open(player_stats_f, 'r') as f:
             player_stats = json.load(f)
@@ -224,7 +224,19 @@ class UtilitiesCog(commands.Cog):
         embed.add_field(name="Victorias", value=f"{general_winrate_percentage}%")
         embed.add_field(name="Equipo bueno", value=f"{player_stats['games_good']} (:trophy: {g_winrate_percentage}%)")
         embed.add_field(name="Equipo malvado", value=f"{player_stats['games_evil']} (:trophy: {e_winrate_percentage}%)")
-        embed.add_field(name="Personajes más jugados", value=", ".join(top_chars_final))
+        if not character:
+            embed.add_field(name="Personajes más jugados", value=", ".join(top_chars_final))
+            embed.set_footer(text="Usa /jugador <jugador> <personaje> para ver estadísticas con un personaje concreto.")
+        else:
+            if character not in player_stats['characters']:
+                embed.set_footer(text=f"ERROR: {user.display_name} no ha jugado nunca como {character}.")
+                return embed
+            char_stats = player_stats['characters'][character]
+            char_article = self.get_character_article(character)
+            char_name = self.get_character_name(character)
+            char_games = char_stats['games']
+            char_winrate = round(char_stats['winrate'] / char_games * 100)
+            embed.add_field(name=f"Partidas como {char_article}{char_name}", value=f"{char_games} (:trophy: {char_winrate}%)")
 
         return embed
     
