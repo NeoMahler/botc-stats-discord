@@ -257,9 +257,12 @@ class UtilitiesCog(commands.Cog):
         elif type == "townsfolk":
             type = "Aldeano"
             color = discord.Color.blue()
+        elif type == "fabled":
+            type = "Mítico"
+            color = discord.Color.gold()
         else:
             type = "Viajero"
-            color = discord.Color.gold()
+            color = discord.Color.dark_magenta()
         wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
 
         embed = discord.Embed(title=f"{character}", description=char_details["description"]["es"], url=wiki, color=color)
