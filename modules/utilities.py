@@ -288,6 +288,10 @@ class UtilitiesCog(commands.Cog):
         with open(character_stats_f, 'r') as f:
             character_stats = json.load(f)
         
+        #player_stats_f = os.path.join("data", "players.json")
+        #with open(player_stats_f, 'r') as f:
+        #    player_stats = json.load(f)
+
         # Get percentage of results
         good_games = []
         evil_games = []
@@ -307,17 +311,20 @@ class UtilitiesCog(commands.Cog):
             all_characters.append(list(characters.values())) # This creates a list of lists...        
         all_chars_processed = [item for sublist in all_characters for item in sublist] # So we create a new list with only strings
         top_characters = sorted(set(all_chars_processed), key=lambda i: all_chars_processed.count(i), reverse=True)[:5] # We get the top 5 by frequency in the list
-
-        msg = f"Tengo {len(game_stats)} partidas registradas:\n"
-        msg += f"El equipo bueno ha ganado un {good_percentage}% y el malvado {evil_percentage}%.\n\n"
-        msg += "Personajes más usados:\n"
+        final_char_list = []
         for character in top_characters:
             char_name = self.get_character_name(character)
             winrate_absolute = character_stats[character]["winrate"]
             winrate = round(winrate_absolute / character_stats[character]["games"] * 100)
-            msg += f"1. {char_name} (:trophy: {winrate}%)\n"
+            final_char_list.append(f"{char_name} (:trophy: {winrate}%)")
+    
+        embed = discord.Embed(title=f"Estadísticas generales", description=f"De un total de {len(game_stats)} partidas.")
+        embed.add_field(name="Victorias buenas", value=f"{good_percentage}%")
+        embed.add_field(name="Victorias malvadas", value=f"{evil_percentage}%")
+        embed.add_field(name="Personajes más jugados", value="\n".join(final_char_list))
+        embed.set_footer(text="Usa /jugador o /personaje para obtener estadísticas concretas.")
 
-        return msg
+        return embed
     
     def backup_data(self):
         if not os.path.exists("backups"):
