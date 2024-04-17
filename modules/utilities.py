@@ -43,7 +43,7 @@ class UtilitiesCog(commands.Cog):
         character_data = os.path.join("data", "character_data.json")
         with open(character_data, 'r') as f:
             character_data = json.load(f)
-        if character_data[character]["type"] in ["townsfolk", "outsider"]:
+        if character_data[character]["type"] in ["townsfolk", "outsider"]: # All Travellers in stats should have the alignment modifier (e) or (g)
             return True
         else:
             return False
@@ -257,6 +257,9 @@ class UtilitiesCog(commands.Cog):
         elif type == "townsfolk":
             type = "Aldeano"
             color = discord.Color.blue()
+        else:
+            type = "Viajero"
+            color = discord.Color.gold()
         wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
 
         embed = discord.Embed(title=f"{character}", description=char_details["description"]["es"], url=wiki, color=color)
