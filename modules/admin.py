@@ -16,7 +16,7 @@ class AdminCog(commands.Cog):
     async def update(self, ctx):
         await ctx.defer()
         output = subprocess.check_output("git pull", shell=True)
-        await ctx.respond("Pulling latest version from GitHub: ```" + str(output) + "``` Remember to use the reload command for the changes to take effect.")
+        await ctx.respond("Obteniendo la última versión de GitHub: ```" + str(output) + "``` Recuerda usar `/reload` para que los cambios surtan efecto.")
 
     @slash_command(name="load", description="Loads a previously unloaded module (owner-only).")
     @commands.is_owner()
@@ -27,7 +27,7 @@ class AdminCog(commands.Cog):
         except Exception as e:
             await ctx.respond(f':scream: Error: {type(e).__name__} - {e}')
         else:
-            await ctx.respond('Module loaded! :tada:')
+            await ctx.respond('Módulo cargado :tada:')
 
     @slash_command(name="unload", description="Unloads a previously loaded module (owner-only).")
     @commands.is_owner()
@@ -38,7 +38,7 @@ class AdminCog(commands.Cog):
         except Exception as e:
             await ctx.respond(f':scream: Error: {type(e).__name__} - {e}')
         else:
-            await ctx.respond('Module unloaded! :tada:')
+            await ctx.respond('Módulo descargado :tada:')
 
     @slash_command(name="reload", description="Reloads a previously loaded module (owner-only).")
     @commands.is_owner()
@@ -50,7 +50,7 @@ class AdminCog(commands.Cog):
         except Exception as e:
             await ctx.respond(f':scream: Error: {type(e).__name__} - {e}')
         else:
-            await ctx.respond('Module reloaded! :tada:')
+            await ctx.respond('Módulo recargado! :tada:')
 
 def setup(bot):
     bot.add_cog(AdminCog(bot))
