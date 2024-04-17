@@ -100,6 +100,30 @@
             "ca": "?"
         }]
     },
+    "apprentice": {
+        "name": {
+            "en": "Apprentice",
+            "es": "Aprendiz",
+            "ca": "Aprenent"
+        },
+        "description": {
+            "en": "On your 1st night, you gain a Townsfolk ability (if good) or a Minion ability (if evil).",
+            "es": "En tu primera noche, obtienes una habilidad de Aldeano (si eres bueno) o de Secuaz (si eres malvado).",
+            "ca": "A la teva primera nit, obtens una habilitat de Vil·latà (si ets bo) o de Sequaç (si ets malvat)."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "is the apprentice",
+            "es": "es el aprendiz",
+            "ca": "és l'aprenent"
+        }]
+    },
     "artist": {
         "name": {
             "en": "Artist",
@@ -233,6 +257,38 @@
             "ca": "tallada de cabells"
         }]
     },
+    "barista": {
+        "name": {
+            "en": "Barista",
+            "es": "Camarero",
+            "ca": "Cambrer"
+        },
+        "description": {
+            "en": "Each night, until dusk, 1) a player becomes sober, healthy & gets true info, or 2) their ability works twice. They learn which.",
+            "es": "Cada noche, hasta el anochecer, 1) un jugador se vuelve sobrio, sano y obtiene información cierta, o 2) su habilidad funciona dos veces. Sabe cuál de los dos efectos de ha activado.",
+            "ca": "Cada nit, fins al vespre, 1) un jugador es torna sobri, sa i obté informació certa, o 2) la seva habilitat funciona dos cops. Sap quin dels dos efects s'ha activat."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "sober and healthy",
+            "es": "sobrio y sano",
+            "ca": "sobri i sa"
+        }, {
+            "en": "acts twice",
+            "es": "actúa dos veces",
+            "ca": "actua dos cops"
+        }, {
+            "en": "?",
+            "es": "?",
+            "ca": "?"
+        }]
+    },
     "baron": {
         "name": {
             "en": "Baron",
@@ -252,6 +308,81 @@
         "type": "minion",
         "setupWarning": true,
         "reminders": []
+    },
+    "beggar": {
+        "name": {
+            "en": "Beggar",
+            "es": "Mendigo",
+            "ca": "Pidolaire"
+        },
+        "description": {
+            "en": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober and healthy.",
+            "es": "Tiene que usar una ficha de voto para votar. Si un jugador muerto te da la suya, descubres su alineamiento. Estas sobrio y sano."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": []
+    },
+    "bishop": {
+        "name": {
+            "en": "Bishop",
+            "es": "Obispo",
+            "ca": "Bisbe"
+        },
+        "description": {
+            "en": "Only the Storyteller can nominate. At least 1 opposing player must be nominated each day.",
+            "es": "Solo el Narrador puede nominar. Al menos 1 jugador oponente debe ser nominado cada día.",
+            "ca": "Només el Narrador pot nominar. Almenys 1 jugador oponente ha de ser nominat cada dia."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "nominate evil",
+            "es": "nominar malvado",
+            "ca": "nominar malvat"
+        }, {
+            "en": "nominate good",
+            "es": "nominar bueno",
+            "ca": "nominar bo"
+        }]
+    },
+    "bonecollector": {
+        "name": {
+            "en": "Bone Collector",
+            "es": "Coleccionista de huesos",
+            "ca": "Col·leccionista d'ossos"
+        },
+        "description": {
+            "en": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
+            "es": "Una vez por partida, de noche, escoge a un jugador muerto: recupera su habilidad hasta el anochecer.",
+            "ca": "Un cop per partida, de nit, tria un jugador mort: recupera la seva habilitat fins al vespre."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "no ability",
+            "es": "sin habilidad",
+            "ca": "sense habilitat"
+        }, {
+            "en": "has ability",
+            "es": "tiene habilidad",
+            "ca": "té l'habilitat"
+        }]
     },
     "boomdandy": {
         "name": {
@@ -291,6 +422,50 @@
         },
         "type": "townsfolk",
         "setupWarning": true,
+        "reminders": []
+    },
+    "bureaucrat": {
+        "name": {
+            "en": "Bureaucrat",
+            "es": "Burócrata",
+            "ca": "Buròcrata"
+        },
+        "description": {
+            "en": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
+            "es": "Cada noche, elige a un jugador (excepto a ti mismo): mañana su voto cuenta como 3 votos.",
+            "ca": "Cada nit, tria un jugador (excepte a tu mateix): demà el seu vot compta com a 3 vots."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "3 votes",
+            "es": "3 votos",
+            "ca": "3 vots"
+        }]
+    },
+    "butcher": {
+        "name": {
+            "en": "Butcher",
+            "es": "Carnicero",
+            "ca": "Carnisser"
+        },
+        "description": {
+            "en": "Each day, after the 1st execution, you may nominate again.",
+            "es": "Cada día, después de la primera ejecución, puedes nominar otra vez.",
+            "ca": "Cada dia, després de la primera execució, pots nominar un altre cop."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
         "reminders": []
     },
     "butler": {
@@ -529,6 +704,26 @@
             "es": "intento usado",
             "ca": "intent utilitzat"
         }]
+    },
+    "deviant": {
+        "name": {
+            "en": "Deviant",
+            "es": "Desviado",
+            "ca": "Desviat"
+        },
+        "description": {
+            "en": "If you were funny today, you cannot die by exile.",
+            "es": "Si has sido gracioso hoy, no puedes morir por exilio.",
+            "ca": "Si has estat graciós avui, no pots morir per exili."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": []
     },
     "devilsadvocate": {
         "name": {
@@ -886,6 +1081,26 @@
             "ca": "mort"            
         }]
     },
+    "gangster": {
+        "name": {
+            "en": "Gangster",
+            "es": "Gánster",
+            "ca": "Gàngster"
+        },
+        "description": {
+            "en": "Once per day, you may choose to kill an alive neighbor, if your other alive neighbor agrees.",
+            "es": "Una vez por día, puedes decidir matar a un vecino vivo si tu otro vecino vivo está de acuerdo.",
+            "ca": "Un cop per dia, pots decidir matar un veí viu si el teu altre veí viu hi està d'acord."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": []
+    },
     "general": {
         "name": {
             "en": "General",
@@ -1042,6 +1257,50 @@
             "en": "grandchild",
             "es": "nieto",
             "ca": "net"
+        }]
+    },
+    "gunslinger": {
+        "name": {
+            "en": "Gunslinger",
+            "es": "Pistolero",
+            "ca": "Pistoler"
+        },
+        "description": {
+            "en": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.",
+            "es": "Cada día, después de la primera votación, puedes escoger a un jugador que haya votado: muere.",
+            "ca": "Cada dia, després de la primera votació, pots triar un jugador que hagi votat: mor."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": []
+    },
+    "harlot": {
+        "name": {
+            "en": "Harlot",
+            "es": "Ramera",
+            "ca": "Meuca"
+        },
+        "description": {
+            "en": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
+            "es": "Cada noche*, escoge a un jugador vivo: si lo acepta, descubres su personaje, pero ambos podríais morir.",
+            "ca": "Cada nit*, tria un jugador viu: si ho accepta, descobreixes el seu personatge, pero els dos podrieu morir."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "dead",
+            "es": "muerto",
+            "ca": "mort"
         }]
     },
     "harpy": {
@@ -1241,6 +1500,30 @@
                 "ca": "sequaç"
             }
         ]
+    },
+    "judge": {
+        "name": {
+            "en": "Judge",
+            "es": "Juez",
+            "ca": "Jutge"
+        },
+        "description": {
+            "en": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail.",
+            "es": "Una vez por partida, si otro jugador ha nominado, puedes decidir forzar que la ejecución actual se realice o falle.",
+            "ca": "Un cop per partida, si un altre jugador ha nominat, pots decidir forçar que l'execució actual es realitzi o falli."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "no ability",
+            "es": "sin habilidad",
+            "ca": "sense habilitat"
+        }]
     },
     "juggler": {
         "name": {
@@ -1640,6 +1923,26 @@
             "es": "anormal",
             "ca": "anormal"
         }]
+    },
+    "matron": {
+        "name": {
+            "en": "Matron",
+            "es": "Matrona",
+            "ca": "Matrona"
+        },
+        "description": {
+            "en": "Each day, you may choose up to 3 sets of 2 players to swap seats. Players may not leave their seats to talk in private.",
+            "es": "Cada día, puedes escoger hasta 3 grupos de 2 jugadores para intercambiarse los asientos. Nadie puede dejar su asiento para hablar en privado.",
+            "ca": "Cada dia, pots triar fins a 3 grups de 2 jugadors per intercanviar-se els llocs. Ningú no pot deixar el seu lloc per parlar en privat."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": []
     },
     "mayor": {
         "name": {
@@ -2449,6 +2752,26 @@
             "ca": "sense habilitat"
         }]
     },
+    "scapegoat": {
+        "name": {
+            "en": "Scapegoat",
+            "es": "Cabeza de turco",
+            "ca": "Cap de turc"
+        },
+        "description": {
+            "en": "If a player of your alignment is executed, you might be executed instead.",
+            "es": "Si un jugador de tu alineamiento es ejecutado, puedes ser ejecutado en su lugar.",
+            "ca": "Si un jugador del teu alineament és executat, pots ser executat en el seu lloc."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": []
+    },
     "scarletwoman": {
         "name": {
             "en": "Scarlet Woman",
@@ -2722,6 +3045,30 @@
             "ca": "no pot morir"
         }]
     },
+    "thief": {
+        "name": {
+            "en": "Thief",
+            "es": "Ladrón",
+            "ca": "Lladre"
+        },
+        "description": {
+            "en": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
+            "es": "Cada noche, elige a un jugador (no a ti mismo): mañana su voto cuenta negativamente.",
+            "ca": "Cada nit, tria un jugador (no a tu mateix): demà el seu vot conta negativament."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "negative vote",
+            "es": "voto negativo",
+            "ca": "vot negatiu"
+        }]
+    },
     "tinker": {
         "name": {
             "en": "Tinker",
@@ -2921,6 +3268,26 @@
             "es": "muerto",
             "ca": "mort"
         }]
+    },
+    "voudon": {
+        "name": {
+            "en": "Voudon",
+            "es": "Vodú",
+            "ca": "Vodú"
+        },
+        "description": {
+            "en": "Only you & the dead can vote. They don't need a vote token to do so. A 50% majority isn't required.",
+            "es": "Solo tú y los muertos podéis votar. No necesitan fichas de voto para hacerlo. No hace falta una mayoría del 50%.",
+            "ca": "Només tu i els morts podeu votar. No necessiten fitxes de vote per a fer-ho. No cal una majoria del 50%."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": []
     },
     "washerwoman": {
         "name": {
