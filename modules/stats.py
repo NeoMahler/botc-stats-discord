@@ -6,12 +6,13 @@ from discord.commands import slash_command, Option
 class StatsCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        self.utilities = bot.get_cog("UtilitiesCog")
+        self.messages = bot.get_cog("MessagesCog")
 
     @slash_command(name='stats', description='Da estadísticas generales sobre el juego')
     async def stats(self, ctx):
-        utilities = self.bot.get_cog("UtilitiesCog")
 
-        game_stats = utilities.generate_game_stats()
+        game_stats = self.messages.generate_game_stats()
         
         if not game_stats:
             await ctx.respond("No tengo partidas registradas.")
@@ -22,35 +23,32 @@ class StatsCog(commands.Cog):
 
     @slash_command(name='personaje', description='Da estadísticas sobre el personaje')
     async def personaje(self, ctx, character: Option(str, "Personaje")):
-        utilities = self.bot.get_cog("UtilitiesCog")
 
         character = character.lower().replace(" ", "")
-        if not utilities.is_character_valid(character):
+        if not self.utilities.is_character_valid(character):
             await ctx.respond("El personaje no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
             return
         
-        character_stats = utilities.generate_character_stats(character)
+        character_stats = self.messages.generate_character_stats(character)
         
         await ctx.respond(embed=character_stats)
         return
 
     @slash_command(name='jugador', description='Da estadísticas sobre el jugador')
     async def jugador(self, ctx, player: Option(str, "Jugador: mención o ID"), character: Option(str, "Personaje", required=False)):
-        utilities = self.bot.get_cog("UtilitiesCog")
-
-        player = utilities.clean_id(player)
+        player = self.utilities.clean_id(player)
         if not player:
             await ctx.respond("El jugador no es válido. Solo acepto menciones o IDs de usuarios.")
             return
         
         if character:
-            if not utilities.is_character_valid(character):
+            if not self.utilities.is_character_valid(character):
                 await ctx.respond("El personaje no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
                 return
         
         player_member = await self.bot.fetch_user(int(player))
         
-        player_stats = utilities.generate_player_stats(player, player_member, character=character if character else None)
+        player_stats = self.messages.generate_player_stats(player, player_member, character=character if character else None)
         
         if not player_stats:
             await ctx.respond(f"No tengo partidas registradas con <@{player}>.")
@@ -64,8 +62,6 @@ class StatsCog(commands.Cog):
     async def resultado(self, ctx, 
                         players: Option(str, "Lista de jugadores con sus personajes al acabar la partida."), 
                         winner: Option(str, "Resultado del juego. Valores admitidos: good, evil")):
-        utilities = self.bot.get_cog("UtilitiesCog")
-
         if winner not in ["good", "evil"]:
             await ctx.respond("El resultado solo puede ser 'good' o 'evil'.")
             return
@@ -73,13 +69,13 @@ class StatsCog(commands.Cog):
         raw_player_list = players.split(" ")
         processed_players = {}
         for player_data in raw_player_list:
-            player = utilities.clean_id(player_data.split("-")[0]) # Renive the <@> part of the user ID
+            player = self.utilities.clean_id(player_data.split("-")[0]) # Remove the <@> part of the user ID
             if not player:
                 await ctx.respond(f"El usuario {player_data.split('-')[0]} no es válido. Solo acepto menciones o IDs de usuarios.")
                 return
 
             character = player_data.split("-")[1]
-            if utilities.is_character_valid(character) == False: # Check if character is in character_data.json
+            if self.utilities.is_character_valid(character) == False: # Check if character is in character_data.json
                 await ctx.respond(f"El personaje {character} no es válido.")
                 return
             if player in processed_players:
@@ -88,9 +84,9 @@ class StatsCog(commands.Cog):
             processed_players[player] = character
         print(processed_players)
 
-        utilities.backup_data()
+        self.utilities.backup_data()
 
-        confirmation = utilities.generate_confirmation_msg(processed_players, winner)
+        confirmation = self.messages.generate_confirmation_msg(processed_players, winner)
         if confirmation == None:
             await ctx.respond("Error al procesar la validez de los parámetros. Revisa que los jugadores, personajes, alineamiento y resultado sean correctos.")
             return
