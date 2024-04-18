@@ -30,7 +30,7 @@ def get_prefix(bot, message):
 
 # Below cogs represents our folder our cogs are in. Following is the file name. So 'meme.py' in cogs, would be cogs.meme
 # Think of it like a dot path import
-initial_extensions = ['modules.utilities', 'modules.messages', 'modules.stats', 'modules.admin']
+initial_extensions = ['modules.utilities', 'modules.messages', 'modules.stats', 'modules.storyteller', 'modules.admin']
 
 bot = commands.Bot(command_prefix=get_prefix)
 # CONFIG: CHANGE OWNER_ID IN ABOVE LINE TO YOUR DISCORD ACCOUNT'S USER ID.

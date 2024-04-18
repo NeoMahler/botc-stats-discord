@@ -1,6 +1,5 @@
 import os, json, shutil
 from discord.ext import commands
-import discord
 import time
 
 class UtilitiesCog(commands.Cog):
