@@ -1,6 +1,5 @@
 import os, json, shutil
 from discord.ext import commands
-import discord
 import time
 
 class UtilitiesCog(commands.Cog):
@@ -107,8 +106,6 @@ class UtilitiesCog(commands.Cog):
         with open(player_file, 'r') as f:
             players = json.load(f)
 
-        print(player)
-        print(players)
         if player not in players: # Register new player
             players[player] = {
                 "games_good": 0,
@@ -173,7 +170,35 @@ class UtilitiesCog(commands.Cog):
         shutil.copy(os.path.join("data", "characters.json"), os.path.join("backups", "characters.json"))
         shutil.copy(os.path.join("data", "games.json"), os.path.join("backups", "games.json"))
         return
+    
+    def get_config(self):
+        config_file = "config.json"
+        with open(config_file, 'r') as f:
+            config = json.load(f)
+        return config
 
+    def get_player_type(self, player):
+        config = self.get_config()
+        player_role = int(config["player_role"])
+        st_role = int(config["st_role"])
+
+        player_role_ids = []
+        for role in player.roles:
+            player_role_ids.append(role.id)
+
+        if st_role in player_role_ids:
+            return "st"
+        elif player_role in player_role_ids:
+            return "player"
+        else:
+            return False
+
+    def get_player_name(self, player):
+        if player.global_name:
+            return player.global_name
+        else:
+            return player.display_name
+        
 
 def setup(bot):
     bot.add_cog(UtilitiesCog(bot))

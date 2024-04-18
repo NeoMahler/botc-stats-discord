@@ -11,7 +11,6 @@ class MessagesCog(commands.Cog):
     def generate_confirmation_msg(self, players, result):
         msg = "¿Guardar partida con los siguientes datos?\n\n"
         for player in players:
-            print(player)
             char_id = players[player].split("(")[0]
             character = self.utilities.get_character_name(char_id)
             if "(" in players[player]:
@@ -54,7 +53,6 @@ class MessagesCog(commands.Cog):
         general_winrate_percentage = round((player_stats['winrate_good'] + player_stats['winrate_evil']) / (player_stats['games_good'] + player_stats['games_evil']) * 100)
 
         all_played_chars = player_stats['characters']
-        print(all_played_chars)
         top_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)[:5] # Ordenar los personajes según el valor de "games" de cada personaje
 
         top_chars_final = []
