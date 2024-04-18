@@ -1,4 +1,4 @@
-import json
+import time, asyncio
 from discord.ext import commands
 from discord.commands import Option, slash_command
 import discord
@@ -10,7 +10,7 @@ class StorytellerCog(commands.Cog):
     
     @slash_command(name="boomdandy", description="Boom!", guild_ids=[551837071703146506])
     async def boomdandy(self, ctx, players: Option(str, "Space-separated list of surviving players (using Discord mentions).")):
-        if self.utilities.get_player_type(ctx.author) != "st":
+        if self.utilities.get_player_type(ctx.author) != "st": # Avoid activation by regular players
             await ctx.respond("Solo el Narrador puede activar esta función.")
             return
         
@@ -30,13 +30,15 @@ class StorytellerCog(commands.Cog):
             return
 
         pings = [f'<@{player}>' for player in clean_players]
-        msg = "# ¡El Boomdandy ha explotado! Los jugadores que sobrevivieron son:\n"
-        msg += f"{' '.join(pings)}\n\n"
-        msg += "Tenéis **1 minuto** para decidir quien va a morir. Usad los botones para escogerlo."
+        msg = "# ¡El Boomdandy ha explotado!\n"
+        msg += f"Los supervivientes son: {' '.join(pings)}\n\n"
+        msg += "Tenéis **1 minuto** para decidir quién va a morir. Usad los botones para escogerlo."
 
 
-        self.BoomdandyUI.result = {}
+        self.BoomdandyUI.result = {} # Empty the dictionary, otherwise it would carry over the survivors form the previous game
         await ctx.respond(msg, view=self.BoomdandyUI(ctx, self.bot, player_members))
+        async with asyncio.timeout(60):
+            await self.BoomdandyUI.timeout()
         return
 
     class BoomButton(discord.ui.Button):
@@ -48,22 +50,22 @@ class StorytellerCog(commands.Cog):
             self.player = player
         
         async def callback(self, interaction):
-            if self.utilities.get_player_type(interaction.user) != "player":
+            if self.utilities.get_player_type(interaction.user) != "player": # Prevent non-players (and ST) from voting
                 await interaction.response.send_message("No estás jugando, así que no puedes participar en la votación.", ephemeral=True)
                 return
-            await interaction.response.defer()
+            await interaction.response.defer() # Prevent button from being unresponsive for 3 seconds and erroring out
             await self.ctx.send(f"<@{interaction.user.id}> está apuntando a <@{self.player.id}>")
             result_dict = StorytellerCog.BoomdandyUI.result
             for player in result_dict: # Avoid duplicates
                 if interaction.user.id in result_dict[player]:
-                    result_dict[player].remove(interaction.user.id)
+                    result_dict[player].remove(interaction.user.id) # Remove the voter from the previous votee (if any)
             result_dict[self.player.id].append(interaction.user.id)
             return
         
     class BoomdandyUI(discord.ui.View):
-        result = {}
+        result = {} # Accessible from other methods
         def __init__(self, ctx, bot, players):
-            super().__init__(timeout=10.0, disable_on_timeout=True)
+            super().__init__()
             self.players = players
             self.ctx = ctx
             self.bot = bot
@@ -73,8 +75,8 @@ class StorytellerCog(commands.Cog):
                 self.result[player.id] = []
                 player_name = self.utilities.get_player_name(player)
                 self.add_item(StorytellerCog.BoomButton(ctx, self.bot, player_name, player))
-        
-        async def on_timeout(self): # TODO: I don't think this is working accurately!"
+
+        async def timeout(self): # TODO: I don't think this is working accurately!"
             msg = "## :bomb: **TIEMPO** :bomb:\n\n"
             msg += "Resultados:\n"
             for player in self.result:
