@@ -53,7 +53,7 @@ class AdminCog(commands.Cog):
             print(f"\n===== MODULE {cog} RELOADED =====\n")
             await ctx.respond('Módulo recargado :tada:')
     
-    @slash_command(name="sync", description="Syncs commands with Discord (owner-only).", guild_ids=[551837071703146506])
+    @slash_command(name="sync", description="Syncs commands with Discord (owner-only).")
     @commands.is_owner()
     async def sync(self, ctx):
         await self.bot.sync_commands()
@@ -66,6 +66,10 @@ class AdminCog(commands.Cog):
                      st_role: Option(str, "Storyteller role ID", required=False), 
                      game_chat: Option(str, "Game chat text channel ID", required=False)):
         bot_config_f = "config.json"
+        if not os.path.isfile(bot_config_f):
+            with open(bot_config_f, "w") as f:
+                json.dump({}, f)
+
         with open(bot_config_f, "r") as f:
             bot_config = json.load(f)
 
@@ -80,6 +84,12 @@ class AdminCog(commands.Cog):
             json.dump(bot_config, f)
         
         await ctx.respond(f'Configuración guardada :tada:')
+    
+    @slash_command(name="getpid", description="Gets process ID of the bot (owner-only).")
+    @commands.is_owner()
+    async def getpid(self, ctx):
+        pid = os.getpid()
+        await ctx.respond(f'PID: `{pid}`')
 
 def setup(bot):
     bot.add_cog(AdminCog(bot))
