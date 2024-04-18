@@ -82,7 +82,6 @@ class StatsCog(commands.Cog):
                 await ctx.respond(f"No puedo procesar este resultado. <@{player}> está duplicado.")
                 return
             processed_players[player] = character
-        print(processed_players)
 
         self.utilities.backup_data()
 

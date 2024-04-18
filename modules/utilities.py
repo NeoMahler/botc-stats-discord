@@ -106,8 +106,6 @@ class UtilitiesCog(commands.Cog):
         with open(player_file, 'r') as f:
             players = json.load(f)
 
-        print(player)
-        print(players)
         if player not in players: # Register new player
             players[player] = {
                 "games_good": 0,

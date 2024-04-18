@@ -1,4 +1,4 @@
-import subprocess
+import subprocess, os, json
 from discord.ext import commands
 from discord.commands import slash_command, Option
 
@@ -51,6 +51,34 @@ class AdminCog(commands.Cog):
             await ctx.respond(f':scream: Error: {type(e).__name__} - {e}')
         else:
             await ctx.respond('Módulo recargado :tada:')
+    
+    @slash_command(name="sync", description="Syncs commands with Discord (owner-only).", guild_ids=[551837071703146506])
+    @commands.is_owner()
+    async def sync(self, ctx):
+        await self.bot.tree.sync(guild=ctx.guild)
+        await ctx.respond('Comandos sincronizados :tada:')
+
+    @slash_command(name="config", description="Set up configuration options.")
+    @commands.is_owner()
+    async def config(self, ctx, 
+                     player_role: Option(str, "Player role ID number", required=False), 
+                     st_role: Option(str, "Storyteller role ID", required=False), 
+                     game_chat: Option(str, "Game chat text channel ID", required=False)):
+        bot_config_f = "config.json"
+        with open(bot_config_f, "r") as f:
+            bot_config = json.load(f)
+
+        if player_role:
+            bot_config["player_role"] = player_role
+        if st_role:
+            bot_config["st_role"] = st_role
+        if game_chat:
+            bot_config["game_chat"] = game_chat
+        
+        with open(bot_config_f, "w") as f:
+            json.dump(bot_config, f)
+        
+        await ctx.respond(f'Configuración guardada :tada:')
 
 def setup(bot):
     bot.add_cog(AdminCog(bot))
