@@ -165,3 +165,4 @@ data/players.json
 data/characters.json
 backups/*
 .vscode
+config.json
