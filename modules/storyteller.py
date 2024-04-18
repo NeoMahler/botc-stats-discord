@@ -22,7 +22,7 @@ class StorytellerCog(commands.Cog):
             player_members.append(player_member)
         
         pings = [f'<@{player}>' for player in clean_players]
-        msg = "¡El Boomdandy ha explotado! Los jugadores que sobrevivieron son:\n"
+        msg = "# ¡El Boomdandy ha explotado! Los jugadores que sobrevivieron son:\n"
         msg += f"{' '.join(pings)}\n\n"
         msg += "Tenéis **1 minuto** para decidir quien va a morir. Usad los botones para escogerlo."
 
@@ -39,19 +39,30 @@ class StorytellerCog(commands.Cog):
         async def callback(self, interaction):
             await interaction.response.defer()
             await self.ctx.send(f"<@{interaction.user.id}> está apuntando a <@{self.player.id}>")
+            result_dict = StorytellerCog.BoomdandyUI.result
+            for player in result_dict: # Avoid duplicates
+                if interaction.user.id in result_dict[player]:
+                    result_dict[player].remove(interaction.user.id)
+            result_dict[self.player.id].append(interaction.user.id)
             return
-
+        
     class BoomdandyUI(discord.ui.View):
+        result = {}
         def __init__(self, ctx, players):
-            super().__init__(timeout=60.0, disable_on_timeout=True)
+            super().__init__(timeout=10.0, disable_on_timeout=True)
             self.players = players
             self.ctx = ctx
 
             for player in players:
+                self.result[player.id] = []
                 self.add_item(StorytellerCog.BoomButton(ctx, player))
         
-        async def on_timeout(self):
-            await self.ctx.send("¡Tiempo!")
+        async def on_timeout(self): # TODO: I don't think this is working accurately!"
+            msg = "## :bomb: **TIEMPO** :bomb:\n\n"
+            msg += "Resultados:\n"
+            for player in self.result:
+                msg += f"**<@{player}>**: {', '.join([f'<@{user}>' for user in self.result[player]])} (**{len(self.result[player])} votos**)\n"
+            await self.ctx.send(msg)
             return 
 
 
