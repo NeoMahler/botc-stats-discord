@@ -36,10 +36,19 @@ class StorytellerCog(commands.Cog):
 
 
         self.BoomdandyUI.result = {} # Empty the dictionary, otherwise it would carry over the survivors form the previous game
-        await ctx.respond(msg, view=self.BoomdandyUI(ctx, self.bot, player_members))
-        async with asyncio.timeout(60):
-            await self.BoomdandyUI.timeout()
-        return
+        view = self.BoomdandyUI(ctx, self.bot, player_members)
+        await ctx.respond(msg, view=view)
+
+        await asyncio.sleep(60) # Wait for the "vote" to end
+        view.disable_all_items() # Disable the buttons
+        await ctx.edit(view=view)
+        result = self.BoomdandyUI.result
+        msg = "## :bomb: **TIEMPO** :bomb:\n\n"
+        msg += "Resultados:\n"
+        for player in result:
+            msg += f"**<@{player}>**: {', '.join([f'<@{user}>' for user in result[player]])} (**{len(result[player])} votos**)\n"
+        await ctx.send(msg)
+        return 
 
     class BoomButton(discord.ui.Button):
         def __init__(self, ctx, bot, player_name, player):
@@ -75,14 +84,6 @@ class StorytellerCog(commands.Cog):
                 self.result[player.id] = []
                 player_name = self.utilities.get_player_name(player)
                 self.add_item(StorytellerCog.BoomButton(ctx, self.bot, player_name, player))
-
-        async def timeout(self): # TODO: I don't think this is working accurately!"
-            msg = "## :bomb: **TIEMPO** :bomb:\n\n"
-            msg += "Resultados:\n"
-            for player in self.result:
-                msg += f"**<@{player}>**: {', '.join([f'<@{user}>' for user in self.result[player]])} (**{len(self.result[player])} votos**)\n"
-            await self.ctx.send(msg)
-            return 
 
 
 def setup(bot):

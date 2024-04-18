@@ -50,6 +50,7 @@ class AdminCog(commands.Cog):
         except Exception as e:
             await ctx.respond(f':scream: Error: {type(e).__name__} - {e}')
         else:
+            print(f"\n===== MODULE {cog} RELOADED =====\n")
             await ctx.respond('Módulo recargado :tada:')
     
     @slash_command(name="sync", description="Syncs commands with Discord (owner-only).", guild_ids=[551837071703146506])
