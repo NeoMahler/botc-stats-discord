@@ -55,7 +55,7 @@ class AdminCog(commands.Cog):
     @slash_command(name="sync", description="Syncs commands with Discord (owner-only).", guild_ids=[551837071703146506])
     @commands.is_owner()
     async def sync(self, ctx):
-        await self.bot.tree.sync(guild=ctx.guild)
+        await self.bot.sync_commands()
         await ctx.respond('Comandos sincronizados :tada:')
 
     @slash_command(name="config", description="Set up configuration options.")
