@@ -66,6 +66,10 @@ class AdminCog(commands.Cog):
                      st_role: Option(str, "Storyteller role ID", required=False), 
                      game_chat: Option(str, "Game chat text channel ID", required=False)):
         bot_config_f = "config.json"
+        if not os.path.isfile(bot_config_f):
+            with open(bot_config_f, "w") as f:
+                json.dump({}, f)
+
         with open(bot_config_f, "r") as f:
             bot_config = json.load(f)
 
