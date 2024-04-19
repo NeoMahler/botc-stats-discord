@@ -1,4 +1,4 @@
-import time, asyncio
+import random, asyncio
 from discord.ext import commands
 from discord.commands import Option, slash_command
 import discord
@@ -59,11 +59,13 @@ class StorytellerCog(commands.Cog):
             self.player = player
         
         async def callback(self, interaction):
+            emojis = [":bomb:", ":scream:", ":smirk:", ":zany_face:", ":nerd:", ":disguised_face:", ":flushed:", ":face_in_clouds:", ":face_with_peeking_eye:", ":shaking_face:", ":smiling_imp:", ":clown:", ":skull:", ":spy:"]
+            emoji = random.choice(emojis)
             if self.utilities.get_player_type(interaction.user) != "player": # Prevent non-players (and ST) from voting
                 await interaction.response.send_message("No estás jugando, así que no puedes participar en la votación.", ephemeral=True)
                 return
             await interaction.response.defer() # Prevent button from being unresponsive for 3 seconds and erroring out
-            await self.ctx.send(f"<@{interaction.user.id}> está apuntando a <@{self.player.id}>")
+            await self.ctx.send(f"<@{interaction.user.id}> está apuntando a <@{self.player.id}> {emoji}")
             result_dict = StorytellerCog.BoomdandyUI.result
             for player in result_dict: # Avoid duplicates
                 if interaction.user.id in result_dict[player]:
