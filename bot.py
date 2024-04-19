@@ -56,6 +56,11 @@ async def on_application_command(ctx):
     with open(logfile, 'a') as f:
         f.write(f"[{datetime.datetime.now()}] {ctx.command}{' ' + str(ctx.selected_options) if ctx.selected_options != None else ''} in server {ctx.guild} ({ctx.guild_id}).\n")
 
+@bot.event
+async def on_application_command_error(ctx, error):
+    ctx.respond(f":bug: Error desconocido: {error}")
+    raise error
+
 load_dotenv()
 try:
     with open('token.cfg', 'r') as f:
