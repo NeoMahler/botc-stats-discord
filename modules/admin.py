@@ -91,5 +91,10 @@ class AdminCog(commands.Cog):
         pid = os.getpid()
         await ctx.respond(f'PID: `{pid}`')
 
+    @slash_command(name="error", description="Forcibly causes the bot to error, for debugging purposes (owner-only).", guild_ids=[551837071703146506])
+    @commands.is_owner()
+    async def error(self, ctx):
+        raise ValueError("Someone used !error.")
+
 def setup(bot):
     bot.add_cog(AdminCog(bot))

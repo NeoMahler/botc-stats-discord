@@ -8,7 +8,7 @@ class StorytellerCog(commands.Cog):
         self.bot = bot
         self.utilities = bot.get_cog("UtilitiesCog")
     
-    @slash_command(name="boomdandy", description="Boom!", guild_ids=[551837071703146506])
+    @slash_command(name="boomdandy", description="Boom!")
     async def boomdandy(self, ctx, players: Option(str, "Space-separated list of surviving players (using Discord mentions).")):
         if self.utilities.get_player_type(ctx.author) != "st": # Avoid activation by regular players
             await ctx.respond("Solo el Narrador puede activar esta función.")
