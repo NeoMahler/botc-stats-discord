@@ -185,7 +185,7 @@
         },
         "description": {
             "en": "The Storyteller can break the game rules, and if executed, good wins, even if you are dead. [No evil characters]",
-            "es": "El Narrador puede saltarse las reglas del juego. Si es ejecutado, el equipo bueno gana, incluso si estás muertos. [No hay personajes malvados]",
+            "es": "El Narrador puede saltarse las reglas del juego. Si es ejecutado, el equipo bueno gana, incluso si estás muerto. [No hay personajes malvados]",
             "ca": "El Narrador pot saltar-se les normes del joc. Si és executat, l'equipo bo guanya, fins i tot si ets mort. [No hi ha personatges malvats]"
         },
         "article": {
@@ -317,7 +317,8 @@
         },
         "description": {
             "en": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober and healthy.",
-            "es": "Tiene que usar una ficha de voto para votar. Si un jugador muerto te da la suya, descubres su alineamiento. Estas sobrio y sano."
+            "es": "Tienes que usar una ficha de voto para votar. Si un jugador muerto te da la suya, descubres su alineamiento. Estás sobrio y sano.",
+            "ca": "Has d'utilitzar una fitxa de vot per a votar. Si un jugador mort et dona la seva, en descobreixes l'alineament. Estàs sobri i sa."
         },
         "article": {
             "en": "the ",

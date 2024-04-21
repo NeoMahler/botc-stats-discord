@@ -48,9 +48,24 @@ class MessagesCog(commands.Cog):
             return False
         
         player_stats = player_stats[str(player)]
-        g_winrate_percentage = round(player_stats['winrate_good'] / (player_stats['games_good']) * 100)
-        e_winrate_percentage = round(player_stats['winrate_evil'] / (player_stats['games_evil']) * 100)
-        general_winrate_percentage = round((player_stats['winrate_good'] + player_stats['winrate_evil']) / (player_stats['games_good'] + player_stats['games_evil']) * 100)
+        good_games = player_stats['games_good'] if player_stats['games_good'] > 0 else 0
+        evil_games = player_stats['games_evil'] if player_stats['games_evil'] > 0 else 0
+        winrate_good = player_stats['winrate_good'] if player_stats['winrate_good'] > 0 else 0
+        winrate_evil = player_stats['winrate_evil'] if player_stats['winrate_evil'] > 0 else 0
+
+        if good_games == 0:
+            g_winrate_percentage = 0
+        else:
+            g_winrate_percentage = round(winrate_good / good_games * 100)
+        if evil_games == 0:
+            e_winrate_percentage = 0
+        else:
+            e_winrate_percentage = round(winrate_evil / evil_games * 100)
+        
+        if evil_games == 0 or good_games == 0:
+            general_winrate_percentage = 0
+        else:
+            general_winrate_percentage = round(winrate_good + winrate_evil / good_games + evil_games * 100)
 
         all_played_chars = player_stats['characters']
         top_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)[:5] # Ordenar los personajes según el valor de "games" de cada personaje
@@ -60,11 +75,11 @@ class MessagesCog(commands.Cog):
             char_name = self.utilities.get_character_name(char[0])
             top_chars_final.append(f"{char_name} ({char[1]['games']})")
 
-        embed = discord.Embed(title=f"Estadísticas de {user.display_name}", description=f"Ha participado en {player_stats['games_good'] + player_stats['games_evil']} partidas")
+        embed = discord.Embed(title=f"Estadísticas de {user.display_name}", description=f"Ha participado en {good_games + evil_games} partidas")
         embed.set_thumbnail(url=user.display_avatar.url)
         embed.add_field(name="Victorias", value=f"{general_winrate_percentage}%")
-        embed.add_field(name="Equipo bueno", value=f"{player_stats['games_good']} (:trophy: {g_winrate_percentage}%)")
-        embed.add_field(name="Equipo malvado", value=f"{player_stats['games_evil']} (:trophy: {e_winrate_percentage}%)")
+        embed.add_field(name="Equipo bueno", value=f"{good_games} (:trophy: {g_winrate_percentage}%)")
+        embed.add_field(name="Equipo malvado", value=f"{evil_games} (:trophy: {e_winrate_percentage}%)")
         if not character:
             embed.add_field(name="Personajes más jugados", value=", ".join(top_chars_final))
             embed.set_footer(text="Usa /jugador <jugador> <personaje> para ver estadísticas con un personaje concreto.")
