@@ -122,7 +122,9 @@ class UtilitiesCog(commands.Cog):
                 "winrate": 0
             }
         player_characters[character]["games"] += 1
-        if result == "good" and self.is_character_good(character):
+        if result == "good" and self.is_character_good(character): # If good win with good character...
+            player_characters[character]["winrate"] += 1
+        if result == "evil" and not self.is_character_good(character): # If evil win with evil character...
             player_characters[character]["winrate"] += 1
 
         if self.is_character_good(character):
