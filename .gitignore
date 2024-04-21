@@ -166,3 +166,4 @@ data/characters.json
 backups/*
 .vscode
 config.json
+.DS_Store
