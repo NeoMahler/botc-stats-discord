@@ -62,10 +62,14 @@ class MessagesCog(commands.Cog):
         else:
             e_winrate_percentage = round(winrate_evil / evil_games * 100)
         
+        print(f"Good games: {good_games} ({winrate_good}), Evil games: {evil_games} ({winrate_evil})" )
+
         if evil_games == 0 or good_games == 0:
             general_winrate_percentage = 0
         else:
-            general_winrate_percentage = round(winrate_good + winrate_evil / good_games + evil_games * 100)
+            general_winrate_percentage = round((winrate_good + winrate_evil) / (good_games + evil_games) * 100)
+        
+        print(f"General winrate: {general_winrate_percentage}%")
 
         all_played_chars = player_stats['characters']
         top_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)[:5] # Ordenar los personajes según el valor de "games" de cada personaje
