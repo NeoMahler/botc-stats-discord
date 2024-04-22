@@ -46,7 +46,7 @@ class StorytellerCog(commands.Cog):
         msg = "## :bomb: **TIEMPO** :bomb:\n\n"
         msg += "Resultados:\n"
         for player in result:
-            msg += f"**<@{player}>**: {', '.join([f'<@{user}>' for user in result[player]])} (**{len(result[player])} votos**)\n"
+            msg += f"**<@{player}>** (**{len(result[player])} voto{'s' if len(result[player]) > 1 else ''}**): {', '.join([f'<@{user}>' for user in result[player]])}\n"
         await ctx.send(msg)
         return 
 
