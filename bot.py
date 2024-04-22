@@ -3,7 +3,7 @@ from discord.ext import commands
 
 from dotenv import load_dotenv
 
-import logging, os
+import logging, sys, traceback
 
 import datetime
 
@@ -58,7 +58,11 @@ async def on_application_command(ctx):
 
 @bot.event
 async def on_application_command_error(ctx, error):
-    ctx.respond(f":bug: Error desconocido: {error}")
+    raise error
+
+@bot.event
+async def on_error(self, ctx, error):
+    await ctx.respond(f":bug: Error desconocido. Traceback completo: ```python\n{traceback.format_exc()}```")
     raise error
 
 load_dotenv()

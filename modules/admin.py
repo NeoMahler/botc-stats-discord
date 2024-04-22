@@ -94,7 +94,8 @@ class AdminCog(commands.Cog):
     @slash_command(name="error", description="Forcibly causes the bot to error, for debugging purposes (owner-only).", guild_ids=[551837071703146506])
     @commands.is_owner()
     async def error(self, ctx):
-        raise ValueError("Someone used !error.")
+        print("/error used!")
+        raise Exception("Forced error")
 
 def setup(bot):
     bot.add_cog(AdminCog(bot))
