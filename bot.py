@@ -57,13 +57,14 @@ async def on_application_command(ctx):
         f.write(f"[{datetime.datetime.now()}] {ctx.command}{' ' + str(ctx.selected_options) if ctx.selected_options != None else ''} in server {ctx.guild} ({ctx.guild_id}).\n")
 
 @bot.event
-async def on_application_command_error(ctx, error):
-    raise error
+async def on_application_command_error(ctx, exception):
+    await ctx.respond(f":bug: Error desconocido. Traceback completo: ```python\n{exception}```")
+    raise exception
 
-@bot.event
-async def on_error(self, ctx, error):
-    await ctx.respond(f":bug: Error desconocido. Traceback completo: ```python\n{traceback.format_exc()}```")
-    raise error
+# @bot.event # TODO: on_error doesn't get ctx
+# async def on_error(ctx):
+#     await ctx.respond(f":bug: Error desconocido. Traceback completo: ```python\n{traceback.format_exc()}```")
+#     raise traceback.format_exc()
 
 load_dotenv()
 try:
