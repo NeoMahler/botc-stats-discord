@@ -81,10 +81,10 @@ class StorytellerCog(commands.Cog):
         msg += f"Las víctimas son: {' '.join(pings)}\n\n"
         msg += f"<@&{role_id}>: _Canal silenciado hasta que las víctimas escojan si quieren vivir o morir._"
 
-        view = self.CloseButton(ctx, role)
+        view = self.AlHadikhiaButton(ctx, role)
         await ctx.respond(msg, view=view)
 
-    class CloseButton(discord.ui.View):
+    class AlHadikhiaButton(discord.ui.View):
         def __init__(self, ctx, role):
             super().__init__()
             self.ctx = ctx
