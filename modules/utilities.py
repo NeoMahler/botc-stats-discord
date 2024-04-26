@@ -5,6 +5,7 @@ import time
 class UtilitiesCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        
     def clean_id(self, id):
         clean_id = id.replace('<', '').replace('>', '').replace('!', '').replace('@', '').replace('&', '').replace(' ', '')
         try:

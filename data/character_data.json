@@ -233,6 +233,30 @@
             "ca": "vist demoni"
         }]
     },
+    "banshee": {
+        "name": {
+            "en": "Banshee",
+            "es": "Banshee",
+            "ca": "Banshee"
+        },
+        "description": {
+            "en": "If the Demon kills you, all players learn this. From now on, you may nominate twice per day and vote twice per nomination.",
+            "es": "Si el Demonio te mata, todos los jugadores lo saben. A partir de ahora, puedes nominar dos veces por día y votar dos veces por nominación.",
+            "ca": "Si el Dimoni et mata, tots els jugadors ho saben. A partir d'ara, pots nominar dos cops per dia i votar dos cops per nominació."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
+        "type": "townsfolk",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "has ability",
+            "es": "tiene habilidad",
+            "ca": "té habilitat"
+        }]
+    },
     "barber": {
         "name": {
             "en": "Barber",
