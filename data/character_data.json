@@ -2185,6 +2185,26 @@
             "ca": "enverinat"
         }]
     },
+    "ogre": {
+        "name": {
+            "en": "Ogre",
+            "es": "Ogro",
+            "ca": "Ogre"
+        },
+        "description": {
+            "en": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.",
+            "es": "En tu primera noche, escoge a un jugador (no a ti mismo): tienes su alineamiento (no sabes cuál) incluso si estás borracho o envenenado.",
+            "ca": "La teva primera nit, tria un jugador (no a tu mateix): obtens el seu alineament (no saps quin), fins i tot si estàs borratxo o enverinat."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
+        "type": "outsider",
+        "setupWarning": false,
+        "reminders": []
+    },
     "ojo": {
         "name": {
             "en": "Ojo",
