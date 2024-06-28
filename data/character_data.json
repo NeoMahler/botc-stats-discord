@@ -76,6 +76,26 @@
             "ca": "3"
         }]
     },
+    "alsaahir": {
+        "name": {
+            "en": "Alsaahir",
+            "es": "Alsaahir",
+            "ca": "Alsaahir"
+        },
+        "description": {
+            "en": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+            "es": "Una vez por día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, el bien gana.",
+            "ca": "Un cop per dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, el bé guanya."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
+        "type": "townsfolk",
+        "setupWarning": false,
+        "reminders": []
+    },
     "amnesiac": {
         "name": {
             "en": "Amnesiac",
