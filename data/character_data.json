@@ -3459,6 +3459,26 @@
             "ca": "mort"
         }]
     },
+    "zealot": {
+        "name": {
+            "en": "Zealot",
+            "es": "Fanático",
+            "ca": "Fanàtic"
+        },
+        "description": {
+            "en": "If there are 5 or more players alive, you must vote for every nomination.",
+            "es": "Si hay 5 o más jugadores vivos, debes votar en cada nominación.",
+            "ca": "Si hi ha 5 o més jugadors, has de votar a cada nominació."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "outsider",
+        "setupWarning": false,
+        "reminders": []
+    },
     "zombuul": {
         "name": {
             "en": "Zombuul",
