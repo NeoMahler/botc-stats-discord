@@ -1812,9 +1812,9 @@
             "ca": "Lleech"
         },
         "description": {
-            "en": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if (& only if) they die.",
-            "es": "Cada noche*, escoge a un jugador: muere. Empiezas escogiendo a un jugador vivo: está envenenado; mueres si (y solo si) él muere.",
-            "ca": "Cada nit*, tria un jugador: mor. Comences triant un jugador viu: està enverinat; mors si (i només si) ell mor."
+            "en": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned. You die if & only if they are dead.",
+            "es": "Cada noche*, escoge a un jugador: muere. Empiezas escogiendo a un jugador vivo: está envenenado. Mueres si (y solo si) él está muerto.",
+            "ca": "Cada nit*, tria un jugador: mor. Comences triant un jugador viu: està enverinat. Mors si (i només si) ell és mort."
         },
         "article": {
             "en": "the ",
