@@ -401,6 +401,26 @@
             "ca": "nominar bo"
         }]
     },
+    "boffin": {
+        "name": {
+            "en": "Boffin",
+            "es": "Boffin",
+            "ca": "Boffin"
+        },
+        "description": {
+            "en": "The Demon (even if drunk or poisoned) has a not-in-play good character's ability. You both know which.",
+            "es": "El Demonio (incluso si está borracho o envenenado) tiene la habilidad de un personaje bueno fuera de juego. Ambos sabéis cuál.",
+            "ca": "El Demoni (fins i tot si està borratxo o enverinat) té l'habilitat d'un personatge bo fora de joc. Els dos sabeu quin."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "minion",
+        "setupWarning": false,
+        "reminders": []
+    },
     "bonecollector": {
         "name": {
             "en": "Bone Collector",
@@ -1828,6 +1848,30 @@
             "es": "envenenado",
             "ca": "enverinat"
         }, {
+            "en": "dead",
+            "es": "muerto",
+            "ca": "mort"
+        }]
+    },
+    "lordoftyphon": {
+        "name":{
+            "en": "Lord of Typhon",
+            "es": "Señor de Tifón",
+            "ca": "Senyor de Tifó"
+        },
+        "description": {
+            "en": "Each night*, choose a player: they die. [Evil characters are in a line. You are in the middle. +1 Minion. -? to +? Outsiders]",
+            "es": "Cada noche*, escoge a un jugador: muere. [Los personajes malvados están de lado. Estás en el medio. +1 Secuaz. -? a +? Forasteros]",
+            "ca": "Cada nit*, tria un jugador: mor. [Els personatges malvats estan de costat. Estàs al mig. +1 Sequaç. -? a +? Forasters]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "demon",
+        "setupWarning": true,
+        "reminders": [{
             "en": "dead",
             "es": "muerto",
             "ca": "mort"
