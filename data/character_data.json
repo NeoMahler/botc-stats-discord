@@ -76,6 +76,26 @@
             "ca": "3"
         }]
     },
+    "alsaahir": {
+        "name": {
+            "en": "Alsaahir",
+            "es": "Alsaahir",
+            "ca": "Alsaahir"
+        },
+        "description": {
+            "en": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+            "es": "Una vez por día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, el bien gana.",
+            "ca": "Un cop per dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, el bé guanya."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
+        "type": "townsfolk",
+        "setupWarning": false,
+        "reminders": []
+    },
     "amnesiac": {
         "name": {
             "en": "Amnesiac",
@@ -204,9 +224,9 @@
             "ca": "Aeronauta"
         },
         "description": {
-            "en": "Each night, you learn 1 player of each character type, until there are no more types to learn. [+1 Outsider]",
-            "es": "Cada noche, descubres 1 jugador de cada tipo de personaje, hasta que no haya más tipos para descubrir. [+1 Forastero]",
-            "ca": "Cada nit, descobreixes 1 jugador de cada tipus de personatge, fins que no hi hagi més tipus per descobrir. [+1 Foraster]"
+            "en": "Each night, you learn a player of a different character type than last night. [+0 or +1 Outsider]",
+            "es": "Cada noche, descubres 1 jugador de un tipo de personaje distinto a la noche anterior. [+1 Forastero]",
+            "ca": "Cada nit, descobreixes 1 jugador d'un tipus de personatge diferent a la nit anterior. [+1 Foraster]"
         },
         "article": {
             "en": "the ",
@@ -380,6 +400,26 @@
             "es": "nominar bueno",
             "ca": "nominar bo"
         }]
+    },
+    "boffin": {
+        "name": {
+            "en": "Boffin",
+            "es": "Boffin",
+            "ca": "Boffin"
+        },
+        "description": {
+            "en": "The Demon (even if drunk or poisoned) has a not-in-play good character's ability. You both know which.",
+            "es": "El Demonio (incluso si está borracho o envenenado) tiene la habilidad de un personaje bueno fuera de juego. Ambos sabéis cuál.",
+            "ca": "El Demoni (fins i tot si està borratxo o enverinat) té l'habilitat d'un personatge bo fora de joc. Els dos sabeu quin."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "minion",
+        "setupWarning": false,
+        "reminders": []
     },
     "bonecollector": {
         "name": {
@@ -1335,9 +1375,9 @@
             "ca": "Harpia"
         },
         "description": {
-            "en": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or both might die.",
-            "es": "Cada noche, escoge a 2 jugadores: mañana, el 1ᵒ está loco sobre que el 2ᵒ es malvado, o ambos pueden morir.",
-            "ca": "Cada nit, tria dos jugadors: demà, el 1r està boig que el 2n és malvat, o els dos podem morir."
+            "en": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or one or both might die.",
+            "es": "Cada noche, escoge a 2 jugadores: mañana, el 1ᵒ está loco sobre que el 2ᵒ es malvado, o uno o ambos pueden morir.",
+            "ca": "Cada nit, tria dos jugadors: demà, el 1r està boig que el 2n és malvat, o un o els dos poden morir."
         },
         "article": {
             "en": "the ",
@@ -1581,9 +1621,9 @@
             "ca": "Rei"
         },
         "description": {
-            "en": "Each night, if the dead outnumber the living, you learn 1 alive character. The Demon knows who you are.",
-            "es": "Cada noche, si hay más muertos que vivos, descubres 1 personaje vivo. El Demonio sabe quién eres.",
-            "ca": "Cada nit, si hi ha més morts que vius, descobreixes 1 personatge viu. El Dimoni sap qui ets."
+            "en": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows who you are.",
+            "es": "Cada noche, si hay tantos o más muertos que vivos, descubres 1 personaje vivo. El Demonio sabe quién eres.",
+            "ca": "Cada nit, si hi ha tants o més morts que vius, descobreixes 1 personatge viu. El Dimoni sap qui ets."
         },
         "article": {
             "en": "the ",
@@ -1764,9 +1804,9 @@
             "ca": "Petit Monstre"
         },
         "description": {
-            "en": "Each night, Minions choose who babysits Lil' Monsta's token & \"is the Demon\". A player dies each night*. [+1 Minion]",
-            "es": "Cada noche, los Secuaces deciden quién cuida la ficha del Monstruito y \"es el Demonio\". Un jugador muere cada noche*. [+1 Secuaz]",
-            "ca": "Cada nit, els Sequaços decideixen qui cuida la fitxa del Petit Monstre i \"és el Dimoni\". Un jugador mor cada nit*. [+1 Sequaç]"
+            "en": "Each night, Minions choose who babysits Lil' Monsta & 'is the Demon'. Each night*, a player might die. [+1 Minion]",
+            "es": "Cada noche, los Secuaces deciden quién cuida el Monstruito y \"es el Demonio\". Cada noche*, un jugador puede morir. [+1 Secuaz]",
+            "ca": "Cada nit, els Sequaços decideixen qui cuida el Petit Monstre i \"és el Dimoni\". Cada nit*, un jugador pot morir. [+1 Sequaç]"
         },
         "article": {
             "en": "the ",
@@ -1792,9 +1832,9 @@
             "ca": "Lleech"
         },
         "description": {
-            "en": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned - you die if (& only if) they die.",
-            "es": "Cada noche*, escoge a un jugador: muere. Empiezas escogiendo a un jugador vivo: está envenenado; mueres si (y solo si) él muere.",
-            "ca": "Cada nit*, tria un jugador: mor. Comences triant un jugador viu: està enverinat; mors si (i només si) ell mor."
+            "en": "Each night*, choose a player: they die. You start by choosing an alive player: they are poisoned. You die if & only if they are dead.",
+            "es": "Cada noche*, escoge a un jugador: muere. Empiezas escogiendo a un jugador vivo: está envenenado. Mueres si (y solo si) él está muerto.",
+            "ca": "Cada nit*, tria un jugador: mor. Comences triant un jugador viu: està enverinat. Mors si (i només si) ell és mort."
         },
         "article": {
             "en": "the ",
@@ -1808,6 +1848,30 @@
             "es": "envenenado",
             "ca": "enverinat"
         }, {
+            "en": "dead",
+            "es": "muerto",
+            "ca": "mort"
+        }]
+    },
+    "lordoftyphon": {
+        "name":{
+            "en": "Lord of Typhon",
+            "es": "Señor de Tifón",
+            "ca": "Senyor de Tifó"
+        },
+        "description": {
+            "en": "Each night*, choose a player: they die. [Evil characters are in a line. You are in the middle. +1 Minion. -? to +? Outsiders]",
+            "es": "Cada noche*, escoge a un jugador: muere. [Los personajes malvados están de lado. Estás en el medio. +1 Secuaz. -? a +? Forasteros]",
+            "ca": "Cada nit*, tria un jugador: mor. [Els personatges malvats estan de costat. Estàs al mig. +1 Sequaç. -? a +? Forasters]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "demon",
+        "setupWarning": true,
+        "reminders": [{
             "en": "dead",
             "es": "muerto",
             "ca": "mort"
@@ -2376,9 +2440,9 @@
             "ca": "Metge de la Pesta"
         },
         "description": {
-            "en": "If you die, the Storyteller gains a not-in-play Minion ability.",
-            "es": "Si mueres, el Narrador obtiene la habilidad de un Secuaz fuera de juego.",
-            "ca": "Si mors, el Narrador obté l'habilitat d'un Sequaç fora de joc."
+            "en": "If you die, the Storyteller gains a Minion ability.",
+            "es": "Si mueres, el Narrador obtiene la habilidad de un Secuaz.",
+            "ca": "Si mors, el Narrador obté l'habilitat d'un Sequaç."
         },
         "article": {
             "en": "the ",
@@ -3438,6 +3502,26 @@
             "es": "muerto",
             "ca": "mort"
         }]
+    },
+    "zealot": {
+        "name": {
+            "en": "Zealot",
+            "es": "Fanático",
+            "ca": "Fanàtic"
+        },
+        "description": {
+            "en": "If there are 5 or more players alive, you must vote for every nomination.",
+            "es": "Si hay 5 o más jugadores vivos, debes votar en cada nominación.",
+            "ca": "Si hi ha 5 o més jugadors, has de votar a cada nominació."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "outsider",
+        "setupWarning": false,
+        "reminders": []
     },
     "zombuul": {
         "name": {
