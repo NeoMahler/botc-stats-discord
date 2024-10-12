@@ -64,7 +64,7 @@ class MessagesCog(commands.Cog):
         
         print(f"Good games: {good_games} ({winrate_good}), Evil games: {evil_games} ({winrate_evil})" )
 
-        if evil_games == 0 or good_games == 0:
+        if evil_games == 0 and good_games == 0:
             general_winrate_percentage = 0
         else:
             general_winrate_percentage = round((winrate_good + winrate_evil) / (good_games + evil_games) * 100)
