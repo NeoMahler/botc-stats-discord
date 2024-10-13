@@ -72,12 +72,15 @@ class MessagesCog(commands.Cog):
         print(f"General winrate: {general_winrate_percentage}%")
 
         all_played_chars = player_stats['characters']
-        top_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)[:5] # Ordenar los personajes según el valor de "games" de cada personaje
+        top_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)[:5] # Ordenar los personajes según el valor de "games" de cada personaje. 0=char id, 1=games player
 
         top_chars_final = []
         for char in top_chars:
             char_name = self.utilities.get_character_name(char[0])
-            top_chars_final.append(f"{char_name} ({char[1]['games']})")
+            char_games = char[1]['games']
+            char_stats = player_stats['characters'][char[0]]
+            char_winrate = round(char_stats['winrate'] / char_games * 100)
+            top_chars_final.append(f"{char_name} ({char_games}, :trophy: {char_winrate}%)")
 
         embed = discord.Embed(title=f"Estadísticas de {user.display_name}", description=f"Ha participado en {good_games + evil_games} partidas")
         embed.set_thumbnail(url=user.display_avatar.url)
