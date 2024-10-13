@@ -1,4 +1,4 @@
-import subprocess, os, json
+import subprocess, os, json, shutil
 from discord.ext import commands
 from discord.commands import slash_command, Option
 
@@ -91,11 +91,14 @@ class AdminCog(commands.Cog):
         pid = os.getpid()
         await ctx.respond(f'PID: `{pid}`')
 
-    @slash_command(name="error", description="Forcibly causes the bot to error, for debugging purposes (owner-only).", guild_ids=[551837071703146506])
+    @slash_command(name="undo", description="Recovers the last version of the stats before the last saved game.")
     @commands.is_owner()
-    async def error(self, ctx):
-        print("/error used!")
-        raise Exception("Forced error")
+    async def undo(self, ctx):
+        await ctx.defer()
+        shutil.copy(os.path.join("backups", "players.json"), os.path.join("data", "players.json"))
+        shutil.copy(os.path.join("backups", "characters.json"), os.path.join("data", "characters.json"))
+        shutil.copy(os.path.join("backups", "games.json"), os.path.join("data", "games.json"))
+        await ctx.respond('Los datos de la última partida guardada se han borrado. Recuerda que solo se pueden borrar los datos de la última partida; si haces `/undo` más de una vez seguida, no va a cambiar nada.')
 
 def setup(bot):
     bot.add_cog(AdminCog(bot))
