@@ -35,15 +35,17 @@ class StatsCog(commands.Cog):
         return
 
     @slash_command(name='jugador', description='Da estadísticas sobre el jugador')
-    async def jugador(self, ctx, player: Option(str, "Jugador: mención o ID"), character: Option(str, "Personaje", required=False)):
-        player = self.utilities.clean_id(player)
+    async def jugador(self, ctx, jugador: Option(str, "Jugador: mención o ID"), character: Option(str, "Personaje", required=False)):
+        player = self.utilities.clean_id(jugador)
         if not player:
-            await ctx.respond("El jugador no es válido. Solo acepto menciones o IDs de usuarios.")
-            return
+            player = self.utilities.get_player_from_data(jugador)
+            if not player:
+                await ctx.respond(f"No conozco a {jugador}.")
+                return
         
         if character:
             if not self.utilities.is_character_valid(character):
-                await ctx.respond("El personaje no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
+                await ctx.respond(f"El personaje {character} no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
                 return
         
         player_member = await self.bot.fetch_user(int(player))
@@ -61,7 +63,7 @@ class StatsCog(commands.Cog):
     @commands.is_owner()
     async def resultado(self, ctx, 
                         players: Option(str, "Lista de jugadores con sus personajes al acabar la partida."), 
-                        winner: Option(str, "Resultado del juego. Valores admitidos: good, evil")):
+                        winner: Option(str, "Resultado del juego. Valores admitidos: good, evil", choices=["good", "evil"])):
         if winner not in ["good", "evil"]:
             await ctx.respond("El resultado solo puede ser 'good' o 'evil'.")
             return
@@ -82,6 +84,7 @@ class StatsCog(commands.Cog):
                 await ctx.respond(f"No puedo procesar este resultado. <@{player}> está duplicado.")
                 return
             processed_players[player] = character
+            await self.utilities.update_player_details(player)
 
         self.utilities.backup_data()
 

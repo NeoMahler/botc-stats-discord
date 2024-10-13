@@ -1,6 +1,7 @@
 import os, json, shutil
 from discord.ext import commands
 import time
+from fuzzywuzzy import process
 
 class UtilitiesCog(commands.Cog):
     def __init__(self, bot):
@@ -202,6 +203,47 @@ class UtilitiesCog(commands.Cog):
         else:
             return player.display_name
         
+    async def update_player_details(self, player):
+        player_file = os.path.join("data", "player_details.json")
+        user = self.bot.get_user(player)
+        if user is None:
+            user = await self.bot.fetch_user(player)
+
+        print(user)
+
+        with open(player_file, 'r') as f:
+            player_details = json.load(f)
+
+        player_details[str(player)] = {
+            "username": user.name,
+            "display_name": user.display_name,
+            "global_name": user.global_name
+        }
+
+        with open(player_file, 'w') as f:
+            json.dump(player_details, f)
+        return
+    
+    def get_player_from_data(self, data):
+        player_file = os.path.join("data", "player_details.json")
+        with open(player_file, 'r') as f:
+            player_details = json.load(f)
+        
+        all_options = []
+        for player in player_details:
+            for value in player_details[player].values():
+                all_options.append(value)
+                if value == data:
+                    return player
+
+        fuzzy_match = process.extract(data, all_options, limit=1)[0][0] #fuzzywuzzy
+
+        for player in player_details:
+            for value in player_details[player].values():
+                if value == fuzzy_match:
+                    return player
+
+        return False
 
 def setup(bot):
     bot.add_cog(UtilitiesCog(bot))
