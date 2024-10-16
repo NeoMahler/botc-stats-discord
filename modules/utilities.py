@@ -49,7 +49,7 @@ class UtilitiesCog(commands.Cog):
         else:
             return False
     
-    def get_character_name(self, character, lang="es"):
+    def get_character_name(self, character, lang="en"):
         modifier = ""
         if "(" in character:
             modifier = " bueno" if character[-2] == "g" else " malvado"
