@@ -78,6 +78,21 @@ class UtilitiesCog(commands.Cog):
             character = character.split("(")[0]
 
         return character_data[character]
+    
+    def did_player_win(self, characters, result):
+        last_character = characters[-1]
+        character_alignment = self.is_character_good(last_character)
+        if character_alignment is True:
+            if result == "good":
+                return True
+        if character_alignment is False:
+            if result == "evil":
+                return True
+        return False
+    
+    def did_player_end_good(self, characters):
+        last_character = characters[-1]
+        return self.is_character_good(last_character)
 
     def generate_game_id(self):
         games_file = os.path.join("data", "games.json")
@@ -103,7 +118,7 @@ class UtilitiesCog(commands.Cog):
             json.dump(games, f)
         return game_id
     
-    def update_player_stats(self, player, character, result):
+    def update_player_stats(self, player, characters, result):
         player_file = os.path.join("data", "players.json")
         with open(player_file, 'r') as f:
             players = json.load(f)
@@ -118,25 +133,29 @@ class UtilitiesCog(commands.Cog):
             }
 
         player_characters = players[player]["characters"]
-        if character not in player_characters:
-            player_characters[character] = { #Register new played character if first time
-                "games": 0,
-                "winrate": 0
-            }
-        player_characters[character]["games"] += 1
-        if result == "good" and self.is_character_good(character): # If good win with good character...
-            player_characters[character]["winrate"] += 1
-        if result == "evil" and not self.is_character_good(character): # If evil win with evil character...
-            player_characters[character]["winrate"] += 1
+        player_won = self.did_player_win(characters, result) # True if won, False if lost (based on the character they had at game end)
+        for character in characters:
+            if character not in player_characters:
+                player_characters[character] = { #Register new played character if first time
+                    "games": 0,
+                    "winrate": 0
+                }
+            # TODO: Winrate should be based on whether the last character won or not
+            player_characters[character]["games"] += 1
+            if player_won:
+                player_characters[character]["winrate"] += 1
 
-        if self.is_character_good(character):
-            players[player]["games_good"] += 1
-            if result == "good":
-                players[player]["winrate_good"] += 1
-        else:
-            players[player]["games_evil"] += 1
-            if result == "evil":
-                players[player]["winrate_evil"] += 1
+            player_ended_good = self.did_player_end_good(characters)
+            if player_ended_good:
+                players[player]["games_good"] += 1
+                if result == "good":
+                    players[player]["winrate_good"] += 1
+            else:
+                players[player]["games_evil"] += 1
+                if result == "evil":
+                    players[player]["winrate_evil"] += 1
+            
+            self.update_character_stats(character, result)
 
         with open(player_file, 'w') as f:
             json.dump(players, f)
@@ -147,7 +166,7 @@ class UtilitiesCog(commands.Cog):
         with open(character_file, 'r') as f:
             characters = json.load(f)
         
-        if character not in characters:
+        if character not in set(characters):
             characters[character] = {
                 "games": 0,
                 "winrate": 0
@@ -236,7 +255,10 @@ class UtilitiesCog(commands.Cog):
                 if value == data:
                     return player
 
-        fuzzy_match = process.extract(data, all_options, limit=1)[0][0] #fuzzywuzzy
+        try:
+            fuzzy_match = process.extract(data, all_options, limit=1)[0][0] #fuzzywuzzy
+        except:
+            return False            
 
         for player in player_details:
             for value in player_details[player].values():
