@@ -13,11 +13,12 @@ class MessagesCog(commands.Cog):
         for player in players:
             player_characters = players[player]
             formatted_characters = []
-            for character in player_characters:
-                char_id = character.split("(")[0]
+            for raw_character in player_characters:
+                char_id = raw_character.split("(")[0]
                 character = self.utilities.get_character_name(char_id)
-                if "(" in character:
-                    alignment = character[-2]
+                print(f"Character: {character} ({char_id})")
+                if "(" in raw_character:
+                    alignment = raw_character[-2]
                     if alignment == "g":
                         alignment = "bueno"
                     elif alignment == "e":
