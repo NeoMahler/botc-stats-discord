@@ -64,6 +64,7 @@ class StatsCog(commands.Cog):
     async def resultado(self, ctx, 
                         players: Option(str, "Lista de jugadores con sus personajes al acabar la partida."), 
                         winner: Option(str, "Resultado del juego. Valores admitidos: good, evil", choices=["good", "evil"])):
+        await ctx.defer()
         if winner not in ["good", "evil"]:
             await ctx.respond("El resultado solo puede ser 'good' o 'evil'.")
             return
@@ -76,14 +77,21 @@ class StatsCog(commands.Cog):
                 await ctx.respond(f"El usuario {player_data.split('-')[0]} no es válido. Solo acepto menciones o IDs de usuarios.")
                 return
 
-            character = player_data.split("-")[1]
-            if self.utilities.is_character_valid(character) == False: # Check if character is in character_data.json
-                await ctx.respond(f"El personaje {character} no es válido.")
-                return
-            if player in processed_players:
-                await ctx.respond(f"No puedo procesar este resultado. <@{player}> está duplicado.")
-                return
-            processed_players[player] = character
+            characters = player_data.split("-")[1:]
+            player_characters = []
+
+            for character in characters:
+                print(f"Character: {character}")
+                if self.utilities.is_character_valid(character) == False: # Check if character is in character_data.json
+                    await ctx.respond(f"El personaje {character} no es válido.")
+                    return
+                if player in processed_players:
+                    await ctx.respond(f"No puedo procesar este resultado. <@{player}> está duplicado.")
+                    return
+                player_characters.append(character)
+            processed_players[player] = player_characters
+            print(f"Processed player {player}: {processed_players[player]}")
+
             await self.utilities.update_player_details(player)
 
         self.utilities.backup_data()
@@ -119,9 +127,7 @@ class StatsCog(commands.Cog):
             save_game = self.utilities.update_game_stats(self.processed_players, self.winner)
             for player in self.processed_players:
                 self.utilities.update_player_stats(str(player), self.processed_players[player], self.winner)
-            
-            for player in self.processed_players:
-                self.utilities.update_character_stats(self.processed_players[player], self.winner)
+                # update_character_stats is called from update_player_stats
 
             await self.ctx.send(f"**Partida guardada.** ID: `{save_game}` / Fecha: <t:{int(time.time())}:f>")
             await interaction.response.edit_message(view=self)

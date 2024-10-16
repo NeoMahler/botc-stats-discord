@@ -11,25 +11,27 @@ class MessagesCog(commands.Cog):
     def generate_confirmation_msg(self, players, result):
         msg = "¿Guardar partida con los siguientes datos?\n\n"
         for player in players:
-            char_id = players[player].split("(")[0]
-            character = self.utilities.get_character_name(char_id)
-            if "(" in players[player]:
-                alignment = players[player][-2]
-                if alignment == "g":
-                    alignment = "bueno"
-                elif alignment == "e":
-                    alignment = "malvado"
+            player_characters = players[player]
+            formatted_characters = []
+            for character in player_characters:
+                char_id = character.split("(")[0]
+                character = self.utilities.get_character_name(char_id)
+                if "(" in character:
+                    alignment = character[-2]
+                    if alignment == "g":
+                        alignment = "bueno"
+                    elif alignment == "e":
+                        alignment = "malvado"
+                    else:
+                        return None
                 else:
-                    return None
-                msg += f"**<@{player}>** era el **{character}** ({alignment})\n"
-            else:
-                is_good = self.utilities.is_character_good(char_id)
-                if is_good:
-                    alignment = "bueno"
-                else:
-                    alignment = "malvado"
-                article = self.utilities.get_character_article(char_id)
-                msg += f"**<@{player}>** era {article}**{character}** ({alignment})\n"
+                    is_good = self.utilities.is_character_good(char_id)
+                    if is_good:
+                        alignment = "bueno"
+                    else:
+                        alignment = "malvado"
+                formatted_characters.append(f"{character} ({alignment})")
+            msg += f"<@{player}>: {', '.join(formatted_characters)}\n"
 
         if result == "good":
             result = "Bueno"
