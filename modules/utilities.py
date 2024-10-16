@@ -236,7 +236,10 @@ class UtilitiesCog(commands.Cog):
                 if value == data:
                     return player
 
-        fuzzy_match = process.extract(data, all_options, limit=1)[0][0] #fuzzywuzzy
+        try:
+            fuzzy_match = process.extract(data, all_options, limit=1)[0][0] #fuzzywuzzy
+        except:
+            return False            
 
         for player in player_details:
             for value in player_details[player].values():
