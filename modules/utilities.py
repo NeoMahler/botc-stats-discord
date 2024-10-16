@@ -166,7 +166,6 @@ class UtilitiesCog(commands.Cog):
         with open(character_file, 'r') as f:
             characters = json.load(f)
         
-        print(f"Characters: {characters.keys()} // Character: {character}")
         if character not in set(characters):
             characters[character] = {
                 "games": 0,

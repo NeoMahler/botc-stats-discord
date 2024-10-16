@@ -81,7 +81,6 @@ class StatsCog(commands.Cog):
             player_characters = []
 
             for character in characters:
-                print(f"Character: {character}")
                 if self.utilities.is_character_valid(character) == False: # Check if character is in character_data.json
                     await ctx.respond(f"El personaje {character} no es válido.")
                     return
@@ -90,7 +89,6 @@ class StatsCog(commands.Cog):
                     return
                 player_characters.append(character)
             processed_players[player] = player_characters
-            print(f"Processed player {player}: {processed_players[player]}")
 
             await self.utilities.update_player_details(player)
 
