@@ -144,6 +144,7 @@ class MessagesCog(commands.Cog):
         wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
 
         embed = discord.Embed(title=f"{character}", description=char_details["description"]["es"], url=wiki, color=color)
+        embed.set_thumbnail(url=char_details["icon"])
         embed.add_field(name="Tipo", value=type)
         if with_stats:
             embed.add_field(name="Partidas", value=f"{character_stats['games']} (:trophy: {winrate}%)")
