@@ -92,7 +92,7 @@ class MessagesCog(commands.Cog):
         embed.add_field(name="Equipo malvado", value=f"{evil_games} (:trophy: {e_winrate_percentage}%)")
         if not character:
             embed.add_field(name="Personajes más jugados", value=", ".join(top_chars_final))
-            embed.set_footer(text="Usa /jugador <jugador> <personaje> para ver estadísticas con un personaje concreto. Las estadísticas de victorias se calculan siempre según al alineamento final del jugador.")
+            embed.set_footer(text="Usa /jugador <jugador> <personaje> para ver estadísticas con un personaje concreto. Las estadísticas de victorias se calculan siempre según al alineamiento final del jugador.")
         else:
             if character not in player_stats['characters']:
                 embed.set_footer(text=f"ERROR: {user.display_name} no ha jugado nunca como {character}.")

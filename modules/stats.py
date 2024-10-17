@@ -82,7 +82,7 @@ class StatsCog(commands.Cog):
 
             for character in characters:
                 if self.utilities.is_character_valid(character) == False: # Check if character is in character_data.json
-                    await ctx.respond(f"El personaje {character} no es válido.")
+                    await ctx.respond(f"El personaje **{character}** no es válido. Recuerda no especificar el alineamiento de los personajes que no hayan cambiado de alineamiento.")
                     return
                 if player in processed_players:
                     await ctx.respond(f"No puedo procesar este resultado. <@{player}> está duplicado.")
@@ -125,7 +125,10 @@ class StatsCog(commands.Cog):
             save_game = self.utilities.update_game_stats(self.processed_players, self.winner)
             for player in self.processed_players:
                 self.utilities.update_player_stats(str(player), self.processed_players[player], self.winner)
-                # update_character_stats is called from update_player_stats
+            
+            characters_list = self.utilities.get_all_characters_from_game(self.processed_players)
+            for character in characters_list:
+                self.utilities.update_character_stats(character, self.winner)
 
             await self.ctx.send(f"**Partida guardada.** ID: `{save_game}` / Fecha: <t:{int(time.time())}:f>")
             await interaction.response.edit_message(view=self)
