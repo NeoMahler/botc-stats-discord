@@ -154,8 +154,6 @@ class UtilitiesCog(commands.Cog):
                 players[player]["games_evil"] += 1
                 if result == "evil":
                     players[player]["winrate_evil"] += 1
-            
-            self.update_character_stats(character, result)
 
         with open(player_file, 'w') as f:
             json.dump(players, f)
@@ -266,6 +264,18 @@ class UtilitiesCog(commands.Cog):
                     return player
 
         return False
+    
+    def get_all_characters_from_game(self, game_data):
+        characters = []
+        print(game_data)
+        for player in game_data:
+            player_characters = game_data[player]
+            for character in player_characters:
+                characters.append(character)
+
+        characters = list(set(characters)) # Remove duplicates
+        
+        return characters
 
 def setup(bot):
     bot.add_cog(UtilitiesCog(bot))
