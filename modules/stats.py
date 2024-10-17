@@ -28,7 +28,7 @@ class StatsCog(commands.Cog):
         if not self.utilities.is_character_valid(character):
             character = self.utilities.get_character_id(character)
             if not character:
-                await ctx.respond("El personaje no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
+                await ctx.respond(f"No encuentro el personaje **{character}**. ¿Lo has escrito bien?")
                 return
         
         character_stats = self.messages.generate_character_stats(character)
@@ -47,8 +47,10 @@ class StatsCog(commands.Cog):
         
         if character:
             if not self.utilities.is_character_valid(character):
-                await ctx.respond(f"El personaje {character} no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
-                return
+                character = self.utilities.get_character_id(character)
+                if not character:
+                    await ctx.respond(f"No encuentro el personaje **{character}**. ¿Lo has escrito bien?")
+                    return
         
         player_member = await self.bot.fetch_user(int(player))
         
