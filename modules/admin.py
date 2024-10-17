@@ -1,6 +1,7 @@
 import subprocess, os, json, shutil
 from discord.ext import commands
 from discord.commands import slash_command, Option
+import discord
 
 class AdminCog(commands.Cog):
     def __init__(self, bot):
@@ -99,6 +100,14 @@ class AdminCog(commands.Cog):
         shutil.copy(os.path.join("backups", "characters.json"), os.path.join("data", "characters.json"))
         shutil.copy(os.path.join("backups", "games.json"), os.path.join("data", "games.json"))
         await ctx.respond('Los datos de la última partida guardada se han borrado. Recuerda que solo se pueden borrar los datos de la última partida; si haces `/undo` más de una vez seguida, no va a cambiar nada.')
+
+    @slash_command(name="backup", description="Sends the stats files.")
+    @commands.is_owner()
+    async def backup(self, ctx):
+        await ctx.respond("Enviando los archivos de partidas guardadas...")
+        files = [os.path.join("data", "players.json"), os.path.join("data", "characters.json"), os.path.join("data", "games.json")]
+        for f in files:
+            await ctx.send(file=discord.File(f))
 
 def setup(bot):
     bot.add_cog(AdminCog(bot))
