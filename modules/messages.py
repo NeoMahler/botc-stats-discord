@@ -143,12 +143,12 @@ class MessagesCog(commands.Cog):
             color = discord.Color.dark_magenta()
         wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
 
-        embed = discord.Embed(title=f"{character}", description=char_details["description"]["es"], url=wiki, color=color)
+        embed = discord.Embed(title=f"{character_en}", description=char_details["description"]["es"], url=wiki, color=color)
         embed.set_thumbnail(url=char_details["icon"])
         embed.add_field(name="Tipo", value=type)
         if with_stats:
             embed.add_field(name="Partidas", value=f"{character_stats['games']} (:trophy: {winrate}%)")
-        embed.add_field(name="En inglés", value=character_en)
+        #embed.add_field(name="En inglés", value=character_en)
         if with_stats:
             embed.set_footer(text="Nota: no incluye partidas con el alineamiento alterado.")
         else:
