@@ -279,6 +279,38 @@ class UtilitiesCog(commands.Cog):
         characters = list(set(characters)) # Remove duplicates
         
         return characters
+    
+    def get_character_id(self, character_input):
+        characters_file = os.path.join("data", "character_data.json")
+        with open(characters_file, "r") as f:
+            characters = json.load(f)
+
+        character_keys = list(characters.keys())
+        all_match_options = []
+
+        for i in character_keys:
+            all_match_options.append(characters[i]["name"]["en"])
+            all_match_options.append(characters[i]["name"]["es"])
+            all_match_options.append(characters[i]["name"]["ca"])
+        for i in character_keys:
+            all_match_options.append(i)
+        
+        try:
+            fuzzy_match = process.extract(character_input, all_match_options, limit=1)[0][0] #fuzzywuzzy
+            print(f"Fuzzy match: {fuzzy_match}")
+        except:
+            return False
+        
+        if self.is_character_valid(fuzzy_match):
+            return fuzzy_match
+        else:
+            for i in characters: # Find which key has the fuzzy match as the name value
+                if characters[i]["name"]["en"] == fuzzy_match:
+                    return i
+                elif characters[i]["name"]["es"] == fuzzy_match:
+                    return i
+                elif characters[i]["name"]["ca"] == fuzzy_match:
+                    return i
 
 def setup(bot):
     bot.add_cog(UtilitiesCog(bot))

@@ -26,8 +26,10 @@ class StatsCog(commands.Cog):
 
         character = character.lower().replace(" ", "")
         if not self.utilities.is_character_valid(character):
-            await ctx.respond("El personaje no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
-            return
+            character = self.utilities.get_character_id(character)
+            if not character:
+                await ctx.respond("El personaje no es válido. Usa el nombre del personaje en inglés, en minúscula y sin espacios (por ejemplo: `scarletwoman`).")
+                return
         
         character_stats = self.messages.generate_character_stats(character)
         
