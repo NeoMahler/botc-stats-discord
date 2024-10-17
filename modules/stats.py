@@ -82,7 +82,7 @@ class StatsCog(commands.Cog):
 
             for character in characters:
                 if self.utilities.is_character_valid(character) == False: # Check if character is in character_data.json
-                    await ctx.respond(f"El personaje {character} no es válido.")
+                    await ctx.respond(f"El personaje **{character}** no es válido. Recuerda no especificar el alineamiento de los personajes que no hayan cambiado de alineamiento.")
                     return
                 if player in processed_players:
                     await ctx.respond(f"No puedo procesar este resultado. <@{player}> está duplicado.")
