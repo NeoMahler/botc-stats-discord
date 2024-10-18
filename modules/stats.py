@@ -67,12 +67,15 @@ class StatsCog(commands.Cog):
     @commands.is_owner()
     async def resultado(self, ctx, 
                         players: Option(str, "Lista de jugadores con sus personajes al acabar la partida."), 
-                        winner: Option(str, "Resultado del juego. Valores admitidos: good, evil", choices=["good", "evil"])):
+                        winner: Option(str, "Resultado del juego. Valores admitidos: good, evil", choices=["good", "evil"]),
+                        bluffs: Option(str, "Los tres personajes que el demonio sabía que no estaban en juego, separados por espacios", required=False)):
         await ctx.defer()
+        # Validate winner
         if winner not in ["good", "evil"]:
             await ctx.respond("El resultado solo puede ser 'good' o 'evil'.")
             return
 
+        # Validate players
         raw_player_list = players.split(" ")
         processed_players = {}
         for player_data in raw_player_list:
@@ -85,7 +88,7 @@ class StatsCog(commands.Cog):
             player_characters = []
 
             for character in characters:
-                if self.utilities.is_character_valid(character) == False: # Check if character is in character_data.json
+                if not self.utilities.is_character_valid(character): # Check if character is in character_data.json
                     await ctx.respond(f"El personaje **{character}** no es válido. Recuerda no especificar el alineamiento de los personajes que no hayan cambiado de alineamiento.")
                     return
                 if player in processed_players:
@@ -96,13 +99,23 @@ class StatsCog(commands.Cog):
 
             await self.utilities.update_player_details(player)
 
+        # Validate bluffs
+        if bluffs:
+            bluffs = bluffs.split(" ")
+            for bluff in bluffs:
+                if not self.utilities.is_character_valid(bluff):
+                    await ctx.respond(f"El personaje **{bluff}** no es válido.")
+                    return
+        else:
+            bluffs = []
+
         self.utilities.backup_data()
 
-        confirmation = self.messages.generate_confirmation_msg(processed_players, winner)
+        confirmation = self.messages.generate_confirmation_msg(processed_players, winner, bluffs)
         if confirmation == None:
             await ctx.respond("Error al procesar la validez de los parámetros. Revisa que los jugadores, personajes, alineamiento y resultado sean correctos.")
             return
-        await ctx.respond(confirmation, view=self.ConfirmationButtons(ctx, self.bot, processed_players, winner))
+        await ctx.respond(confirmation, view=self.ConfirmationButtons(ctx, self.bot, processed_players, winner, bluffs))
 
         return
     
@@ -114,19 +127,20 @@ class StatsCog(commands.Cog):
             raise error
 
     class ConfirmationButtons(discord.ui.View):
-        def __init__(self, ctx, bot, processed_players, winner):
+        def __init__(self, ctx, bot, processed_players, winner, bluffs):
             super().__init__()
             self.ctx = ctx
             self.author = ctx.author
             self.processed_players = processed_players
             self.winner = winner
+            self.bluffs = bluffs
             self.utilities = bot.get_cog("UtilitiesCog")
 
         @discord.ui.button(label="✅ Confirmar", row=0, style=discord.ButtonStyle.primary)
         async def confirm_btn_callback (self, button, interaction):
             button.label = "✅ Partida guardada"
             self.disable_all_items()
-            save_game = self.utilities.update_game_stats(self.processed_players, self.winner)
+            save_game = self.utilities.update_game_stats(self.processed_players, self.winner, self.bluffs)
             for player in self.processed_players:
                 self.utilities.update_player_stats(str(player), self.processed_players[player], self.winner)
             

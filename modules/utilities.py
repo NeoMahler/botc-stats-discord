@@ -106,7 +106,7 @@ class UtilitiesCog(commands.Cog):
         else:
             return int(max([int(n) for n in games])) + 1
 
-    def update_game_stats(self, player_data, result):
+    def update_game_stats(self, player_data, result, bluffs):
         game_id = self.generate_game_id()
         game_time = int(time.time()) # Unix timestamp (without decimals), which can be easily displayed on discord as <t:TIMESTAMP:F>
         games_file = os.path.join("data", "games.json")
@@ -115,7 +115,8 @@ class UtilitiesCog(commands.Cog):
         games[game_id] = {
             "timestamp": game_time,
             "players": player_data,
-            "result": result
+            "result": result,
+            "bluffs": bluffs
         }
         with open(games_file, 'w') as f:
             json.dump(games, f)
