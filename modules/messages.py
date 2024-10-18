@@ -130,8 +130,12 @@ class MessagesCog(commands.Cog):
         # Find stats in opposite alignment
         if self.utilities.is_character_good(character):
             opposite = f"{character}(e)"
+            team_message = "(equipo bueno)"
+            opposite_message = "(equipo malvado)"
         else:
             opposite = f"{character}(g)"
+            team_message = "(equipo malvado)"
+            opposite_message = "(equipo bueno)"
         print(f"Opposite: {opposite}")
         with_opposite_stats = False
         if opposite in full_character_stats:
@@ -162,9 +166,9 @@ class MessagesCog(commands.Cog):
         embed.set_thumbnail(url=char_details["icon"])
         embed.add_field(name="Tipo", value=type)
         if with_stats:
-            embed.add_field(name="Partidas", value=f"{character_stats['games']} (:trophy: {winrate}%)")
+            embed.add_field(name=f"Partidas {team_message}", value=f"{character_stats['games']} (:trophy: {winrate}%)")
         if with_opposite_stats:
-            embed.add_field(name="Partidas con alineamiento alterado", value=f"{opposite_stats['games']} (:trophy: {opposite_winrate}%)")
+            embed.add_field(name=f"Partidas {opposite_message}", value=f"{opposite_stats['games']} (:trophy: {opposite_winrate}%)")
         #embed.add_field(name="En inglés", value=character_en)
         if not with_stats and not with_opposite_stats:
             embed.set_footer(text="No tengo partidas guardadas con este personaje.")
