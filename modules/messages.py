@@ -155,7 +155,7 @@ class MessagesCog(commands.Cog):
             "outsider": {"label": "Forastero", "color": discord.Color.blue()},
             "townsfolk": {"label": "Aldeano", "color": discord.Color.blue()},
             "fabled": {"label": "Mítico", "color": discord.Color.gold()},
-            "traveler": {"label": "Viajero", "color": discord.Color.dark_magenta()}
+            "traveller": {"label": "Viajero", "color": discord.Color.dark_magenta()}
         }
         color = type_details[type]["color"]
         type = type_details[type]["label"]
