@@ -132,24 +132,16 @@ class MessagesCog(commands.Cog):
         character = char_details["name"]["es"]
         character_en = char_details["name"]["en"]
         type = char_details["type"]
-        if type == "demon":
-            type = "Demonio"
-            color = discord.Color.red()
-        elif type == "minion":
-            type = "Secuaz"
-            color = discord.Color.red()
-        elif type == "outsider":
-            type = "Forastero"
-            color = discord.Color.blue()
-        elif type == "townsfolk":
-            type = "Aldeano"
-            color = discord.Color.blue()
-        elif type == "fabled":
-            type = "Mítico"
-            color = discord.Color.gold()
-        else:
-            type = "Viajero"
-            color = discord.Color.dark_magenta()
+        type_details = {
+            "demon": {"label": "Demonio", "color": discord.Color.red()},
+            "minion": {"label": "Secuaz", "color": discord.Color.red()},
+            "outsider": {"label": "Forastero", "color": discord.Color.blue()},
+            "townsfolk": {"label": "Aldeano", "color": discord.Color.blue()},
+            "fabled": {"label": "Mítico", "color": discord.Color.gold()},
+            "traveler": {"label": "Viajero", "color": discord.Color.dark_magenta()}
+        }
+        type = type_details[type]["label"]
+        color = type_details[type]["color"]
         wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
 
         embed = discord.Embed(title=f"{character_en}", description=char_details["description"]["es"], url=wiki, color=color)
