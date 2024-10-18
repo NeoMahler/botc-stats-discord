@@ -118,16 +118,29 @@ class MessagesCog(commands.Cog):
     def generate_character_stats(self, character):
         character_stats_f = os.path.join("data", "characters.json")
         with open(character_stats_f, 'r') as f:
-            character_stats = json.load(f)
+            full_character_stats = json.load(f)
 
         with_stats = False
-        if character in character_stats:
+        if character in full_character_stats:
             with_stats = True
-        
         if with_stats:
-            character_stats = character_stats[character]
+            character_stats = full_character_stats[character]
             winrate = round(character_stats['winrate'] / character_stats['games'] * 100)
 
+        # Find stats in opposite alignment
+        if self.utilities.is_character_good(character):
+            opposite = f"{character}(e)"
+        else:
+            opposite = f"{character}(g)"
+        print(f"Opposite: {opposite}")
+        with_opposite_stats = False
+        if opposite in full_character_stats:
+            with_opposite_stats = True
+        if with_opposite_stats:
+            opposite_stats = full_character_stats[opposite]
+            opposite_winrate = round(opposite_stats['winrate'] / opposite_stats['games'] * 100)    
+
+        # Set up what appears in the embed
         char_details = self.utilities.get_character_details(character)
         character = char_details["name"]["es"]
         character_en = char_details["name"]["en"]
@@ -140,19 +153,20 @@ class MessagesCog(commands.Cog):
             "fabled": {"label": "Mítico", "color": discord.Color.gold()},
             "traveler": {"label": "Viajero", "color": discord.Color.dark_magenta()}
         }
-        type = type_details[type]["label"]
         color = type_details[type]["color"]
+        type = type_details[type]["label"]
         wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
 
+        # Set up the embed
         embed = discord.Embed(title=f"{character_en}", description=char_details["description"]["es"], url=wiki, color=color)
         embed.set_thumbnail(url=char_details["icon"])
         embed.add_field(name="Tipo", value=type)
         if with_stats:
             embed.add_field(name="Partidas", value=f"{character_stats['games']} (:trophy: {winrate}%)")
+        if with_opposite_stats:
+            embed.add_field(name="Partidas con alineamiento alterado", value=f"{opposite_stats['games']} (:trophy: {opposite_winrate}%)")
         #embed.add_field(name="En inglés", value=character_en)
-        if with_stats:
-            embed.set_footer(text="Nota: no incluye partidas con el alineamiento alterado.")
-        else:
+        if not with_stats and not with_opposite_stats:
             embed.set_footer(text="No tengo partidas guardadas con este personaje.")
 
         return embed
