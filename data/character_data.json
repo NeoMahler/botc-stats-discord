@@ -386,7 +386,7 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_beggar.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e3/Icon_beggar.png"
     },
     "bishop": {
         "name": {
@@ -532,7 +532,7 @@
             "es": "3 votos",
             "ca": "3 vots"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_bureaucrat.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/b1/Icon_bureaucrat.png"
     },
     "butcher": {
         "name": {
@@ -632,7 +632,7 @@
             "es": "loco",
             "ca": "boig"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_cerenovus.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/45/Icon_cerenovus.png"
     },
     "chambermaid": {
         "name": {
@@ -716,7 +716,7 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_clockmaker.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/3/3d/Icon_clockmaker.png"
     },
     "courtier": {
         "name": {
@@ -774,7 +774,7 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_cultleader.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6c/Icon_cultleader.png"
     },
     "damsel": {
         "name": {
@@ -820,7 +820,7 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_deviant.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a5/Icon_deviant.png"
     },
     "devilsadvocate": {
         "name": {
@@ -1141,7 +1141,7 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_fool.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d9/Icon_fool.png"
     },
     "fortuneteller": {
         "name": {
@@ -1794,7 +1794,7 @@
             "es": "a punto de morir",
             "ca": "a punt de morir"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/File:Icon_legion.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/cb/Icon_legion.png"
     },
     "leviathan": {
         "name": {
