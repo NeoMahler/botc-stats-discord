@@ -21,15 +21,17 @@ class UtilitiesCog(commands.Cog):
             character_data = json.load(f)
         if character not in character_data:
             if character.endswith(")"): #This means there's a custom alignment!
-                clean_character = character[:-3]
-                if clean_character not in character_data:
+                base_character = character[:-3]
+                if base_character not in character_data:
+                    print(f"{character} is not in character_data.json")
                     return False
                 # Having an explicit alignment when it's the default causes problems later on
-                if self.is_character_good(character) and "(g)" in character:
+                if self.is_character_good(base_character) and "(g)" in character:
                     return False
-                elif not self.is_character_good(character) and "(e)" in character:
+                elif not self.is_character_good(base_character) and "(e)" in character:
                     return False
             else:
+                print(f"{character} is not in character_data.json")
                 return False
 
         return True 
