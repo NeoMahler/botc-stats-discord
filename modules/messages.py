@@ -8,7 +8,7 @@ class MessagesCog(commands.Cog):
         self.bot = bot
         self.utilities = bot.get_cog("UtilitiesCog")
     
-    def generate_confirmation_msg(self, players, result):
+    def generate_confirmation_msg(self, players, result, bluffs):
         msg = "¿Guardar partida con los siguientes datos?\n\n"
         for player in players:
             player_characters = players[player]
@@ -40,6 +40,15 @@ class MessagesCog(commands.Cog):
             result = "Malvado"
 
         msg += f"\nEquipo ganador: **{result}**"
+
+        if bluffs:
+            clean_bluffs = []
+            for bluff in bluffs:
+                clean_bluffs.append(self.utilities.get_character_name(bluff))
+            bluffs = ", ".join(clean_bluffs)
+            msg += f"\n\n**Demon bluffs:** {bluffs}"
+        else:
+            msg += "\n\n**Demon bluffs:** El demonio no sabía qué personajes estaban fuera de juego."
 
         return msg
     
