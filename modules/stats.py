@@ -62,6 +62,20 @@ class StatsCog(commands.Cog):
         
         await ctx.respond(embed=player_stats)
         return
+    
+    @slash_command(name='personajes', description='Da la lista completa de personajes que alguien ha jugado')
+    async def jugador(self, ctx, jugador: Option(str, "Jugador: mención o ID"),
+                                equipo: Option(str, "Equipo", required=False)):
+        player = self.utilities.clean_id(jugador)
+        if not player:
+            player = self.utilities.get_player_from_data(jugador)
+            if not player:
+                await ctx.respond(f"No conozco a {jugador}.")
+                return
+
+        character_list = self.messages.generate_character_list(player)       
+        await ctx.respond(character_list)
+        return
 
     @slash_command(name='resultado', description='Registra el resultado de una partida.')
     @commands.is_owner()
