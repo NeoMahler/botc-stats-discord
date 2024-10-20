@@ -58,11 +58,12 @@ class MessagesCog(commands.Cog):
             player_stats = json.load(f)
         if str(player) not in player_stats:
             return False
-        
-        msg = "Personajes jugados:\n"
 
         all_played_chars = player_stats[player]['characters']
         all_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)
+
+        msg = f"<@{player}> ha jugado con {len(all_chars)} personajes diferentes:\n"
+
         good_games = player_stats[player]['games_good'] if player_stats[player]['games_good'] > 0 else 0
         evil_games = player_stats[player]['games_evil'] if player_stats[player]['games_evil'] > 0 else 0
         for char in all_chars:
@@ -72,7 +73,14 @@ class MessagesCog(commands.Cog):
             char_winrate = round(char_stats['winrate'] / char_games * 100)
             total_player_games = good_games + evil_games
             char_percent = round(char_games / total_player_games * 100)
-            msg += f"- **{char_name}**: {char_games}  partidas, {char_stats['winrate']} ganadas ({char_percent}%, :trophy: {char_winrate}%)\n"
+
+            if char_games == 1:
+                s = ""
+            else: 
+                s = "s"
+            msg += f"- **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+
+        msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
 
         return msg
 
