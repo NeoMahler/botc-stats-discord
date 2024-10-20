@@ -221,10 +221,7 @@ class UtilitiesCog(commands.Cog):
             return False
 
     def get_player_name(self, player):
-        if player.global_name:
-            return player.global_name
-        else:
-            return player.display_name
+        return player.display_name
         
     async def update_player_details(self, player):
         player_file = os.path.join("data", "player_details.json")
@@ -239,8 +236,7 @@ class UtilitiesCog(commands.Cog):
 
         player_details[str(player)] = {
             "username": user.name,
-            "display_name": user.display_name,
-            "global_name": user.global_name
+            "display_name": user.display_name
         }
 
         with open(player_file, 'w') as f:
