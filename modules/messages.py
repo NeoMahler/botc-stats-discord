@@ -52,6 +52,30 @@ class MessagesCog(commands.Cog):
 
         return msg
     
+    def generate_character_list(self, player, team=None):
+        player_stats_f = os.path.join("data", "players.json")
+        with open(player_stats_f, 'r') as f:
+            player_stats = json.load(f)
+        if str(player) not in player_stats:
+            return False
+        
+        msg = "Personajes jugados:\n"
+
+        all_played_chars = player_stats[player]['characters']
+        all_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)
+        good_games = player_stats[player]['games_good'] if player_stats[player]['games_good'] > 0 else 0
+        evil_games = player_stats[player]['games_evil'] if player_stats[player]['games_evil'] > 0 else 0
+        for char in all_chars:
+            char_name = self.utilities.get_character_name(char[0])
+            char_games = char[1]['games']
+            char_stats = all_played_chars[char[0]]
+            char_winrate = round(char_stats['winrate'] / char_games * 100)
+            total_player_games = good_games + evil_games
+            char_percent = round(char_games / total_player_games * 100)
+            msg += f"- **{char_name}**: {char_games}  partidas, {char_stats['winrate']} ganadas ({char_percent}%, :trophy: {char_winrate}%)\n"
+
+        return msg
+
     def generate_player_stats(self, player, user, character=None):
         player_stats_f = os.path.join("data", "players.json")
         with open(player_stats_f, 'r') as f:
