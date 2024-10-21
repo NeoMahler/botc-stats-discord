@@ -9,7 +9,7 @@ class AdminCog(commands.Cog):
     
     @slash_command(name='ping', description='Pong!')
     async def ping(self, ctx):
-        await ctx.respond('Pong!')
+        await ctx.respond("Pong! :ping_pong: ({0}ms)".format(round(self.bot.latency * 1000)))
         return
 
     @slash_command(name="update", description="Pulls the latest version from GitHub (owner-only).")
