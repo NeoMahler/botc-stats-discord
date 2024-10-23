@@ -6,16 +6,16 @@
             "ca": "Acròbata"
         },
         "description": {
-            "en": "Each night*, if either good living neighbour is drunk or poisoned, you die.",
-            "es": "Cada noche*, si alguno de tus vecinos vivos buenos está borracho o envenenado, mueres.",
-            "ca": "Cada nit*, si algun dels teus veïns vius estan borratxos o enverinats, mors."
+            "en": "Each night*, choose a player: if they are or become drunk or poisoned tonight, you die.",
+            "es": "Cada noche*, escoge a un jugador: si está borracho o envenenado en algún momento de esta noche, mueres.",
+            "ca": "Cada nit*, tria un jugador: si està borracho o enverinat en algun moment d'aquesta nit, mor."
         },
         "article": {
             "en": "the ",
             "es": "el ",
             "ca": "l'"
         },
-        "type": "outsider",
+        "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
         "icon": "https://wiki.bloodontheclocktower.com/images/b/b5/Icon_acrobat.png"
@@ -2415,9 +2415,9 @@
             "ca": "Organista de carrer"
         },
         "description": {
-            "en": "All players keep their eyes closed when voting & the vote tally is secret. Votes for you only count if you vote.",
-            "es": "Todos los jugadores cierran sus ojos al votar y el recuento es secreto. Los votos contra ti solo cuentan si votas.",
-            "ca": "Tots els jugadors tanquen els ulls en votar i el recompte és secret. Els vots contra tu només compten si votes."
+            "en": "All players keep their eyes closed when voting & the vote tally is secret. Each night, choose if you are drunk or not.",
+            "es": "Todos los jugadores cierran sus ojos al votar y el recuento es secreto. Cada noche, decide si estás borracho no.",
+            "ca": "Tots els jugadors tanquen els ulls en votar i el recompte és secret. Cada nit, decideix si estàs borratxo o no."
         },
         "article": {
             "en": "the ",
