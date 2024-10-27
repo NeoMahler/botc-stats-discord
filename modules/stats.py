@@ -68,7 +68,7 @@ class StatsCog(commands.Cog):
                                 equipo: Option(str, "Equipo", required=False)):
         player = self.utilities.clean_id(jugador)
         if not player:
-            player = self.utilities.get_player_from_data(jugador)
+            player = self.utilities.get_player_from_data(player)
             if not player:
                 await ctx.respond(f"No conozco a {jugador}.")
                 return

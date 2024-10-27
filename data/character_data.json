@@ -2430,6 +2430,11 @@
             "en": "about to die",
             "es": "a punto de morir",
             "ca": "a punt de morir"
+        },
+        {
+            "en": "drunk",
+            "es": "borracho",
+            "ca": "borratxo"
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/6/61/Icon_organgrinder.png"
     },
