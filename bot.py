@@ -58,7 +58,7 @@ async def on_application_command(ctx):
 
 @bot.event
 async def on_application_command_error(ctx, exception):
-    await ctx.respond(f":bug: Error desconocido. Traceback completo: ```python\n{exception}```")
+    await ctx.respond(f":bug: Error desconocido: ```python\n{exception}```")
     raise exception
 
 # @bot.event # TODO: on_error doesn't get ctx

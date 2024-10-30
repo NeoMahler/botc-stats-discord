@@ -95,8 +95,9 @@ class MessagesCog(commands.Cog):
         total_games = len(games)
 
         all_chars = sorted(character_stats.items(), key=lambda x: x[1]['games'], reverse=True)
-
-        msg = "Personajes con más partidas jugadas:\n"
+        if len(all_chars) > 10:
+            all_chars = all_chars[:15]
+        msg = "15 personajes con más partidas jugadas:\n"
         for char in all_chars:
             char_name = self.utilities.get_character_name(char[0])
             char_games = char[1]['games']
