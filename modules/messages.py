@@ -52,7 +52,7 @@ class MessagesCog(commands.Cog):
 
         return msg
     
-    def generate_character_list(self, player, team=None):
+    def generate_character_list(self, player=None, team=None):
         player_stats_f = os.path.join("data", "players.json")
         with open(player_stats_f, 'r') as f:
             player_stats = json.load(f)
@@ -73,6 +73,36 @@ class MessagesCog(commands.Cog):
             char_winrate = round(char_stats['winrate'] / char_games * 100)
             total_player_games = good_games + evil_games
             char_percent = round(char_games / total_player_games * 100)
+
+            if char_games == 1:
+                s = ""
+            else: 
+                s = "s"
+            msg += f"- **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+
+        msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
+
+        return msg
+    
+    def generate_generic_character_list(self):
+        character_stats_f = os.path.join("data", "characters.json")
+        with open(character_stats_f, 'r') as f:
+            character_stats = json.load(f)
+
+        games_file = os.path.join("data", "games.json")
+        with open(games_file, 'r') as f:
+            games = json.load(f)
+        total_games = len(games)
+
+        all_chars = sorted(character_stats.items(), key=lambda x: x[1]['games'], reverse=True)
+
+        msg = "Personajes con más partidas jugadas:\n"
+        for char in all_chars:
+            char_name = self.utilities.get_character_name(char[0])
+            char_games = char[1]['games']
+            char_stats = character_stats[char[0]]
+            char_winrate = round(char_stats['winrate'] / char_games * 100)
+            char_percent = round(char_games / total_games * 100)
 
             if char_games == 1:
                 s = ""

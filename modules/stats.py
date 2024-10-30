@@ -64,16 +64,19 @@ class StatsCog(commands.Cog):
         return
     
     @slash_command(name='personajes', description='Da la lista completa de personajes que alguien ha jugado')
-    async def personajes(self, ctx, jugador: Option(str, "Jugador: mención o ID"),
+    async def personajes(self, ctx, jugador: Option(str, "Jugador: mención o ID", required=False),
                                 equipo: Option(str, "Equipo", required=False)):
-        player = self.utilities.clean_id(jugador)
-        if not player:
-            player = self.utilities.get_player_from_data(player)
+        if jugador:
+            player = self.utilities.clean_id(jugador)
             if not player:
-                await ctx.respond(f"No conozco a {jugador}.")
-                return
+                player = self.utilities.get_player_from_data(jugador)
+                if not player:
+                    await ctx.respond(f"No conozco a {jugador}.")
+                    return
 
-        character_list = self.messages.generate_character_list(player)       
+            character_list = self.messages.generate_character_list(player=str(player))
+        else:
+            character_list = self.messages.generate_generic_character_list()       
         await ctx.respond(character_list)
         return
 
