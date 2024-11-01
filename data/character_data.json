@@ -1235,6 +1235,31 @@
         "reminders": [],
         "icon": "https://wiki.bloodontheclocktower.com/images/9/99/Icon_general.png"
     },
+    "gnome": {
+        "name": {
+            "en": "Gnome",
+            "es": "Gnomo",
+            "ca": "Gnom"
+        },
+        "description": {
+            "en": "All players start knowing a player of your alignment. You may choose to kill anyone who nominates them.",
+            "es": "Todos los jugadores empiezan conociendo a un jugador de tu alineamiento. Puedes decidir matar a cualquiera que lo nomine.",
+            "ca": "Tots els jugadors comencen coneixent un jugador del teu alineament. Pots decidir matar a qualsevol que el nomini."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "traveller",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "amigo",
+            "es": "amigo",
+            "ca": "amic"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_gnome.png"
+    },
     "goblin": {
         "name": {
             "en": "Goblin",
