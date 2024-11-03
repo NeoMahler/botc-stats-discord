@@ -474,9 +474,9 @@
             "ca": "Boomdandy"
         },
         "description": {
-            "en": "If you are executed, all but 3 players die. 1 minute later, the player with the most players pointing at them, dies.",
-            "es": "Si eres ejecutado, todos los jugadores menos 3 mueren. 1 minuto después, el jugador con más jugadores apuntándolo muere.",
-            "ca": "Si ets executat, tots els jugadors fora de 3 moren. 1 minut després, el jugador amb més jugadors apuntant-lo mor."
+            "en": "If you are executed, all but 3 players die. After a 10 to 1 countdown, the player with the most players pointing at them, dies.",
+            "es": "Si eres ejecutado, todos los jugadores menos 3 mueren. Después de una cuenta atrás de 10 a 1, el jugador con más jugadores apuntándolo muere.",
+            "ca": "Si ets executat, tots els jugadors fora de 3 moren. Després d'un compte enrere de 10 a 1, el jugador amb més jugadors apuntant-lo mor."
         },
         "article": {
             "en": "the ",
@@ -2010,9 +2010,9 @@
             "ca": "Licantrop"
         },
         "description": {
-            "en": "Each night*, choose an alive player: if good, they die, but they are the only player that can die tonight.",
-            "es": "Cada noche*, escoge a un jugador vivo: si es bueno, muere, pero es el único jugador que puede morir esta noche.",
-            "ca": "Cada nit*, tria un jugador viu: si és bo, mor, però és l'únic jugador que pot morir aquesta nit."
+            "en": "Each night*, choose an alive player. If good, they die & the Demon doesn’t kill tonight. One good player registers as evil.",
+            "es": "Cada noche*, escoge a un jugador vivo: si es bueno, muere, pero el Demonio no mata esta noche. Un jugador bueno figura como malvado.",
+            "ca": "Cada nit*, tria un jugador viu: si és bo, mor, però el Dimoni no mata aquesta nit. Un jugador bo figura com a malvat."
         },
         "article": {
             "en": "the ",
