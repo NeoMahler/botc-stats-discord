@@ -588,7 +588,7 @@
         },
         "description": {
             "en": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
-            "es": "Tienes l'habilitat del ejecutado más reciente. Si es malvado, estás envenenado hasta que un jugador bueno muera ejecutado.",
+            "es": "Tienes la habilidad del ejecutado más reciente. Si es malvado, estás envenenado hasta que un jugador bueno muera ejecutado.",
             "ca": "Tens l'habilitat de l'executat més recent. Si és malvat, estàs enverinat fins que un jugador bo mori executat."
         },
         "article": {
