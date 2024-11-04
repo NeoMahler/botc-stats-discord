@@ -87,8 +87,8 @@
         },
         "description": {
             "en": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
-            "es": "Una vez por día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, el bien gana.",
-            "ca": "Un cop per dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, el bé guanya."
+            "es": "Una vez por día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, gana el equipo bueno.",
+            "ca": "Un cop per dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, guanya l'equip bo."
         },
         "article": {
             "en": "the ",
