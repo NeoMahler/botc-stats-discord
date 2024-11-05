@@ -8,7 +8,7 @@ class MessagesCog(commands.Cog):
         self.bot = bot
         self.utilities = bot.get_cog("UtilitiesCog")
     
-    def generate_confirmation_msg(self, players, result, bluffs):
+    def generate_confirmation_msg(self, players, result, bluffs, fabled):
         msg = "¿Guardar partida con los siguientes datos?\n\n"
         for player in players:
             player_characters = players[player]
@@ -49,6 +49,15 @@ class MessagesCog(commands.Cog):
             msg += f"\n\n**Demon bluffs:** {bluffs}"
         else:
             msg += "\n\n**Demon bluffs:** El demonio no sabía qué personajes estaban fuera de juego."
+
+        if fabled:
+            clean_fabled = []
+            for fabled in fabled:
+                clean_fabled.append(self.utilities.get_character_name(fabled))
+            fabled = ", ".join(clean_fabled)
+            msg += f"\n\n**Fabled:** {fabled}"
+        else:
+            msg += "\n\n**Fabled:** Ninguno"
 
         return msg
     
@@ -178,6 +187,41 @@ class MessagesCog(commands.Cog):
 
         return embed
     
+    def generate_fabled_stats(self, character):
+        character_stats_f = os.path.join("data", "characters.json")
+        with open(character_stats_f, 'r') as f:
+            full_character_stats = json.load(f)
+
+        with_stats = False
+        if character in full_character_stats:
+            with_stats = True
+        
+        if with_stats:
+            character_stats = full_character_stats[character]
+            total_games = character_stats['games']
+            winrate_good = round(character_stats['winrate_good'] / total_games * 100)   
+            winrate_evil = round(character_stats['winrate_evil'] / total_games * 100)
+
+        # Set up embed
+        char_details = self.utilities.get_character_details(character)
+        character = char_details["name"]["es"]
+        character_en = char_details["name"]["en"]
+        wiki = "https://wiki.bloodontheclocktower.com/" + character_en.replace(" ", "_")
+
+        # Set up the embed
+        embed = discord.Embed(title=f"{character_en}", description=char_details["description"]["es"], url=wiki, color=discord.Color.gold())
+        embed.set_thumbnail(url=char_details["icon"])
+        embed.add_field(name="Tipo", value="Mítico")
+        if with_stats:
+            embed.add_field(name=f"Partidas", value=f"{character_stats['games']}")
+            embed.add_field(name=f"Victoria de los buenos", value=f"{character_stats['winrate_good']} (:trophy: {winrate_good}%)")
+            embed.add_field(name=f"Victoria de los malvados", value=f"{character_stats['winrate_evil']} (:trophy: {winrate_evil}%)")
+        #embed.add_field(name="En inglés", value=character_en)
+        if not with_stats:
+            embed.set_footer(text="No tengo partidas guardadas con este personaje.")
+
+        return embed
+
     def generate_character_stats(self, character):
         character_stats_f = os.path.join("data", "characters.json")
         with open(character_stats_f, 'r') as f:
@@ -186,6 +230,7 @@ class MessagesCog(commands.Cog):
         with_stats = False
         if character in full_character_stats:
             with_stats = True
+
         if with_stats:
             character_stats = full_character_stats[character]
             winrate = round(character_stats['winrate'] / character_stats['games'] * 100)
@@ -212,12 +257,11 @@ class MessagesCog(commands.Cog):
         character = char_details["name"]["es"]
         character_en = char_details["name"]["en"]
         type = char_details["type"]
-        type_details = {
+        type_details = { # Fabled missing because it's handled by generate_fabled_stats
             "demon": {"label": "Demonio", "color": discord.Color.red()},
             "minion": {"label": "Secuaz", "color": discord.Color.red()},
             "outsider": {"label": "Forastero", "color": discord.Color.blue()},
             "townsfolk": {"label": "Aldeano", "color": discord.Color.blue()},
-            "fabled": {"label": "Mítico", "color": discord.Color.gold()},
             "traveller": {"label": "Viajero", "color": discord.Color.dark_magenta()}
         }
         color = type_details[type]["color"]
