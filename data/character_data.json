@@ -125,6 +125,36 @@
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/2/26/Icon_amnesiac.png"
     },
+    "angel": {
+        "name": {
+            "en": "Angel",
+            "es": "Angel",
+            "ca": "Àngel" 
+        },
+        "description": {
+            "en": "Something bad might happen to whoever is most responsible for the death of a new player.",
+            "es": "Algo malo puede ocurrirle a quien sea más responsable por la muerte de un jugador nuevo.",
+            "ca": "Alguna cosa dolenta li pot passar a qui sigui més responsable per la mort d'un jugador nou."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "protected",
+            "es": "protegido",
+            "ca": "protegit"
+        },
+        {
+            "en": "something bad",
+            "es": "algo malo",
+            "ca": "cosa dolenta"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/ca/Icon_angel.png"
+    },
     "apprentice": {
         "name": {
             "en": "Apprentice",
@@ -488,6 +518,27 @@
         "reminders": [],
         "icon": "https://wiki.bloodontheclocktower.com/images/2/20/Icon_boomdandy.png"
     },
+    "bootlegger": {
+        "name": {
+            "en": "Bootlegger",
+            "es": "Bootlegger",
+            "ca": "Bootlegger"
+        },
+        "description": {
+            "en": "This script has homebrew characters or rules.",
+            "es": "Este guion tiene personajes o normas originales.",
+            "ca": "Aquest guió té personatges o normes originals."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_bootlegger.png"
+    },
     "bountyhunter": {
         "name": {
             "en": "Bounty Hunter",
@@ -508,6 +559,27 @@
         "setupWarning": true,
         "reminders": [],
         "icon": "https://wiki.bloodontheclocktower.com/images/5/5b/Icon_bountyhunter.png"
+    },
+    "buddhist": {
+        "name": {
+            "en": "Buddhist",
+            "es": "Budista",
+            "ca": "Budista"
+        },
+        "description": {
+            "en": "For the first 2 minutes of each day, veteran players may not talk.",
+            "es": "Durante los primeros 2 minutos de cada día, los jugadores veteranos no pueden hablar.",
+            "ca": "Durant els primers 2 minuts de cada dia, els jugadors veterans no poden parlar."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/25/Icon_buddhist.png"
     },
     "bureaucrat": {
         "name": {
@@ -847,6 +919,48 @@
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/0/09/Icon_devilsadvocate.png"
     },
+    "djinn": {
+        "name": {
+            "en": "Djinn",
+            "es": "Djinn",
+            "ca": "Djinn"
+        },
+        "description": {
+            "en": "Use the Djinn's special rule. All players know what it is.",
+            "es": "Usa la norma especial del Djinn. Todos los jugadores saben cuál es.",
+            "ca": "Utilitza la norma especial del Djinn. Tots els jugadors saben quina és."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/86/Icon_djinn.png"
+    },
+    "doomsayer": {
+        "name": {
+            "en": "Doomsayer",
+            "es": "Doomsayer",
+            "ca": "Doomsayer"
+        },
+        "description": {
+            "en": "If 4 or more players live, each living player may publicly choose (once per game) that a player of their own alignment dies.",
+            "es": "Si hay 4 o más jugadores vivos, cada jugador vivo puede decidir públicamente (una vez por partida) que un jugador de su alineamiento muera.",
+            "ca": "Si hi ha 4 o més jugadors vius, cada jugador viu pot decidir públicament (un cop per partida) que un jugador del seu alineament mori."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/8f/Icon_doomsayer.png"
+    },
     "dreamer": {
         "name": {
             "en": "Dreamer",
@@ -892,6 +1006,35 @@
             "ca": "es el borratxo"
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/4/4a/Icon_drunk.png"
+    },
+    "duchess": {
+        "name": {
+            "en": "Duchess",
+            "es": "Duquesa",
+            "ca": "Duquessa"
+        },
+        "description": {
+            "en": "Each day, 3 players may choose to visit you. At night*, each visitor learns how many visitors are evil, but 1 gets false info.",
+            "es": "Cada día, 3 jugadores pueden visitarte. De noche*, cada visitante sabe cuántos de los visitantes son malvados, pero 1 recibe información falsa.",
+            "ca": "Cada dia, 3 jugadors et poden visitar. De nit*, cada visitant sap quants dels visitants són malvats, però 1 rep informació falsa."
+        },
+        "article": {
+            "en": "the ",
+            "es": "la ",
+            "ca": "la "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "visitor",
+            "es": "visitante",
+            "ca": "visitant"
+        }, {
+            "en": "false info",
+            "es": "información falsa",
+            "ca": "informació falsa"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/87/Icon_duchess.png"
     },
     "empath": {
         "name": {
@@ -1064,6 +1207,73 @@
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/1/11/Icon_fearmonger.png"
     },
+    "ferryman": {
+        "name": {
+            "en": "Ferryman",
+            "es": "Ferryman",
+            "ca": "Ferryman"
+        },
+        "description": {
+            "en": "On the final day, all dead players regain their vote token.",
+            "es": "En el último día, todos los jugadores muertos recuperan su ficha de voto.",
+            "ca": "L'últim dia, tots els jugadors morts recuperen la seva fitxa de vot."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/8f/Icon_ferryman.png"
+    },
+    "fibbin": {
+        "name": {
+            "en": "Fibbin",
+            "es": "Fibbin",
+            "ca": "Fibbin"
+        },
+        "description": {
+            "en": "Once per game, 1 good player might get incorrect information.",
+            "es": "Una vez por partida, 1 jugador bueno puede obtener información incorrecta.",
+            "ca": "Un cop per partida, 1 jugador bo pot obtenir informació incorrecta."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "no ability",
+            "es": "sin habilidad",
+            "ca": "sense habilitat"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/2e/Icon_fibbin.png"
+    },
+    "fiddler": {
+        "name": {
+            "en": "Fiddler",
+            "es": "Violinista",
+            "ca": "Violinista"
+        },
+        "description": {
+            "en": "Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win.",
+            "es": "Una vez por partida, el Demonio escoge secretamente a un jugador del otro equipo: todos los jugadores escogen quien de esos 2 jugadores gana.",
+            "ca": "Un cop per partida, el Dimoni tria secretament un jugador de l'altre equip: tots els jugadors trien quin dels 2 jugadors guanya."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e5/Icon_fiddler.png"
+    },
     "fisherman": {
         "name": {
             "en": "Fisherman",
@@ -1213,6 +1423,27 @@
         "setupWarning": false,
         "reminders": [],
         "icon": "https://wiki.bloodontheclocktower.com/images/a/a5/Icon_gangster.png"
+    },
+    "gardener": {
+        "name": {
+            "en": "Gardener",
+            "es": "Jardinero",
+            "ca": "Jardiner"
+        },
+        "description": {
+            "en": "The Storyteller assigns 1 or more players' characters.",
+            "es": "El Narrador asigna los personajes de 1 o más jugadores.",
+            "ca": "El Narrador assigna els personatges d'1 o més jugadors."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/5c/Icon_gardener.png"
     },
     "general": {
         "name": {
@@ -1504,6 +1735,31 @@
             "ca": "te aquesta nit"
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/4/44/Icon_hatter.png"
+    },
+    "hellslibrarian": {
+        "name": {
+            "en": "Hell's Librarian",
+            "es": "Bibliotecario infernal",
+            "ca": "Bibliotecari infernal"
+        },
+        "description": {
+            "en": "Something bad might happen to whoever talks when the Storyteller has asked for silence.",
+            "es": "Puede pasarle algo malo a quien hable cuando el Narrador pida silencio.",
+            "ca": "Pot passar-li alguna cosa dolenta a qui parli quan el Narrador demani silenci."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "something bad",
+            "es": "algo malo",
+            "ca": "cosa dolenta"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/65/Icon_hellslibrarian.png"
     },
     "heretic": {
         "name": {
@@ -2863,6 +3119,31 @@
         "reminders": [],
         "icon": "https://wiki.bloodontheclocktower.com/images/6/60/Icon_recluse.png"
     },
+    "revolutionary": {
+        "name": {
+            "en": "Revolutionary",
+            "es": "Revolucionario",
+            "ca": "Revolucionari"
+        },
+        "description": {
+            "en": "2 neighboring players are known to be the same alignment. Once per game, 1 of them registers falsely.",
+            "es": "2 jugadores vecinos son públicamente del mismo alineamiento. Una vez por partida, 1 de ellos figura falsamente.",
+            "ca": "2 jugadors veïns són públicament del mateix alineament. Un cop per partida, 1 d'ells figura falsament."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": true,
+        "reminders": [{
+            "en": "register falsely?",
+            "es": "figura falsamente?",
+            "ca": "figura falsament?"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/94/Icon_revolutionary.png"
+    },
     "riot": {
         "name": {
             "en": "Riot",
@@ -3008,6 +3289,27 @@
             "ca": "sense habilitat"
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/5/53/Icon_seamstress.png"
+    },
+    "sentinel": {
+        "name": {
+            "en": "Sentinel",
+            "es": "Centinela",
+            "ca": "Sentinella"
+        },
+        "description": {
+            "en": "There might be 1 extra or 1 fewer Outsider in play.",
+            "es": "Podría haber 1 Forastero más o 1 Forastero menos en juego.",
+            "ca": "Hi podria haver 1 Foraster més o 1 Foraster menys en joc."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [],
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d4/Icon_sentinel.png"
     },
     "scapegoat": {
         "name": {
@@ -3193,6 +3495,31 @@
         "reminders": [],
         "icon": "https://wiki.bloodontheclocktower.com/images/c/c3/Icon_soldier.png"
     },
+    "spiritofivory": {
+        "name": {
+            "en": "Spirit of Ivory",
+            "es": "Spirit of Ivory",
+            "ca": "Spirit of Ivory"
+        },
+        "description": {
+            "en": "There can't be more than 1 extra evil player.",
+            "es": "No puede haber más de 1 jugador malvado adicional.",
+            "ca": "No hi pot haver més d'1 jugador malvat addicional."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "no more evil",
+            "es": "no hay más malvados",
+            "ca": "no hi ha més malvats"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/96/Icon_spiritofivory.png"
+    },
     "spy": {
         "name": {
             "en": "Spy",
@@ -3238,6 +3565,31 @@
             "ca": "coneix"
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/f/fe/Icon_steward.png"
+    },
+    "stormcatcher": {
+        "name": {
+            "en": "Stormcatcher",
+            "es": "Stormcatcher",
+            "ca": "Stormcatcher"
+        },
+        "description": {
+            "en": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.",
+            "es": "Escoge un personaje bueno. Si está en juego, solo puede morir ejecutado, pero los jugadores malvados saben qué jugador es.",
+            "ca": "Tria un personatge bo. Si està en joc, només pot morir executat, però els jugadors malvats saben quin jugador és."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "l'"
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "safe",
+            "es": "protegido",
+            "ca": "protegit"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_stormcatcher.png"
     },
     "summoner": {
         "name": {
@@ -3392,6 +3744,31 @@
             "ca": "sequaços no han nominat"
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/e/ef/Icon_towncrier.png"
+    },
+    "toymaker": {
+        "name": {
+            "en": "Toymaker",
+            "es": "Juguetero",
+            "ca": "Toymaker"
+        },
+        "description": {
+            "en": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info.",
+            "es": "El Demonio puede escoger no atacar y tiene que hacerlo por lo menos una vez por partida. Los jugadores malvados reciben la información inicial habitual.",
+            "ca": "El Dimoni pot decidir no atacar i ho ha de fer almenys un cop per partida. Els jugadors malvats reben la información inicial habitual."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "fabled",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "final night: no attack",
+            "es": "última noche: sin ataque",
+            "ca": "última nit: sense atac"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/27/Icon_toymaker.png"
     },
     "undertaker": {
         "name": {
@@ -3651,11 +4028,11 @@
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/7/7b/Icon_witch.png"
     },
-    "yaggabable": {
+    "yaggababble": {
         "name": {
-            "en": "Yaggabable",
-            "es": "Yaggabable",
-            "ca": "Yaggabable"
+            "en": "Yaggababble",
+            "es": "Yaggababble",
+            "ca": "Yaggababble"
         },
         "description": {
             "en": "You start knowing a secret phrase. For each time you said it publicly today, a player might die.",

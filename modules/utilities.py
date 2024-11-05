@@ -108,7 +108,7 @@ class UtilitiesCog(commands.Cog):
         else:
             return int(max([int(n) for n in games])) + 1
 
-    def update_game_stats(self, player_data, result, bluffs):
+    def update_game_stats(self, player_data, result, bluffs, fabled):
         game_id = self.generate_game_id()
         game_time = int(time.time()) # Unix timestamp (without decimals), which can be easily displayed on discord as <t:TIMESTAMP:F>
         games_file = os.path.join("data", "games.json")
@@ -118,7 +118,8 @@ class UtilitiesCog(commands.Cog):
             "timestamp": game_time,
             "players": player_data,
             "result": result,
-            "bluffs": bluffs
+            "bluffs": bluffs,
+            "fabled": fabled
         }
         with open(games_file, 'w') as f:
             json.dump(games, f)
@@ -165,24 +166,39 @@ class UtilitiesCog(commands.Cog):
             json.dump(players, f)
         return
 
-    def update_character_stats(self, character, result):
+    def update_character_stats(self, character, result, is_fabled=False):
         character_file = os.path.join("data", "characters.json")
         with open(character_file, 'r') as f:
             characters = json.load(f)
         
         if character not in set(characters):
-            characters[character] = {
-                "games": 0,
-                "winrate": 0
-            }
+            if is_fabled:
+                characters[character] = {
+                    "games": 0,
+                    "winrate_good": 0,
+                    "winrate_evil": 0
+                }
+            else:
+                characters[character] = {
+                    "games": 0,
+                    "winrate": 0
+                }
         
         characters[character]["games"] += 1
-        if self.is_character_good(character):
+
+        if is_fabled:
             if result == "good":
-                characters[character]["winrate"] += 1
+                characters[character]["winrate_good"] += 1
+            else:
+                characters[character]["winrate_evil"] += 1
         else:
-            if result == "evil":
-                characters[character]["winrate"] += 1
+            # If it's a regular character
+            if self.is_character_good(character):
+                if result == "good":
+                    characters[character]["winrate"] += 1
+            else:
+                if result == "evil":
+                    characters[character]["winrate"] += 1
 
         with open(character_file, 'w') as f:
             json.dump(characters, f)
@@ -310,6 +326,13 @@ class UtilitiesCog(commands.Cog):
                     return i
                 elif characters[i]["name"]["ca"] == fuzzy_match:
                     return i
+
+    def is_fabled(self, character):
+        type = self.get_character_details(character)["type"]
+        if type == "fabled":
+            return True
+        else:
+            return False
 
 def setup(bot):
     bot.add_cog(UtilitiesCog(bot))

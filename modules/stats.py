@@ -31,7 +31,10 @@ class StatsCog(commands.Cog):
                 await ctx.respond(f"No encuentro el personaje **{character}**. ¿Lo has escrito bien?")
                 return
         
-        character_stats = self.messages.generate_character_stats(character)
+        if self.utilities.is_fabled(character):
+            character_stats = self.messages.generate_fabled_stats(character)
+        else:
+            character_stats = self.messages.generate_character_stats(character)
         
         await ctx.respond(embed=character_stats)
         return
@@ -85,7 +88,8 @@ class StatsCog(commands.Cog):
     async def resultado(self, ctx, 
                         players: Option(str, "Lista de jugadores con sus personajes al acabar la partida."), 
                         winner: Option(str, "Resultado del juego. Valores admitidos: good, evil", choices=["good", "evil"]),
-                        bluffs: Option(str, "Los tres personajes que el demonio sabía que no estaban en juego, separados por espacios", required=False)):
+                        bluffs: Option(str, "Los tres personajes que el demonio sabía que no estaban en juego, separados por espacios", required=False),
+                        fabled: Option(str, "Personajes míticos (fabled) que había en juego", required=False)):
         await ctx.defer()
         # Validate winner
         if winner not in ["good", "evil"]:
@@ -126,13 +130,23 @@ class StatsCog(commands.Cog):
         else:
             bluffs = []
 
+        # Validate fabled
+        if fabled:
+            fabled = fabled.split(" ")
+            for fabled_character in fabled:
+                if not self.utilities.is_character_valid(fabled_character):
+                    await ctx.respond(f"El personaje **{fabled_character}** no es válido.")
+                    return
+        else:
+            fabled = []
+
         self.utilities.backup_data()
 
-        confirmation = self.messages.generate_confirmation_msg(processed_players, winner, bluffs)
+        confirmation = self.messages.generate_confirmation_msg(processed_players, winner, bluffs, fabled)
         if confirmation == None:
             await ctx.respond("Error al procesar la validez de los parámetros. Revisa que los jugadores, personajes, alineamiento y resultado sean correctos.")
             return
-        await ctx.respond(confirmation, view=self.ConfirmationButtons(ctx, self.bot, processed_players, winner, bluffs))
+        await ctx.respond(confirmation, view=self.ConfirmationButtons(ctx, self.bot, processed_players, winner, bluffs, fabled))
 
         return
     
@@ -144,26 +158,30 @@ class StatsCog(commands.Cog):
             raise error
 
     class ConfirmationButtons(discord.ui.View):
-        def __init__(self, ctx, bot, processed_players, winner, bluffs):
+        def __init__(self, ctx, bot, processed_players, winner, bluffs, fabled):
             super().__init__()
             self.ctx = ctx
             self.author = ctx.author
             self.processed_players = processed_players
             self.winner = winner
             self.bluffs = bluffs
+            self.fabled = fabled
             self.utilities = bot.get_cog("UtilitiesCog")
 
         @discord.ui.button(label="✅ Confirmar", row=0, style=discord.ButtonStyle.primary)
         async def confirm_btn_callback (self, button, interaction):
             button.label = "✅ Partida guardada"
             self.disable_all_items()
-            save_game = self.utilities.update_game_stats(self.processed_players, self.winner, self.bluffs)
+            save_game = self.utilities.update_game_stats(self.processed_players, self.winner, self.bluffs, self.fabled)
             for player in self.processed_players:
                 self.utilities.update_player_stats(str(player), self.processed_players[player], self.winner)
             
             characters_list = self.utilities.get_all_characters_from_game(self.processed_players)
             for character in characters_list:
                 self.utilities.update_character_stats(character, self.winner)
+            
+            for fabled in self.fabled:
+                self.utilities.update_character_stats(fabled, self.winner, is_fabled=True)
 
             await self.ctx.send(f"**Partida guardada.** ID: `{save_game}` / Fecha: <t:{int(time.time())}:f>")
             await interaction.response.edit_message(view=self)
