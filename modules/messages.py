@@ -104,8 +104,13 @@ class MessagesCog(commands.Cog):
         total_games = len(games)
 
         all_chars = sorted(character_stats.items(), key=lambda x: x[1]['games'], reverse=True)
-        if len(all_chars) > 10:
-            all_chars = all_chars[:15]
+
+        # Remove fabled from list (irrelevant, and also have different data structure)
+        for char in all_chars:
+            if self.utilities.is_fabled(char[0]):
+                all_chars.remove(char)
+        
+        all_chars = all_chars[:15]
         msg = "15 personajes con más partidas jugadas:\n"
         for char in all_chars:
             char_name = self.utilities.get_character_name(char[0])
