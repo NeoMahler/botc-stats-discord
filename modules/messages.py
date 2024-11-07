@@ -89,7 +89,7 @@ class MessagesCog(commands.Cog):
                 s = ""
             else: 
                 s = "s"
-            msg += f"{emoji} **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+            msg += f"{emoji} **{char_name}**: {char_games} partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
 
         msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
 
@@ -127,7 +127,7 @@ class MessagesCog(commands.Cog):
                 s = ""
             else: 
                 s = "s"
-            msg += f"{emoji} **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+            msg += f"{emoji} **{char_name}**: {char_games} partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
 
         msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
 
