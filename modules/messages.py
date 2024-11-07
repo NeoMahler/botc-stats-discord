@@ -66,7 +66,8 @@ class MessagesCog(commands.Cog):
         with open(player_stats_f, 'r') as f:
             player_stats = json.load(f)
         if str(player) not in player_stats:
-            return False
+            msg = f"No tengo partidas registradas con <@{player}>.\n\n"
+            return msg
 
         all_played_chars = player_stats[player]['characters']
         all_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)
@@ -79,6 +80,10 @@ class MessagesCog(commands.Cog):
             msg = f":smiling_imp: <@{player}> ha jugado con {len(all_chars)} personajes malvados diferentes:\n\n"
         else:
             msg = f"<@{player}> ha jugado con {len(all_chars)} personajes diferentes:\n\n"
+        
+        if len(all_chars) == 0 and team == "good" or len(all_chars) == 0 and team == "evil":
+            msg = f"No tengo partidas registradas con <@{player}> jugando personajes de este equipo.\n\n"
+            return msg
 
         good_games = player_stats[player]['games_good'] if player_stats[player]['games_good'] > 0 else 0
         evil_games = player_stats[player]['games_evil'] if player_stats[player]['games_evil'] > 0 else 0
