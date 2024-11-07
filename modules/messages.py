@@ -95,7 +95,7 @@ class MessagesCog(commands.Cog):
 
         return msg
     
-    def generate_generic_character_list(self):
+    def generate_generic_character_list(self, team=None):
         character_stats_f = os.path.join("data", "characters.json")
         with open(character_stats_f, 'r') as f:
             character_stats = json.load(f)
@@ -111,9 +111,17 @@ class MessagesCog(commands.Cog):
         for char in all_chars:
             if self.utilities.is_fabled(char[0]):
                 all_chars.remove(char)
+        if team == "good":
+            all_chars = [char for char in all_chars if self.utilities.is_character_good(char[0])]
+            msg = ":innocent: Los 15 personajes buenos con más partidas jugadas:\n\n"
+        elif team == "evil":
+            all_chars = [char for char in all_chars if not self.utilities.is_character_good(char[0])]
+            msg = ":imp: Los 15 personajes malvados con más partidas jugadas:\n\n"
+        else:
+            msg = "Los 15 personajes con más partidas jugadas:\n\n"
         
         all_chars = all_chars[:15]
-        msg = "15 personajes con más partidas jugadas:\n\n"
+        
         for char in all_chars:
             emoji = self.utilities.get_emoji_code(char[0])
 
