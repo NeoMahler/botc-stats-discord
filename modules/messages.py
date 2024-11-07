@@ -66,12 +66,24 @@ class MessagesCog(commands.Cog):
         with open(player_stats_f, 'r') as f:
             player_stats = json.load(f)
         if str(player) not in player_stats:
-            return False
+            msg = f"No tengo partidas registradas con <@{player}>.\n\n"
+            return msg
 
         all_played_chars = player_stats[player]['characters']
         all_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)
 
-        msg = f"<@{player}> ha jugado con {len(all_chars)} personajes diferentes:\n\n"
+        if team == "good":
+            all_chars = [char for char in all_chars if self.utilities.is_character_good(char[0])]
+            msg = f":innocent: <@{player}> ha jugado con {len(all_chars)} personajes buenos diferentes:\n\n"
+        elif team == "evil":    
+            all_chars = [char for char in all_chars if not self.utilities.is_character_good(char[0])]
+            msg = f":smiling_imp: <@{player}> ha jugado con {len(all_chars)} personajes malvados diferentes:\n\n"
+        else:
+            msg = f"<@{player}> ha jugado con {len(all_chars)} personajes diferentes:\n\n"
+        
+        if len(all_chars) == 0 and team == "good" or len(all_chars) == 0 and team == "evil":
+            msg = f"No tengo partidas registradas con <@{player}> jugando personajes de este equipo.\n\n"
+            return msg
 
         good_games = player_stats[player]['games_good'] if player_stats[player]['games_good'] > 0 else 0
         evil_games = player_stats[player]['games_evil'] if player_stats[player]['games_evil'] > 0 else 0
@@ -89,13 +101,13 @@ class MessagesCog(commands.Cog):
                 s = ""
             else: 
                 s = "s"
-            msg += f"{emoji} **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+            msg += f"{emoji} **{char_name}**: {char_games} partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
 
         msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
 
         return msg
     
-    def generate_generic_character_list(self):
+    def generate_generic_character_list(self, team=None):
         character_stats_f = os.path.join("data", "characters.json")
         with open(character_stats_f, 'r') as f:
             character_stats = json.load(f)
@@ -111,9 +123,17 @@ class MessagesCog(commands.Cog):
         for char in all_chars:
             if self.utilities.is_fabled(char[0]):
                 all_chars.remove(char)
+        if team == "good":
+            all_chars = [char for char in all_chars if self.utilities.is_character_good(char[0])]
+            msg = ":innocent: Los 15 personajes buenos con más partidas jugadas:\n\n"
+        elif team == "evil":
+            all_chars = [char for char in all_chars if not self.utilities.is_character_good(char[0])]
+            msg = ":smiling_imp: Los 15 personajes malvados con más partidas jugadas:\n\n"
+        else:
+            msg = "Los 15 personajes con más partidas jugadas:\n\n"
         
         all_chars = all_chars[:15]
-        msg = "15 personajes con más partidas jugadas:\n\n"
+        
         for char in all_chars:
             emoji = self.utilities.get_emoji_code(char[0])
 
@@ -127,7 +147,7 @@ class MessagesCog(commands.Cog):
                 s = ""
             else: 
                 s = "s"
-            msg += f"{emoji} **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+            msg += f"{emoji} **{char_name}**: {char_games} partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
 
         msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
 
