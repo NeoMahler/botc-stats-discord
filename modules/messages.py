@@ -71,11 +71,13 @@ class MessagesCog(commands.Cog):
         all_played_chars = player_stats[player]['characters']
         all_chars = sorted(all_played_chars.items(), key=lambda x: x[1]['games'], reverse=True)
 
-        msg = f"<@{player}> ha jugado con {len(all_chars)} personajes diferentes:\n"
+        msg = f"<@{player}> ha jugado con {len(all_chars)} personajes diferentes:\n\n"
 
         good_games = player_stats[player]['games_good'] if player_stats[player]['games_good'] > 0 else 0
         evil_games = player_stats[player]['games_evil'] if player_stats[player]['games_evil'] > 0 else 0
         for char in all_chars:
+            emoji = self.utilities.get_emoji_code(char[0])
+
             char_name = self.utilities.get_character_name(char[0])
             char_games = char[1]['games']
             char_stats = all_played_chars[char[0]]
@@ -87,7 +89,7 @@ class MessagesCog(commands.Cog):
                 s = ""
             else: 
                 s = "s"
-            msg += f"- **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+            msg += f"{emoji} **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
 
         msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
 
@@ -111,8 +113,10 @@ class MessagesCog(commands.Cog):
                 all_chars.remove(char)
         
         all_chars = all_chars[:15]
-        msg = "15 personajes con más partidas jugadas:\n"
+        msg = "15 personajes con más partidas jugadas:\n\n"
         for char in all_chars:
+            emoji = self.utilities.get_emoji_code(char[0])
+
             char_name = self.utilities.get_character_name(char[0])
             char_games = char[1]['games']
             char_stats = character_stats[char[0]]
@@ -123,7 +127,7 @@ class MessagesCog(commands.Cog):
                 s = ""
             else: 
                 s = "s"
-            msg += f"- **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
+            msg += f"{emoji} **{char_name}**: {char_games}  partida{s}, {char_stats['winrate']} ganada{s} ({char_percent}%, :trophy: {char_winrate}%)\n"
 
         msg += "\n_Nota: Los personajes con alineamiento alterado cuentan como personajes diferentes._"
 

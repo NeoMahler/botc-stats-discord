@@ -18,7 +18,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/b/b5/Icon_acrobat.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/b5/Icon_acrobat.png",
+        "emoji": "1303851855956152391"
     },
     "alchemist": {
         "name": {
@@ -43,7 +44,8 @@
             "es": "es el alquimista",
             "ca": "és l'alquimista"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/54/Icon_alchemist.png" 
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/54/Icon_alchemist.png",
+        "emoji": "1303851871496306808"
     },
     "alhadikhia": {
         "name": {
@@ -77,7 +79,8 @@
             "es": "3",
             "ca": "3"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/18/Icon_alhadikhia.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/18/Icon_alhadikhia.png",
+        "emoji": "1303851881814167643"
     },
     "alsaahir": {
         "name": {
@@ -98,7 +101,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/8e/Icon_alsaahir.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/8e/Icon_alsaahir.png",
+        "emoji": "1303851891880493126"
     },
     "amnesiac": {
         "name": {
@@ -123,7 +127,8 @@
             "es": "?",
             "ca": "?"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/26/Icon_amnesiac.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/26/Icon_amnesiac.png",
+        "emoji": "1303851903326883860"
     },
     "angel": {
         "name": {
@@ -153,7 +158,8 @@
             "es": "algo malo",
             "ca": "cosa dolenta"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/ca/Icon_angel.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/ca/Icon_angel.png",
+        "emoji": "1303851914907226202"
     },
     "apprentice": {
         "name": {
@@ -178,7 +184,8 @@
             "es": "es el aprendiz",
             "ca": "és l'aprenent"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/03/Icon_apprentice.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/03/Icon_apprentice.png",
+        "emoji": "1303851924679823442"
     },
     "artist": {
         "name": {
@@ -203,7 +210,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/1a/Icon_artist.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/1a/Icon_artist.png",
+        "emoji": "1303851936461623296"
     },
     "assassin": {
         "name": {
@@ -233,7 +241,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/4/49/Icon_assassin.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/49/Icon_assassin.png",
+        "emoji": "1303851950969847869"
     },
     "atheist": {
         "name": {
@@ -254,7 +263,8 @@
         "type": "townsfolk",
         "setupWarning": true,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/4/43/Icon_atheist.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/43/Icon_atheist.png",
+        "emoji": "1303851964144025823"
     },
     "balloonist": {
         "name": {
@@ -291,7 +301,8 @@
             "es": "visto demonio",
             "ca": "vist demoni"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/cb/Icon_balloonist.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/cb/Icon_balloonist.png",
+        "emoji": "1303851974013485086"
     },
     "banshee": {
         "name": {
@@ -316,7 +327,8 @@
             "es": "tiene habilidad",
             "ca": "té habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/63/Icon_banshee.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/63/Icon_banshee.png",
+        "emoji": "1303851984255713411"
     },
     "barber": {
         "name": {
@@ -341,7 +353,8 @@
             "es": "cortes de pelo",
             "ca": "tallada de cabells"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_barber.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_barber.png",
+        "emoji": "1303852000638795776"
     },
     "barista": {
         "name": {
@@ -374,7 +387,8 @@
             "es": "?",
             "ca": "?"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/24/Icon_barista.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/24/Icon_barista.png",
+        "emoji": "1303852015104950374"
     },
     "baron": {
         "name": {
@@ -395,7 +409,8 @@
         "type": "minion",
         "setupWarning": true,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/6d/Icon_baron.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6d/Icon_baron.png",
+        "emoji": "1303852026014203997"
     },
     "beggar": {
         "name": {
@@ -416,7 +431,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e3/Icon_beggar.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e3/Icon_beggar.png",
+        "emoji": "1303852041415819264"
     },
     "bishop": {
         "name": {
@@ -445,7 +461,8 @@
             "es": "nominar bueno",
             "ca": "nominar bo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/7/71/Icon_bishop.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/7/71/Icon_bishop.png",
+        "emoji": "1303852058247692308"
     },
     "boffin": {
         "name": {
@@ -466,7 +483,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_boffin.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_boffin.png",
+        "emoji": "1303852074760409098"
     },
     "bonecollector": {
         "name": {
@@ -495,7 +513,8 @@
             "es": "tiene habilidad",
             "ca": "té l'habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/9e/Icon_bonecollector.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/9e/Icon_bonecollector.png",
+        "emoji": "1303852096482967602"
     },
     "boomdandy": {
         "name": {
@@ -516,7 +535,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/20/Icon_boomdandy.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/20/Icon_boomdandy.png",
+        "emoji": "1303852128061755393"
     },
     "bootlegger": {
         "name": {
@@ -537,7 +557,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_bootlegger.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_bootlegger.png",
+        "emoji": "1303852143739932705"
     },
     "bountyhunter": {
         "name": {
@@ -558,7 +579,8 @@
         "type": "townsfolk",
         "setupWarning": true,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/5b/Icon_bountyhunter.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/5b/Icon_bountyhunter.png",
+        "emoji": "1303852156406861824"
     },
     "buddhist": {
         "name": {
@@ -579,7 +601,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/25/Icon_buddhist.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/25/Icon_buddhist.png",
+        "emoji": "1303852170332078120"
     },
     "bureaucrat": {
         "name": {
@@ -604,7 +627,8 @@
             "es": "3 votos",
             "ca": "3 vots"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/b/b1/Icon_bureaucrat.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/b1/Icon_bureaucrat.png",
+        "emoji": "1303852190095507616"
     },
     "butcher": {
         "name": {
@@ -625,7 +649,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e3/Icon_butcher.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e3/Icon_butcher.png",
+        "emoji": "1303852221322235965"
     },
     "butler": {
         "name": {
@@ -650,7 +675,8 @@
             "es": "amo",
             "ca": "amo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/19/Icon_butler.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/19/Icon_butler.png",
+        "emoji": "1303852234559459398"
     },
     "cannibal": {
         "name": {
@@ -679,7 +705,8 @@
             "es": "envenenado",
             "ca": "enverinat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/8e/Icon_cannibal.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/8e/Icon_cannibal.png",
+        "emoji": "1303852255107350528"
     },
     "cerenovus": {
         "name": {
@@ -704,7 +731,8 @@
             "es": "loco",
             "ca": "boig"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/4/45/Icon_cerenovus.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/45/Icon_cerenovus.png",
+        "emoji": "1303852277567586486"
     },
     "chambermaid": {
         "name": {
@@ -725,7 +753,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/87/Icon_chambermaid.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/87/Icon_chambermaid.png",
+        "emoji": "1303852303547367464"
     },
     "chef": {
         "name": {
@@ -746,7 +775,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_chef.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_chef.png",
+        "emoji": "1303852324837396560"
     },
     "choirboy": {
         "name": {
@@ -767,7 +797,8 @@
         "type": "townsfolk",
         "setupWarning": true,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d9/Icon_choirboy.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d9/Icon_choirboy.png",
+        "emoji": "1303852347004555335"
     },
     "clockmaker": {
         "name": {
@@ -788,7 +819,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/3/3d/Icon_clockmaker.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/3/3d/Icon_clockmaker.png",
+        "emoji": "1303852371067277373"
     },
     "courtier": {
         "name": {
@@ -825,7 +857,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_courtier.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_courtier.png",
+        "emoji": "1303852413064843284"
     },
     "cultleader": {
         "name": {
@@ -846,7 +879,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/6c/Icon_cultleader.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6c/Icon_cultleader.png",
+        "emoji": "1303852438704619540"
     },
     "damsel": {
         "name": {
@@ -871,7 +905,8 @@
             "es": "intento usado",
             "ca": "intent utilitzat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/dc/Icon_damsel.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/dc/Icon_damsel.png",
+        "emoji": "1303852460640571524"
     },
     "deviant": {
         "name": {
@@ -892,7 +927,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a5/Icon_deviant.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a5/Icon_deviant.png",
+        "emoji": "1303852491498061835"
     },
     "devilsadvocate": {
         "name": {
@@ -917,7 +953,8 @@
             "es": "sobrevive ejecución",
             "ca": "sobreviu execució"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/09/Icon_devilsadvocate.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/09/Icon_devilsadvocate.png",
+        "emoji": "1303852525828571196"
     },
     "djinn": {
         "name": {
@@ -938,7 +975,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/86/Icon_djinn.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/86/Icon_djinn.png",
+        "emoji": "1303852548008050730"
     },
     "doomsayer": {
         "name": {
@@ -959,7 +997,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/8f/Icon_doomsayer.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/8f/Icon_doomsayer.png",
+        "emoji": "1303852568232853578"
     },
     "dreamer": {
         "name": {
@@ -980,7 +1019,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/f2/Icon_dreamer.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/f2/Icon_dreamer.png",
+        "emoji": "1303852589967998977"
     },
     "drunk": {
         "name": {
@@ -1005,7 +1045,8 @@
             "es": "es el borracho",
             "ca": "es el borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/4/4a/Icon_drunk.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/4a/Icon_drunk.png",
+        "emoji": "1303852615976747119"
     },
     "duchess": {
         "name": {
@@ -1034,7 +1075,8 @@
             "es": "información falsa",
             "ca": "informació falsa"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/87/Icon_duchess.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/87/Icon_duchess.png",
+        "emoji": "1303852659064963092"
     },
     "empath": {
         "name": {
@@ -1055,7 +1097,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/13/Icon_empath.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/13/Icon_empath.png",
+        "emoji": "1303852681533722675"
     },
     "engineer": {
         "name": {
@@ -1080,7 +1123,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/b/b9/Icon_engineer.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/b9/Icon_engineer.png",
+        "emoji": "1303852705374273576"
     },
     "eviltwin": {
         "name": {
@@ -1105,7 +1149,8 @@
             "es": "gemela",
             "ca": "bessona"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/f4/Icon_eviltwin.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/f4/Icon_eviltwin.png",
+        "emoji": "1303852744116928572"
     },
     "exorcist": {
         "name": {
@@ -1130,7 +1175,8 @@
             "es": "escogido",
             "ca": "escollit"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/c2/Icon_exorcist.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/c2/Icon_exorcist.png",
+        "emoji": "1303852776656343111"
     },
     "fanggu": {
         "name": {
@@ -1159,7 +1205,8 @@
             "es": "una vez",
             "ca": "un cop"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/0e/Icon_fanggu.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/0e/Icon_fanggu.png",
+        "emoji": "1303852796843659274"
     },
     "farmer": {
         "name": {
@@ -1180,7 +1227,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/fe/Icon_farmer.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/fe/Icon_farmer.png",
+        "emoji": "1303852822810333246"
     },
     "fearmonger": {
         "name": {
@@ -1205,7 +1253,8 @@
             "es": "miedo",
             "ca": "por"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/11/Icon_fearmonger.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/11/Icon_fearmonger.png",
+        "emoji": "1303852848911614012"
     },
     "ferryman": {
         "name": {
@@ -1226,7 +1275,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/8f/Icon_ferryman.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/8f/Icon_ferryman.png",
+        "emoji": "1303852877143605258"
     },
     "fibbin": {
         "name": {
@@ -1251,7 +1301,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/2e/Icon_fibbin.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/2e/Icon_fibbin.png",
+        "emoji": "1303852899226620006"
     },
     "fiddler": {
         "name": {
@@ -1272,7 +1323,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e5/Icon_fiddler.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e5/Icon_fiddler.png",
+        "emoji": "1303860562307842109"
     },
     "fisherman": {
         "name": {
@@ -1297,7 +1349,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/19/Icon_fisherman.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/19/Icon_fisherman.png",
+        "emoji": "1303852956457635841"
     },
     "flowergirl": {
         "name": {
@@ -1326,7 +1379,8 @@
             "es": "demonio no ha votado",
             "ca": "dimoni no ha votat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/ac/Icon_flowergirl.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/ac/Icon_flowergirl.png",
+        "emoji": "1303852980222562448"
     },
     "fool": {
         "name": {
@@ -1351,7 +1405,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d9/Icon_fool.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d9/Icon_fool.png",
+        "emoji": "1303853034480341103"
     },
     "fortuneteller": {
         "name": {
@@ -1376,7 +1431,8 @@
             "es": "pista falsa",
             "ca": "pista falsa"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/97/Icon_fortuneteller.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/97/Icon_fortuneteller.png",
+        "emoji": "1303853053262430370"
     },
     "gambler": {
         "name": {
@@ -1401,7 +1457,8 @@
             "es": "muerto",
             "ca": "mort"            
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/fd/Icon_gambler.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/fd/Icon_gambler.png",
+        "emoji": "1303853077085946008"
     },
     "gangster": {
         "name": {
@@ -1422,7 +1479,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a5/Icon_gangster.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a5/Icon_gangster.png",
+        "emoji": "1303853100477714523"
     },
     "gardener": {
         "name": {
@@ -1443,7 +1501,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/5c/Icon_gardener.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/5c/Icon_gardener.png",
+        "emoji": "1303853128621494303"
     },
     "general": {
         "name": {
@@ -1464,7 +1523,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/99/Icon_general.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/99/Icon_general.png",
+        "emoji": "1303853161441660998"
     },
     "gnome": {
         "name": {
@@ -1489,7 +1549,8 @@
             "es": "amigo",
             "ca": "amic"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_gnome.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_gnome.png",
+        "emoji": "1303853189115809864"
     },
     "goblin": {
         "name": {
@@ -1510,7 +1571,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_goblin.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_goblin.png",
+        "emoji": "1303853224872116286"
     },
     "godfather": {
         "name": {
@@ -1534,7 +1596,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d0/Icon_godfather.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d0/Icon_godfather.png",
+        "emoji": "1303853257881554984"
     },
     "golem": {
         "name": {
@@ -1559,7 +1622,8 @@
             "es": "no puede nominar",
             "ca": "no pot nominar"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/2b/Icon_golem.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/2b/Icon_golem.png",
+        "emoji": "1303853280488591380"
     },
     "goon": {
         "name": {
@@ -1579,7 +1643,8 @@
             "es": "borracho",
             "ca": "borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_goon.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_goon.png",
+        "emoji": "1303853315213492285"
     },
     "gossip": {
         "name": {
@@ -1604,7 +1669,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/c7/Icon_gossip.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/c7/Icon_gossip.png",
+        "emoji": "1303853346574045205"
     },
     "grandmother": {
         "name": {
@@ -1633,7 +1699,8 @@
             "es": "nieto",
             "ca": "net"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/26/Icon_grandmother.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/26/Icon_grandmother.png",
+        "emoji": "1303853370209206402"
     },
     "gunslinger": {
         "name": {
@@ -1654,7 +1721,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/1c/Icon_gunslinger.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/1c/Icon_gunslinger.png",
+        "emoji": "1303853404845768774"
     },
     "harlot": {
         "name": {
@@ -1679,7 +1747,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/60/Icon_harlot.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/60/Icon_harlot.png",
+        "emoji": "1303853428321288292"
     },
     "harpy": {
         "name": {
@@ -1709,7 +1778,8 @@
             "es": "2ᵒ",
             "ca": "2n"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d3/Icon_harpy.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d3/Icon_harpy.png",
+        "emoji": "1303853458084073514"
     },
     "hatter": {
         "name": {
@@ -1734,7 +1804,8 @@
             "es": "te esta noche",
             "ca": "te aquesta nit"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/4/44/Icon_hatter.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/44/Icon_hatter.png",
+        "emoji": "1303853500106674407"
     },
     "hellslibrarian": {
         "name": {
@@ -1759,7 +1830,8 @@
             "es": "algo malo",
             "ca": "cosa dolenta"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/65/Icon_hellslibrarian.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/65/Icon_hellslibrarian.png",
+        "emoji": "1303853531740111008"
     },
     "heretic": {
         "name": {
@@ -1780,7 +1852,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/4/4a/Icon_heretic.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/4a/Icon_heretic.png",
+        "emoji": "1303853556247429184"
     },
     "highpriestess": {
         "name": {
@@ -1801,7 +1874,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/63/Icon_highpriestess.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/63/Icon_highpriestess.png",
+        "emoji": "1303853591236444181"
     },
     "huntsman": {
         "name": {
@@ -1826,7 +1900,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a1/Icon_huntsman.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a1/Icon_huntsman.png",
+        "emoji": "1303853617186603059"
     },
     "innkeeper": {
         "name": {
@@ -1855,7 +1930,8 @@
             "es": "borracho",
             "ca": "borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/0c/Icon_innkeeper.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/0c/Icon_innkeeper.png",
+        "emoji": "1303853679484473386"
     },
     "imp": {
         "name": {
@@ -1880,7 +1956,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/5c/Icon_imp.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/5c/Icon_imp.png",
+        "emoji": "1303853643522379826"
     },
     "investigator": {
         "name": {
@@ -1909,7 +1986,8 @@
                 "es": "secuaz",
                 "ca": "sequaç"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/ad/Icon_investigator.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/ad/Icon_investigator.png",
+        "emoji": "1303853786204213278"
     },
     "judge": {
         "name": {
@@ -1934,7 +2012,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/59/Icon_judge.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/59/Icon_judge.png",
+        "emoji": "1303853819746189334"
     },
     "juggler": {
         "name": {
@@ -1959,7 +2038,8 @@
             "es": "correcto",
             "ca": "correcte"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/4/42/Icon_juggler.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/4/42/Icon_juggler.png",
+        "emoji": "1303853845994012784"
     },
     "king": {
         "name": {
@@ -1980,7 +2060,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/dc/Icon_king.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/dc/Icon_king.png",
+        "emoji": "1303853905637015572"
     },
     "kazali": {
         "name": {
@@ -2005,7 +2086,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/3/3c/Icon_kazali.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/3/3c/Icon_kazali.png",
+        "emoji": "1303853877904281620"
     },
     "klutz": {
         "name": {
@@ -2026,7 +2108,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/b/bc/Icon_klutz.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/bc/Icon_klutz.png",
+        "emoji": "1303853935274098699"
     },
     "knight": {
         "name": {
@@ -2046,7 +2129,8 @@
             "es": "conoce",
             "ca": "coneix"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/8e/Icon_knight.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/8e/Icon_knight.png",
+        "emoji": "1303853963099111445"
     },
     "legion": {
         "name": {
@@ -2075,7 +2159,8 @@
             "es": "a punto de morir",
             "ca": "a punt de morir"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/cb/Icon_legion.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/cb/Icon_legion.png",
+        "emoji": "1303854529124503552"
     },
     "leviathan": {
         "name": {
@@ -2120,7 +2205,8 @@
             "es": "jugador bueno ejecutado",
             "ca": "jugador bo executat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a7/Icon_leviathan.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a7/Icon_leviathan.png",
+        "emoji": "1303854701447610441"
     },
     "librarian": {
         "name": {
@@ -2149,7 +2235,8 @@
             "es": "forastero",
             "ca": "foraster"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_librarian.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e0/Icon_librarian.png",
+        "emoji": "1303854734360313888"
     },
     "lilmonsta": {
         "name": {
@@ -2178,7 +2265,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/c3/Icon_lilmonsta.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/c3/Icon_lilmonsta.png",
+        "emoji": "1303854778572345354"
     },
     "lleech": {
         "name": {
@@ -2207,7 +2295,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/7/70/Icon_lleech.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/7/70/Icon_lleech.png",
+        "emoji": "1303854816035999846"
     },
     "lordoftyphon": {
         "name":{
@@ -2232,7 +2321,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/cf/Icon_lordoftyphon.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/cf/Icon_lordoftyphon.png",
+        "emoji": "1303854893143953468"
     },
     "lunatic": {
         "name": {
@@ -2257,7 +2347,8 @@
             "es": "escogido",
             "ca": "escollit"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/64/Icon_lunatic.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/64/Icon_lunatic.png",
+        "emoji": "1303854933539426314"
     },
     "lycanthrope": {
         "name": {
@@ -2282,7 +2373,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/92/Icon_lycanthrope.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/92/Icon_lycanthrope.png",
+        "emoji": "1303854974199136407"
     },
     "magician": {
         "name": {
@@ -2303,7 +2395,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/93/Icon_magician.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/93/Icon_magician.png",
+        "emoji": "1303855035154960556"
     },
     "marionette": {
         "name": {
@@ -2328,7 +2421,8 @@
             "es": "es la marioneta",
             "ca": "és la marioneta"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/cf/Icon_marionette.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/cf/Icon_marionette.png",
+        "emoji": "1303855093522759701"
     },
     "mastermind": {
         "name": {
@@ -2349,7 +2443,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_mastermind.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_mastermind.png",
+        "emoji": "1303855146165600327"
     },
     "mathematician": {
         "name": {
@@ -2374,7 +2469,8 @@
             "es": "anormal",
             "ca": "anormal"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/f1/Icon_mathematician.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/f1/Icon_mathematician.png",
+        "emoji": "1303855215686058055"
     },
     "matron": {
         "name": {
@@ -2395,7 +2491,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/21/Icon_matron.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/21/Icon_matron.png",
+        "emoji": "1303855301619093557"
     },
     "mayor": {
         "name": {
@@ -2416,7 +2513,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a1/Icon_mayor.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a1/Icon_mayor.png",
+        "emoji": "1303855338222653550"
     },
     "mezepheles": {
         "name": {
@@ -2445,7 +2543,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/f2/Icon_mezepheles.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/f2/Icon_mezepheles.png",
+        "emoji": "1303855385475813427"
     },
     "minstrel": {
         "name": {
@@ -2470,7 +2569,8 @@
             "es": "todos borrachos",
             "ca": "tots borratxos"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/24/Icon_minstrel.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/24/Icon_minstrel.png",
+        "emoji": "1303855439024361482"
     },
     "monk": {
         "name": {
@@ -2495,7 +2595,8 @@
             "es": "protegido",
             "ca": "protegit"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/7/7c/Icon_monk.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/7/7c/Icon_monk.png",
+        "emoji": "1303855487904780358"
     },
     "moonchild": {
         "name": {
@@ -2520,7 +2621,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/dc/Icon_moonchild.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/dc/Icon_moonchild.png",
+        "emoji": "1303855529021669426"
     },
     "mutant": {
         "name": {
@@ -2541,7 +2643,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/2e/Icon_mutant.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/2e/Icon_mutant.png",
+        "emoji": "1303855566594113610"
     },
     "nightwatchman": {
         "name": {
@@ -2566,7 +2669,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/f0/Icon_nightwatchman.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/f0/Icon_nightwatchman.png",
+        "emoji": "1303855615487119360"
     },
     "noble": {
         "name": {
@@ -2591,7 +2695,8 @@
             "es": "conoce",
             "ca": "coneix"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/cc/Icon_noble.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/cc/Icon_noble.png",
+        "emoji": "1303855658369552507"
     },
     "nodashii": {
         "name": {
@@ -2620,7 +2725,8 @@
             "es": "envenenado",
             "ca": "enverinat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/eb/Icon_nodashii.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/eb/Icon_nodashii.png",
+        "emoji": "1303855697833754725"
     },
     "ogre": {
         "name": {
@@ -2641,7 +2747,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/25/Icon_ogre.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/25/Icon_ogre.png",
+        "emoji": "1303855729526182008"
     },
     "ojo": {
         "name": {
@@ -2666,7 +2773,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_ojo.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6f/Icon_ojo.png",
+        "emoji": "1303855771406041150"
     },
     "oracle": {
         "name": {
@@ -2687,7 +2795,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/b/bb/Icon_oracle.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/bb/Icon_oracle.png",
+        "emoji": "1303855800745328690"
     },
     "organgrinder": {
         "name": {
@@ -2717,7 +2826,8 @@
             "es": "borracho",
             "ca": "borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/61/Icon_organgrinder.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/61/Icon_organgrinder.png",
+        "emoji": "1303855849067778110"
     },
     "pacifist": {
         "name": {
@@ -2738,7 +2848,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/5d/Icon_pacifist.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/5d/Icon_pacifist.png",
+        "emoji": "1303855882295054407"
     },
     "philosopher": {
         "name": {
@@ -2767,7 +2878,8 @@
             "es": "borracho",
             "ca": "borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/5d/Icon_philosopher.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/5d/Icon_philosopher.png",
+        "emoji": "1303855963639513160"
     },
     "pixie": {
         "name": {
@@ -2796,7 +2908,8 @@
             "es": "tiene habilidad",
             "ca": "té l'habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_pixie.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_pixie.png",
+        "emoji": "1303856066605355008"
     },
     "pithag": {
         "name": {
@@ -2817,7 +2930,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/6b/Icon_pithag.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6b/Icon_pithag.png",
+        "emoji": "1303856024406593668"
     },
     "plaguedoctor": {
         "name": {
@@ -2842,7 +2956,8 @@
             "es": "habilidad de narrador",
             "ca": "habilitat de narrador"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png",
+        "emoji": "1303856107097161810"
     },
     "po": {
         "name": {
@@ -2871,7 +2986,8 @@
             "es": "3 ataques",
             "ca": "3 atacs"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/b/b2/Icon_po.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/b2/Icon_po.png",
+        "emoji": "1303856189171433563"
     },
     "poisoner": {
         "name": {
@@ -2896,7 +3012,8 @@
             "es": "envenenado",
             "ca": "enverinat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/b/b1/Icon_poisoner.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/b1/Icon_poisoner.png",
+        "emoji": "1303856133055713334"
     },
     "politician": {
         "name": {
@@ -2917,7 +3034,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a3/Icon_politician.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a3/Icon_politician.png",
+        "emoji": "1303856215046225930"
     },
     "poppygrower": {
         "name": {
@@ -2942,7 +3060,8 @@
             "es": "malvados despiertan",
             "ca": "malvats es desperten"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/91/Icon_poppygrower.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/91/Icon_poppygrower.png",
+        "emoji": "1303856241965142164"
     },
     "pukka": {
         "name": {
@@ -2971,7 +3090,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/f4/Icon_pukka.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/f4/Icon_pukka.png",
+        "emoji": "1303856351625084938"
     },
     "psychopath": {
         "name": {
@@ -2992,7 +3112,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a3/Icon_psychopath.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a3/Icon_psychopath.png",
+        "emoji": "1303856330498510909"
     },
     "puzzlemaster": {
         "name": {
@@ -3021,7 +3142,8 @@
             "es": "intento usado",
             "ca": "intent utilitzat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/7/7a/Icon_puzzlemaster.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/7/7a/Icon_puzzlemaster.png",
+        "emoji": "1303856398186184726"
     },
     "preacher": {
         "name": {
@@ -3046,7 +3168,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/82/Icon_preacher.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/82/Icon_preacher.png",
+        "emoji": "1303856275397808209"
     },
     "professor": {
         "name": {
@@ -3075,7 +3198,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/65/Icon_professor.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/65/Icon_professor.png",
+        "emoji": "1303856302635618424"
     },
     "ravenkeeper": {
         "name": {
@@ -3096,7 +3220,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/ef/Icon_ravenkeeper.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/ef/Icon_ravenkeeper.png",
+        "emoji": "1303856435473547406"
     },
     "recluse": {
         "name": {
@@ -3117,7 +3242,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/60/Icon_recluse.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/60/Icon_recluse.png",
+        "emoji": "1303856475143147620"
     },
     "revolutionary": {
         "name": {
@@ -3142,7 +3268,8 @@
             "es": "figura falsamente?",
             "ca": "figura falsament?"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/94/Icon_revolutionary.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/94/Icon_revolutionary.png",
+        "emoji": "1303856510727618681"
     },
     "riot": {
         "name": {
@@ -3175,7 +3302,8 @@
             "es": "día 3",
             "ca": "dia 3"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/2d/Icon_riot.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/2d/Icon_riot.png",
+        "emoji": "1303856559578681428"
     },
     "sage": {
         "name": {
@@ -3196,7 +3324,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a0/Icon_sage.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a0/Icon_sage.png",
+        "emoji": "1303856592164491275"
     },
     "sailor": {
         "name": {
@@ -3221,7 +3350,8 @@
             "es": "borracho",
             "ca": "borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_sailor.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_sailor.png",
+        "emoji": "1303856624930394124"
     },
     "saint": {
         "name": {
@@ -3242,7 +3372,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/c9/Icon_saint.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/c9/Icon_saint.png",
+        "emoji": "1303856701103149186"
     },
     "savant": {
         "name": {
@@ -3263,7 +3394,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_savant.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d5/Icon_savant.png",
+        "emoji": "1303856725778104440"
     },
     "seamstress": {
         "name": {
@@ -3288,7 +3420,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/53/Icon_seamstress.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/53/Icon_seamstress.png",
+        "emoji": "1303856824537186436"
     },
     "sentinel": {
         "name": {
@@ -3309,7 +3442,8 @@
         "type": "fabled",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d4/Icon_sentinel.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d4/Icon_sentinel.png",
+        "emoji": "1303856871794544742"
     },
     "scapegoat": {
         "name": {
@@ -3330,7 +3464,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/3/3a/Icon_scapegoat.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/3/3a/Icon_scapegoat.png",
+        "emoji": "1303856759227682857"
     },
     "scarletwoman": {
         "name": {
@@ -3351,7 +3486,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/13/Icon_scarletwoman.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/13/Icon_scarletwoman.png",
+        "emoji": "1303856797857222738"
     },
     "shabaloth": {
         "name": {
@@ -3380,7 +3516,8 @@
             "es": "vivo",
             "ca": "viu"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/1f/Icon_shabaloth.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/1f/Icon_shabaloth.png",
+        "emoji": "1303856896599523369"
     },
     "shugenja": {
         "name": {
@@ -3401,7 +3538,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/11/Icon_shugenja.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/11/Icon_shugenja.png",
+        "emoji": "1303856934176165918"
     },
     "slayer": {
         "name": {
@@ -3426,7 +3564,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d3/Icon_slayer.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d3/Icon_slayer.png",
+        "emoji": "1303856987217596466"
     },
     "snakecharmer": {
         "name": {
@@ -3451,7 +3590,8 @@
             "es": "envenenado",
             "ca": "enverinat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_snakecharmer.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_snakecharmer.png",
+        "emoji": "1303857020541075477"
     },
     "snitch": {
         "name": {
@@ -3472,7 +3612,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/c1/Icon_snitch.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/c1/Icon_snitch.png",
+        "emoji": "1303857040510419126"
     },
     "soldier": {
         "name": {
@@ -3493,7 +3634,8 @@
         "type": "townsfolk",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/c/c3/Icon_soldier.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/c/c3/Icon_soldier.png",
+        "emoji": "1303857064732262471"
     },
     "spiritofivory": {
         "name": {
@@ -3518,7 +3660,8 @@
             "es": "no hay más malvados",
             "ca": "no hi ha més malvats"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/96/Icon_spiritofivory.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/96/Icon_spiritofivory.png",
+        "emoji": "1303857088107118624"
     },
     "spy": {
         "name": {
@@ -3539,7 +3682,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/5/54/Icon_spy.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/5/54/Icon_spy.png",
+        "emoji": "1303857114258866307"
     },
     "steward": {
         "name":{
@@ -3564,7 +3708,8 @@
             "es": "conoce",
             "ca": "coneix"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/f/fe/Icon_steward.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/f/fe/Icon_steward.png",
+        "emoji": "1303857139604914247"
     },
     "stormcatcher": {
         "name": {
@@ -3589,7 +3734,8 @@
             "es": "protegido",
             "ca": "protegit"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_stormcatcher.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_stormcatcher.png",
+        "emoji": "1303857164057579581"
     },
     "summoner": {
         "name": {
@@ -3614,7 +3760,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/1a/Icon_summoner.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/1a/Icon_summoner.png",
+        "emoji": "1303857183280070656"
     },
     "sweetheart": {
         "name": {
@@ -3639,7 +3786,8 @@
             "es": "borracho",
             "ca": "borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/6a/Icon_sweetheart.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6a/Icon_sweetheart.png",
+        "emoji": "1303857205493104730"
     },
     "tealady": {
         "name": {
@@ -3664,7 +3812,8 @@
             "es": "no puede morir",
             "ca": "no pot morir"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_tealady.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_tealady.png",
+        "emoji": "1303857228679483432"
     },
     "thief": {
         "name": {
@@ -3689,7 +3838,8 @@
             "es": "voto negativo",
             "ca": "vot negatiu"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/7/77/Icon_thief.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/7/77/Icon_thief.png",
+        "emoji": "1303857251500687380"
     },
     "tinker": {
         "name": {
@@ -3714,7 +3864,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/98/Icon_tinker.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/98/Icon_tinker.png",
+        "emoji": "1303857272035737611"
     },
     "towncrier": {
         "name": {
@@ -3743,7 +3894,8 @@
             "es": "secuaces han nominado",
             "ca": "sequaços no han nominat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/e/ef/Icon_towncrier.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/e/ef/Icon_towncrier.png",
+        "emoji": "1303857295133773845"
     },
     "toymaker": {
         "name": {
@@ -3768,7 +3920,8 @@
             "es": "última noche: sin ataque",
             "ca": "última nit: sense atac"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/2/27/Icon_toymaker.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/2/27/Icon_toymaker.png",
+        "emoji": "1303857311013404712"
     },
     "undertaker": {
         "name": {
@@ -3793,7 +3946,8 @@
             "es": "murió hoy",
             "ca": "morí avui"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/05/Icon_undertaker.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/05/Icon_undertaker.png",
+        "emoji": "1303857333268647976"
     },
     "vigormortis": {
         "name": {
@@ -3826,7 +3980,8 @@
             "es": "envenenado",
             "ca": "enverinat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/1a/Icon_vigormortis.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/1a/Icon_vigormortis.png",
+        "emoji": "1303857354281975924"
     },
     "villageidiot": {
         "name": {
@@ -3851,7 +4006,8 @@
             "es": "borracho",
             "ca": "borratxo"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/da/Icon_villageidiot.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/da/Icon_villageidiot.png",
+        "emoji": "1303857422783483914"
     },
     "virgin": {
         "name": {
@@ -3876,7 +4032,8 @@
             "es": "sin habilidad",
             "ca": "sense habilitat"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/d/d3/Icon_virgin.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/d/d3/Icon_virgin.png",
+        "emoji": "1303857443478048880"
     },
     "vizier": {
         "name": {
@@ -3897,7 +4054,8 @@
         "type": "minion",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/a/a4/Icon_vizier.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/a/a4/Icon_vizier.png",
+        "emoji": "1303857470136914012"
     },
     "vortox": {
         "name": {
@@ -3922,7 +4080,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/89/Icon_vortox.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/89/Icon_vortox.png",
+        "emoji": "1303857485601312860"
     },
     "voudon": {
         "name": {
@@ -3943,7 +4102,8 @@
         "type": "traveller",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/6/6d/Icon_voudon.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/6/6d/Icon_voudon.png",
+        "emoji": "1303857500675903580"
     },
     "washerwoman": {
         "name": {
@@ -3972,7 +4132,8 @@
             "es": "aldeano",
             "ca": "vil·latà"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/8/85/Icon_washerwoman.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/8/85/Icon_washerwoman.png",
+        "emoji": "1303857518937903104"
     },
     "widow": {
         "name": {
@@ -4001,7 +4162,8 @@
             "es": "lo sabe",
             "ca": "ho sap"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/9/99/Icon_widow.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/9/99/Icon_widow.png",
+        "emoji": "1303857537354825758"
     },
     "witch": {
         "name": {
@@ -4026,7 +4188,8 @@
             "es": "maldecido",
             "ca": "maleït"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/7/7b/Icon_witch.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/7/7b/Icon_witch.png",
+        "emoji": "1303857553905549333"
     },
     "yaggababble": {
         "name": {
@@ -4051,7 +4214,8 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_yaggababble.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/08/Icon_yaggababble.png",
+        "emoji": "1303857573539090582"
     },
     "zealot": {
         "name": {
@@ -4072,7 +4236,8 @@
         "type": "outsider",
         "setupWarning": false,
         "reminders": [],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_zealot.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_zealot.png",
+        "emoji": "1303857587460116551"
     },
     "zombuul": {
         "name": {
@@ -4101,6 +4266,7 @@
             "es": "muerto",
             "ca": "mort"
         }],
-        "icon": "https://wiki.bloodontheclocktower.com/images/1/15/Icon_zombuul.png"
+        "icon": "https://wiki.bloodontheclocktower.com/images/1/15/Icon_zombuul.png",
+        "emoji": "1303857598650650687"
     }
 }

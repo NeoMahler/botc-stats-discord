@@ -334,5 +334,13 @@ class UtilitiesCog(commands.Cog):
         else:
             return False
 
+    def get_emoji_code(self, character):
+        if "(" in character:
+            character = character.split("(")[0]
+        character_details = self.get_character_details(character)
+        emoji_id = character_details["emoji"]
+        full_code = f"<:{character}:{emoji_id}>"
+        return full_code
+
 def setup(bot):
     bot.add_cog(UtilitiesCog(bot))
