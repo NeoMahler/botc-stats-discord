@@ -76,7 +76,7 @@ class StatsCog(commands.Cog):
                 if not player:
                     await ctx.respond(f"No conozco a {jugador}.")
                     return
-            character_list = self.messages.generate_character_list(player=str(player))
+            character_list = self.messages.generate_character_list(player=str(player), team=equipo)
         else:
             character_list = self.messages.generate_generic_character_list(equipo)       
         await ctx.respond(character_list)
