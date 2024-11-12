@@ -89,9 +89,9 @@
             "ca": "Alsaahir"
         },
         "description": {
-            "en": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
-            "es": "Una vez por día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, gana el equipo bueno.",
-            "ca": "Un cop per dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, guanya l'equip bo."
+            "en": "Each day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+            "es": "Cada día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, gana el equipo bueno.",
+            "ca": "Cada dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, guanya l'equip bo."
         },
         "article": {
             "en": "the ",
@@ -889,9 +889,9 @@
             "ca": "Damisel·la"
         },
         "description": {
-            "en": "All Minions know you are in play. If a Minion publicly guesses you (once), your team loses.",
-            "es": "Todos los Secuaces saben que estás en juego. Si un Secuaz adivina tu identidad en público (una vez), tu equipo pierde.",
-            "ca": "Tots els Sequaços saben que estàs en joc. Si un Sequaç endevina la teva identitat en públic (una vegada), el teu equipo perd."
+            "en": "All Minions know a Damsel is in play. If a Minion publicly guesses you (once), your team loses.",
+            "es": "Todos los Secuaces saben que hay una Damisela en juego. Si un Secuaz adivina tu identidad en público (una vez), tu equipo pierde.",
+            "ca": "Tots els Sequaços saben que hi ha una Damisel·la en joc. Si un Sequaç endevina la teva identitat en públic (una vegada), el teu equipo perd."
         },
         "article": {
             "en": "the ",
@@ -1215,9 +1215,9 @@
             "ca": "Pagès"
         },
         "description": {
-            "en": "If you die at night, an alive good player becomes a Farmer.",
-            "es": "Si mueres de noche, un jugador bueno vivo se convierte en Campesino.",
-            "ca": "Si mors de nit, un jugador bo viu es converteix en Pagès"
+            "en": "When you die at night, an alive good player becomes a Farmer.",
+            "es": "Al morir de noche, un jugador bueno vivo se convierte en Campesino.",
+            "ca": "En morir de nit, un jugador bo viu es converteix en Pagès"
         },
         "article": {
             "en": "the ",
@@ -2048,9 +2048,9 @@
             "ca": "Rei"
         },
         "description": {
-            "en": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows who you are.",
-            "es": "Cada noche, si hay tantos o más muertos que vivos, descubres 1 personaje vivo. El Demonio sabe quién eres.",
-            "ca": "Cada nit, si hi ha tants o més morts que vius, descobreixes 1 personatge viu. El Dimoni sap qui ets."
+            "en": "Each night, if the dead equal or outnumber the living, you learn 1 alive character. The Demon knows you are the King.",
+            "es": "Cada noche, si hay tantos o más muertos que vivos, descubres 1 personaje vivo. El Demonio sabe que eres el Rey.",
+            "ca": "Cada nit, si hi ha tants o més morts que vius, descobreixes 1 personatge viu. El Dimoni sap que ets el Rei."
         },
         "article": {
             "en": "the ",
@@ -2653,9 +2653,9 @@
             "ca": "Sereno"
         },
         "description": {
-            "en": "Once per game, at night, choose a player: they learn who you are.",
-            "es": "Una vez por partida, de noche, escoge a un jugador: descubre quién eres.",
-            "ca": "Un cop per partida, de nit, tria un jugador: descobreix qui ets."
+            "en": "Once per game, at night, choose a player: they learn you are the Nightwatchman.",
+            "es": "Una vez por partida, de noche, escoge a un jugador: descubre que eres el Nightwatchman.",
+            "ca": "Un cop per partida, de nit, tria un jugador: descobreix que ets el Nightwatchman."
         },
         "article": {
             "en": "the ",
@@ -2940,9 +2940,9 @@
             "ca": "Metge de la Pesta"
         },
         "description": {
-            "en": "If you die, the Storyteller gains a Minion ability.",
-            "es": "Si mueres, el Narrador obtiene la habilidad de un Secuaz.",
-            "ca": "Si mors, el Narrador obté l'habilitat d'un Sequaç."
+            "en": "When you die, the Storyteller gains a Minion ability.",
+            "es": "Al morir, el Narrador obtiene una habilitat de Secuaz.",
+            "ca": "En morir, el Narrador obté una habilitat de Sequaç."
         },
         "article": {
             "en": "the ",
@@ -3600,9 +3600,9 @@
             "ca": "Espieta"
         },
         "description": {
-            "en": "Minions start knowing 3 not-in-play characters.",
-            "es": "Los Secuaces empiezan sabiendo 3 personajes fuera de juego.",
-            "ca": "Els Sequaços comencen sabent 3 personatges fora de joc."
+            "en": "Each Minion gets 3 bluffs.",
+            "es": "Cada Secuaz obtiene 3 bluffs.",
+            "ca": "Cada Sequaç obté 3 bluffs."
         },
         "article": {
             "en": "the ",
@@ -4042,9 +4042,9 @@
             "ca": "Visir"
         },
         "description": {
-            "en": "All players know who you are. You can not die during the day. If good voted, you may choose to execute immediately.",
-            "es": "Todos los jugadores saben quien eres. No puedes morir de día. Si el equipo bueno ha votado, puedes ejecutar de inmediato.",
-            "ca": "Tots els jugadors saben qui ets. No pots morir de dia. Si l'equip bo ha votat, pots executar de seguida."
+            "en": "All players know you are the Vizier. You can not die during the day. If good voted, you may choose to execute immediately.",
+            "es": "Todos los jugadores saben que eres el Visir. No puedes morir de día. Si el equipo bueno ha votado, puedes ejecutar de inmediato.",
+            "ca": "Tots els jugadors saben que ets el Visir. No pots morir de dia. Si l'equip bo ha votat, pots executar de seguida."
         },
         "article": {
             "en": "the ",

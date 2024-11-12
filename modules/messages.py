@@ -14,7 +14,7 @@ class MessagesCog(commands.Cog):
             player_characters = players[player]
             formatted_characters = []
             for raw_character in player_characters:
-                char_id = raw_character.split("(")[0]
+                char_id = raw_character.split("(")[0].split("{")[0]
                 character = self.utilities.get_character_name(char_id)
                 print(f"Character: {character} ({char_id})")
                 if "(" in raw_character:
@@ -31,7 +31,11 @@ class MessagesCog(commands.Cog):
                         alignment = "bueno"
                     else:
                         alignment = "malvado"
-                formatted_characters.append(f"{character} ({alignment})")
+                if "{" in raw_character:
+                    property = f"; info: {raw_character.split('{')[1].replace('}', '')}"
+                else:
+                    property = ""
+                formatted_characters.append(f"{character} ({alignment}{property})")
             msg += f"<@{player}>: {', '.join(formatted_characters)}\n"
 
         if result == "good":
