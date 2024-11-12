@@ -164,6 +164,7 @@ data/games.json
 data/players.json
 data/characters.json
 data/player_details.json
+data/misc.json
 backups/*
 .vscode
 config.json

@@ -19,6 +19,8 @@ class UtilitiesCog(commands.Cog):
         character_data = os.path.join("data", "character_data.json")
         with open(character_data, 'r') as f:
             character_data = json.load(f)
+        if "{" in character:
+            character = character.split("{")[0]
         if character not in character_data:
             if character.endswith(")"): #This means there's a custom alignment!
                 base_character = character[:-3]
@@ -107,6 +109,20 @@ class UtilitiesCog(commands.Cog):
             return 0
         else:
             return int(max([int(n) for n in games])) + 1
+        
+    def update_game_character_details(self, game, player, character, detail):
+        misc_file = os.path.join("data", "misc.json")
+        with open(misc_file, 'r') as f:
+            misc = json.load(f)
+
+        
+        if not character in misc:
+            misc[character] = {}
+        misc[character][game] = {str(player): [detail]}
+        
+        with open(misc_file, 'w') as f:
+            json.dump(misc, f)
+        return
 
     def update_game_stats(self, player_data, result, bluffs, fabled):
         game_id = self.generate_game_id()
@@ -114,6 +130,17 @@ class UtilitiesCog(commands.Cog):
         games_file = os.path.join("data", "games.json")
         with open(games_file, 'r') as f:
             games = json.load(f)
+
+        for player in player_data:
+            for position, character in enumerate(player_data[player]):
+                if "{" in character:
+                    clean_character = character.split("{")[0]
+                    player_data[player][position] = clean_character # Remove the detail from the character in the list
+
+                    detail = character.split("{")[1].replace("}", "")
+                    self.update_game_character_details(game_id, player, clean_character, detail)
+                
+
         games[game_id] = {
             "timestamp": game_time,
             "players": player_data,
