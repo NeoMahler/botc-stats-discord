@@ -31,7 +31,11 @@ class MessagesCog(commands.Cog):
                         alignment = "bueno"
                     else:
                         alignment = "malvado"
-                formatted_characters.append(f"{character} ({alignment})")
+                if "{" in raw_character:
+                    property = f"; info: {raw_character.split('{')[1].replace('}', '')}"
+                else:
+                    property = ""
+                formatted_characters.append(f"{character} ({alignment}{property})")
             msg += f"<@{player}>: {', '.join(formatted_characters)}\n"
 
         if result == "good":
