@@ -28,9 +28,9 @@
             "ca": "Alquimista"
         },
         "description": {
-            "en":"You have a not-in-play Minion ability.",
-            "es": "Tienes la habilitat de un Secuaz fuera de juego.",
-            "ca": "Tens l'habilitat d'un sequaç fora de joc."
+            "en": "You have a Minion ability. When using this, the Storyteller may prompt you to choose differently.",
+            "es": "Tienes una habilidad de Secuaz. Al usarla, el Narrador puede pedirte que elijas diferente.",
+            "ca": "Tens una habilitat de Sequaç. Quan l'utilitzis, el Narrador et pot demanar que triïs diferent."
         },
         "article": {
             "en": "the ",
@@ -54,9 +54,9 @@
             "ca": "Al-Hadikhia"
         },
         "description": {
-            "en": "Each night*, choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
-            "es": "Cada noche*, escoge a 3 jugadors (todos los jugadores saben a quien): cada uno escoge en silencio si vive o muere, pero si todos viven, todos mueren.",
-            "ca": "Cada nit*, tria 3 jugadors (tots els jugadors saben qui): cadascun tria en silenci si viu o mor, però si tots viuen, tots moren."
+            "en": "Each night*, you may choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
+            "es": "Cada noche*, puedes escoger a 3 jugadors (todos los jugadores saben a quien): cada uno escoge en silencio si vive o muere, pero si todos viven, todos mueren.",
+            "ca": "Cada nit*, pots triar 3 jugadors (tots els jugadors saben qui): cadascun tria en silenci si viu o mor, però si tots viuen, tots moren."
         },
         "article": {
             "en": "the ",
@@ -89,9 +89,9 @@
             "ca": "Alsaahir"
         },
         "description": {
-            "en": "Each day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
-            "es": "Cada día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, gana el equipo bueno.",
-            "ca": "Cada dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, guanya l'equip bo."
+            "en": "Once per day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+            "es": "Una vez por día, si adivinas públicamente qué jugadores son Secuaces y cuáles son Demonions, gana el equipo bueno.",
+            "ca": "Un cop per dia, si endevines públicament quins jugadors són Sequaços i quins són Dimonis, guanya l'equip bo."
         },
         "article": {
             "en": "the ",
@@ -170,7 +170,7 @@
         "description": {
             "en": "On your 1st night, you gain a Townsfolk ability (if good) or a Minion ability (if evil).",
             "es": "En tu primera noche, obtienes una habilidad de Aldeano (si eres bueno) o de Secuaz (si eres malvado).",
-            "ca": "A la teva primera nit, obtens una habilitat de Vil·latà (si ets bo) o de Sequaç (si ets malvat)."
+            "ca": "A la teva primera nit, obtens una habilitat de Vilatà (si ets bo) o de Sequaç (si ets malvat)."
         },
         "article": {
             "en": "the ",
@@ -287,7 +287,7 @@
         "reminders": [{
             "en": "seen townsfolk",
             "es": "visto aldeano",
-            "ca": "vist vil·latà"
+            "ca": "vist Vilatà"
         }, {
             "en": "seen outsider",
             "es": "visto forastero",
@@ -569,7 +569,7 @@
         "description": {
             "en": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
             "es": "Empiezas conociendo un jugador malvado. Si ese jugador muere, descubres otro jugador malvado durante la noche. [1 Aldeano es malvado]",
-            "ca": "Comences coneixent un jugador malvat. Si aquest jugador mor, descobreixes un altre jugador malvat durant la nit. [1 Vil·latà és malvat]"
+            "ca": "Comences coneixent un jugador malvat. Si aquest jugador mor, descobreixes un altre jugador malvat durant la nit. [1 Vilatà és malvat]"
         },
         "article": {
             "en": "the ",
@@ -1031,7 +1031,7 @@
         "description": {
             "en": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
             "es": "No sabes que eres el Borracho. Crees que eres un personaje Aldeano, pero no lo eres.",
-            "ca": "No saps que ets el Borratxo. Et penses que ets un personatge Vil·latà, però no l'ets."
+            "ca": "No saps que ets el Borratxo. Et penses que ets un personatge Vilatà, però no l'ets."
         },
         "article": {
             "en": "the ",
@@ -1886,7 +1886,7 @@
         "description": {
             "en": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",
             "es": "Una vez por partida, de noche, escoge a un jugador vivo: la Damisela, si la escoges, se convierte en Aldeano fuera de juego. [+la Damisela]",
-            "ca": "Un cop per partida, de nit, tria un jugador viu: la Damisel·la, si la tries, es converteix en un Vil·latà for ade joc. [+la Damisel·la]"
+            "ca": "Un cop per partida, de nit, tria un jugador viu: la Damisel·la, si la tries, es converteix en un Vilatà for ade joc. [+la Damisel·la]"
         },
         "article": {
             "en": "the ",
@@ -2890,7 +2890,7 @@
         "description": {
             "en": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
             "es": "Empiezas sabiendo 1 Aldeano en juego. Si estabas loco sobre ser este personaje, obtienes su habilidad cuando muera.",
-            "ca": "Comences sabent 1 Vil·latà en joc. Si estaves boig sobre ser aquest personatge, obtens la seva habilitat quan mori."
+            "ca": "Comences sabent 1 Vilatà en joc. Si estaves boig sobre ser aquest personatge, obtens la seva habilitat quan mori."
         },
         "article": {
             "en": "the ",
@@ -3180,7 +3180,7 @@
         "description": {
             "en": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
             "es": "Una vez por partida, de noche*, escoge a un jugador vivo: si es un Aldeano, resucitará.",
-            "ca": "Un cop per partida, de nit*, tria un jugador viu: si és Vil·latà, ressuscitarà."
+            "ca": "Un cop per partida, de nit*, tria un jugador viu: si és Vilatà, ressuscitarà."
         },
         "article": {
             "en": "the ",
@@ -3278,9 +3278,9 @@
             "ca": "Revolta"
         },
         "description": {
-            "en": "Nominees die, but may nominate again immediately (on day 3, they must). After day 3, evil wins. [All Minions are Riot]",
-            "es": "Los nominados mueren, pero pueden nominar inmediatamente (en el día 3, tienen que hacerlo). Después del día 3, el mal gana. [Todos los Secuaces són Revuelta]",
-            "ca": "Els nominats moren, però poden nominar immediatament (el dia 3, han de fer-ho). Després del dia 3, el mal guanya. [Tots els Secuaços són Revolta]"
+            "en": "On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.",
+            "es": "En el día 3, los Secuaces se convierten en Riot y los nominados mueren pero tienen que nominar a otro jugador inmediatamente.",
+            "ca": "Al dia 3, els Sequaços es converteixen en Riot i els nominats moren però han de nominar un altre jugador immediatament."
         },
         "article": {
             "en": "",
@@ -3672,7 +3672,7 @@
         "description": {
             "en": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.",
             "es": "Cada noche, ves el Grimorio. Puedes figurar como bueno y como Aldeano o Forastero, incluso muerto.",
-            "ca": "Cada nit, veus el Grimori. Pots figurar com a bo i com a Vil·latà o Foraster, fins i tot mort."
+            "ca": "Cada nit, veus el Grimori. Pots figurar com a bo i com a Vilatà o Foraster, fins i tot mort."
         },
         "article": {
             "en": "the ",
@@ -3958,7 +3958,7 @@
         "description": {
             "en": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbor. [-1 Outsider]",
             "es": "Cada noche*, escoge a un jugador: muere. Los Secuaces que matas mantienen su habilidad y envenenan a 1 vecino aldeano. [-1 Forastero]",
-            "ca": "Cada nit*, tria un jugador: mor. Els Sequaos que mates mantenen la seva habilitat i enverinen 1 veí vil·latà. [-1 Foraster]"
+            "ca": "Cada nit*, tria un jugador: mor. Els Sequaos que mates mantenen la seva habilitat i enverinen 1 veí Vilatà. [-1 Foraster]"
         },
         "article": {
             "en": "the ",
@@ -4018,7 +4018,7 @@
         "description": {
             "en": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
             "es": "La primera vez que eres nominado, si el nominador es un Aldeano, es ejecutado inmediatamente.",
-            "ca": "El primer cop que ets nominat, si el nominador és un Vil·latà, és executat immediatament."
+            "ca": "El primer cop que ets nominat, si el nominador és un Vilatà, és executat immediatament."
         },
         "article": {
             "en": "the ",
@@ -4066,7 +4066,7 @@
         "description": {
             "en": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
             "es": "Cada noche*, escoge a un jugador: muere. Las habilidades de Aldeano dan información falsa. Cada día, si nadie es ejecutado, el mal gana.",
-            "ca": "Cada nit*, tria un jugador: mor. Les habilitats de Vil·latà donen informació falsa. Cada dia, si ningú és executat, el mal guanya."
+            "ca": "Cada nit*, tria un jugador: mor. Les habilitats de Vilatà donen informació falsa. Cada dia, si ningú és executat, el mal guanya."
         },
         "article": {
             "en": "the ",
@@ -4114,7 +4114,7 @@
         "description": {
             "en": "You start knowing that 1 of 2 players is a particular Townsfolk.",
             "es": "Empiezas sabiendo que 1 de 2 jugadores es un Aldeano concreto.",
-            "ca": "Comences sabent que 1 de 2 jugadors és un Vil·latà concret."
+            "ca": "Comences sabent que 1 de 2 jugadors és un Vilatà concret."
         },
         "article": {
             "en": "the ",
@@ -4130,7 +4130,7 @@
         }, {
             "en": "townsfolk",
             "es": "aldeano",
-            "ca": "vil·latà"
+            "ca": "Vilatà"
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/8/85/Icon_washerwoman.png",
         "emoji": "1303857518937903104"
@@ -4190,6 +4190,44 @@
         }],
         "icon": "https://wiki.bloodontheclocktower.com/images/7/7b/Icon_witch.png",
         "emoji": "1303857553905549333"
+    },
+    "xaan": {
+        "name": {
+            "en": "Xaan",
+            "es": "Xaan",
+            "ca": "Xaan"
+        },
+        "description": {
+            "en": "On night X, all Townsfolk are poisoned until dusk. [X Outsiders]",
+            "es": "En la noche X, todos los Aldeanos están envenenados hasta el anochecer. [X Forasteros]",
+            "ca": "A la nit X, tots els Vilatans estan enverinats fins al vespre. [X Forasters]"
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "minion",
+        "setupWarning": true,
+        "reminders": [{
+            "en": "night 1",
+            "es": "noche 1",
+            "ca": "nit 1"
+        }, {
+            "en": "night 2",
+            "es": "noche 2",
+            "ca": "nit 2"
+        }, {
+            "en": "night 3",
+            "es": "noche 3",
+            "ca": "nit 3"
+        }, {
+            "en": "X",
+            "es": "X",
+            "ca": "X"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/0/0c/Icon_xaan.png",
+        "emoji": "1314627175734837340"
     },
     "yaggababble": {
         "name": {
