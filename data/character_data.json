@@ -4191,6 +4191,32 @@
         "icon": "https://wiki.bloodontheclocktower.com/images/7/7b/Icon_witch.png",
         "emoji": "1303857553905549333"
     },
+    "wizard": {
+        "name": {
+            "en": "Wizard",
+            "es": "Wizard",
+            "ca": "Wizard"
+        },
+        "description": {
+            "en": "Once per game, choose to make a wish. If granted, it might have a price & leave a clue as to its nature.",
+            "es": "Una vez por partida, decide pedir un deseo. Si se te concede, puede tener un precio y dejar una pista sobre su naturaleza.",
+            "ca": "Un cop per partida, decideix demanar un desig. Si se't concedeix, pot tenir un preu i deixar una pista sobre la seva naturalesa."
+        },
+        "article": {
+            "en": "the ",
+            "es": "el ",
+            "ca": "el "
+        },
+        "type": "minion",
+        "setupWarning": false,
+        "reminders": [{
+            "en": "?",
+            "es": "?",
+            "ca": "?"
+        }],
+        "icon": "https://wiki.bloodontheclocktower.com/images/b/b5/Icon_wizard.png",
+        "emoji": "1324706016251875400"
+    },
     "xaan": {
         "name": {
             "en": "Xaan",
